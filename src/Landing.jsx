@@ -16,9 +16,12 @@ import client6 from "./assets/clients/nestle.png";
 import client7 from "./assets/clients/hela.png";
 import client8 from "./assets/clients/esquel.png";
 import abt_man from "./assets/about_man.png";
+import m_1 from "./assets/milestones/m-1.png";
+import m_2 from "./assets/milestones/m-2.png";
+import m_3 from "./assets/milestones/m-3.png";
+import m_4 from "./assets/milestones/m-4.png";
 import { useState, useEffect } from "react";
 import LSCarousel from "./components/LandingServiceCar";
-import CLCarousel from "./components/ClientCar";
 import ServiceCard from "./components/ServiceCard";
 
 function Landing() {
@@ -299,8 +302,80 @@ function Landing() {
         </div>
       </div>
       {/*Milestones*/}
-      <div className="h-[30dvh]">
-            
+      <div className="h-fit">
+        <div className="flex flex-col gap-6 p-6 h-fit max-md:p-3">
+          <h1 className="text-[30px] text-[#C10000]">Our Milestones</h1>
+          {/*for md*/}
+          <div className="hidden h-full gap-3 text-white md:flex">
+            <div className="flex flex-col flex-grow w-2/6 h-full gap-3">
+              <div className="flex flex-col cursor-pointer">
+                <img src={m_1} alt="" className="h-[500px] object-cover" />
+                <p className="bg-[#000000BD] p-3">
+                  Best Coming Entrepreneur of 2015 in Central Province
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col justify-between flex-grow w-1/6 gap-3">
+              <div className="flex flex-col cursor-pointer h-1/2">
+                <img src={m_2} alt="" className="object-cover h-full" />
+                <p className="bg-[#000000BD] p-3">
+                  Best Performing Entrepreneur of 2016 in Central Province
+                </p>
+              </div>
+              <div className="flex flex-col cursor-pointer h-1/2">
+                <img src={m_3} alt="" className="object-cover h-full" />
+                <p className="bg-[#000000BD] p-3">Star Awards in 2017</p>
+              </div>
+            </div>
+            <div className="flex flex-col flex-grow w-2/6 gap-3">
+              <div className="flex flex-col cursor-pointer">
+                <img
+                  src={m_4}
+                  alt=""
+                  className="h-[500px] object-cover object-center"
+                />
+                <p className="bg-[#000000BD] p-3">
+                  Best Performing Entrepreneur of 2016 in Central Province
+                </p>
+              </div>
+            </div>
+          </div>
+          {/*for max-md*/}
+          <div className="flex flex-col h-full gap-3 text-white md:hidden">
+            <div className="flex flex-col flex-grow w-full h-full gap-3">
+              <div className="flex flex-col">
+                <img src={m_1} alt="" className="h-fit max-h-[400px] object-contain bg-[#000000BD]" />
+                <p className="bg-[#000000BD] p-3">
+                  Best Coming Entrepreneur of 2015 in Central Province
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col justify-between flex-grow w-full gap-3">
+              <div className="flex flex-col h-1/2">
+                <img src={m_2} alt="" className="object-contain h-full" />
+                <p className="bg-[#000000BD] p-3">
+                  Best Performing Entrepreneur of 2016 in Central Province
+                </p>
+              </div>
+              <div className="flex flex-col h-1/2">
+                <img src={m_3} alt="" className="object-contain h-full" />
+                <p className="bg-[#000000BD] p-3">Star Awards in 2017</p>
+              </div>
+            </div>
+            <div className="flex flex-col flex-grow w-full gap-3">
+              <div className="flex flex-col">
+                <img
+                  src={m_4}
+                  alt=""
+                  className="h-fit max-h-[400px] object-contain object-center bg-[#000000BD]"
+                />
+                <p className="bg-[#000000BD] p-3">
+                  Best Performing Entrepreneur of 2016 in Central Province
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
