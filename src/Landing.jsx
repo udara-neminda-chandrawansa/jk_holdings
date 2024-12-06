@@ -2,6 +2,7 @@ import banner_1 from "./assets/banner-1.jpg";
 import banner_2 from "./assets/banner-2.jpg";
 import banner_3 from "./assets/banner-3.jpg";
 import { useState, useEffect } from "react";
+import Carousel from "./components/LandingServiceCar";
 
 function Landing() {
   const banners = [
@@ -68,7 +69,7 @@ function Landing() {
             To be the epitome of Service Providing industry.
           </h1>
           <p
-            className={`2xl:text-xl xl:text-lg max-md:text-base max-sm:text-sm transition-all duration-300 ${
+            className={`2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base transition-all duration-300 ${
               isTransitioning
                 ? "opacity-0 translate-y-5"
                 : "opacity-100 translate-y-0"
@@ -81,6 +82,7 @@ function Landing() {
         <div className="z-10">
           {/*service carousel*/}
           <div className="w-full h-[10dvh] bg-red-600 max-sm:hidden">
+            <Carousel></Carousel>
           </div>
           {/*spacing*/}
           <div className="w-full h-[5dvh]"></div>
