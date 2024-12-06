@@ -227,10 +227,10 @@ function Landing() {
             visions to life.
           </p>
         </div>
-
+        {/*client carousel for md*/}
         <div
           id="animation-carousel"
-          className="relative w-full py-6 h-fit"
+          className="relative w-full py-6 h-fit max-md:hidden"
           data-carousel="static"
         >
           <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -300,6 +300,19 @@ function Landing() {
             ></button>
           </div>
         </div>
+        {/*client grid for max-md*/}
+        <div className="p-3 md:hidden max-md:flex">
+          <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
+            <img src={client1} className="w-[100px]" alt="client-card" />
+            <img src={client2} className="w-[100px]" alt="client-card" />
+            <img src={client3} className="w-[100px]" alt="client-card" />
+            <img src={client4} className="w-[100px]" alt="client-card" />
+            <img src={client5} className="w-[100px]" alt="client-card" />
+            <img src={client6} className="w-[100px]" alt="client-card" />
+            <img src={client7} className="w-[100px]" alt="client-card" />
+            <img src={client8} className="w-[100px]" alt="client-card" />
+          </div>
+        </div>
       </div>
       {/*Milestones*/}
       <div className="h-fit">
@@ -344,7 +357,11 @@ function Landing() {
           <div className="flex flex-col h-full gap-3 text-white md:hidden">
             <div className="flex flex-col flex-grow w-full h-full gap-3">
               <div className="flex flex-col">
-                <img src={m_1} alt="" className="h-fit max-h-[400px] object-contain bg-[#000000BD]" />
+                <img
+                  src={m_1}
+                  alt=""
+                  className="h-fit max-h-[400px] object-contain bg-[#000000BD]"
+                />
                 <p className="bg-[#000000BD] p-3">
                   Best Coming Entrepreneur of 2015 in Central Province
                 </p>
