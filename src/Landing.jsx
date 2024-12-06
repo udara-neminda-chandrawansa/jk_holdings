@@ -212,7 +212,7 @@ function Landing() {
       </div>
       {/*Clients*/}
       <div
-        className="flex flex-col justify-center relative h-[60dvh] bg-no-repeat bg-cover bg-fixed bg-center bg-opacity-0"
+        className="relative flex flex-col justify-center py-6 bg-fixed bg-opacity-0 bg-center bg-no-repeat bg-cover h-fit"
         style={{ backgroundImage: `url(${client_banner})` }}
       >
         <div className="flex flex-col gap-6 p-6 max-md:p-3">
@@ -224,44 +224,79 @@ function Landing() {
             visions to life.
           </p>
         </div>
-        <CLCarousel
-          item1={
-            <div className="grid w-full grid-cols-4 gap-6 h-fit place-content-center place-items-center">
-              <img src={client1} className="w-[100px]" alt="client-card" />
-              <img src={client2} className="w-[100px]" alt="client-card" />
-              <img src={client3} className="w-[100px]" alt="client-card" />
-              <img src={client4} className="w-[100px]" alt="client-card" />
-              <img src={client5} className="w-[100px]" alt="client-card" />
-              <img src={client6} className="w-[100px]" alt="client-card" />
-              <img src={client7} className="w-[100px]" alt="client-card" />
-              <img src={client8} className="w-[100px]" alt="client-card" />
+
+        <div
+          id="animation-carousel"
+          className="relative w-full h-[300px]"
+          data-carousel="static"
+        >
+          <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <div className="hidden duration-200 ease-linear" data-carousel-item>
+              <div className="grid w-full grid-cols-4 gap-6 h-fit place-content-center place-items-center">
+                <img src={client1} className="w-[100px]" alt="client-card" />
+                <img src={client2} className="w-[100px]" alt="client-card" />
+                <img src={client3} className="w-[100px]" alt="client-card" />
+                <img src={client4} className="w-[100px]" alt="client-card" />
+                <img src={client5} className="w-[100px]" alt="client-card" />
+                <img src={client6} className="w-[100px]" alt="client-card" />
+                <img src={client7} className="w-[100px]" alt="client-card" />
+                <img src={client8} className="w-[100px]" alt="client-card" />
+              </div>
             </div>
-          }
-          item2={
-            <div className="grid w-full grid-cols-4 gap-6 h-fit place-content-center place-items-center">
-              <img src={client1} className="w-[100px]" alt="client-card" />
-              <img src={client2} className="w-[100px]" alt="client-card" />
-              <img src={client3} className="w-[100px]" alt="client-card" />
-              <img src={client4} className="w-[100px]" alt="client-card" />
-              <img src={client5} className="w-[100px]" alt="client-card" />
-              <img src={client6} className="w-[100px]" alt="client-card" />
-              <img src={client7} className="w-[100px]" alt="client-card" />
-              <img src={client8} className="w-[100px]" alt="client-card" />
+
+            <div className="hidden duration-200 ease-linear" data-carousel-item>
+              <div className="grid w-full grid-cols-4 gap-6 h-fit place-content-center place-items-center">
+                <img src={client1} className="w-[100px]" alt="client-card" />
+                <img src={client2} className="w-[100px]" alt="client-card" />
+                <img src={client3} className="w-[100px]" alt="client-card" />
+                <img src={client4} className="w-[100px]" alt="client-card" />
+                <img src={client5} className="w-[100px]" alt="client-card" />
+                <img src={client6} className="w-[100px]" alt="client-card" />
+                <img src={client7} className="w-[100px]" alt="client-card" />
+                <img src={client8} className="w-[100px]" alt="client-card" />
+              </div>
             </div>
-          }
-          item3={
-            <div className="grid w-full grid-cols-4 gap-6 h-fit place-content-center place-items-center">
-              <img src={client1} className="w-[100px]" alt="client-card" />
-              <img src={client2} className="w-[100px]" alt="client-card" />
-              <img src={client3} className="w-[100px]" alt="client-card" />
-              <img src={client4} className="w-[100px]" alt="client-card" />
-              <img src={client5} className="w-[100px]" alt="client-card" />
-              <img src={client6} className="w-[100px]" alt="client-card" />
-              <img src={client7} className="w-[100px]" alt="client-card" />
-              <img src={client8} className="w-[100px]" alt="client-card" />
+
+            <div
+              className="hidden duration-200 ease-linear"
+              data-carousel-item="active"
+            >
+              <div className="grid w-full grid-cols-4 gap-6 h-fit place-content-center place-items-center">
+                <img src={client1} className="w-[100px]" alt="client-card" />
+                <img src={client2} className="w-[100px]" alt="client-card" />
+                <img src={client3} className="w-[100px]" alt="client-card" />
+                <img src={client4} className="w-[100px]" alt="client-card" />
+                <img src={client5} className="w-[100px]" alt="client-card" />
+                <img src={client6} className="w-[100px]" alt="client-card" />
+                <img src={client7} className="w-[100px]" alt="client-card" />
+                <img src={client8} className="w-[100px]" alt="client-card" />
+              </div>
             </div>
-          }
-        ></CLCarousel>    
+          </div>
+          <div className="absolute z-30 flex space-x-3 -translate-x-1/2 rtl:space-x-reverse bottom-5 left-1/2">
+            <button
+              type="button"
+              className="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              className="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              className="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+          </div>
+        </div>
       </div>
     </>
   );

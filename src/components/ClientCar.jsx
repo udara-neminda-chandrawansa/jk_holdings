@@ -17,13 +17,13 @@ const CLCarousel = ({ item1, item2, item3 }) => {
     <div className="w-full h-[500px] grid place-content-center overflow-hidden">
       {/* Slides Container */}
       <div
-        className="flex transition-transform duration-500 ease-in-out"
+        className="flex h-full transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="flex items-center justify-center flex-shrink-0 w-full h-full py-6"
+            className="flex items-center justify-center flex-shrink-0 w-full h-full"
           >
             {slide}
           </div>
@@ -31,7 +31,7 @@ const CLCarousel = ({ item1, item2, item3 }) => {
       </div>
 
       {/* Indicators */}
-      <div className="flex justify-center w-full gap-2 py-3">
+      <div className="flex justify-center w-full gap-2">
         {slides.map((_, index) => (
           <div
             key={index}
