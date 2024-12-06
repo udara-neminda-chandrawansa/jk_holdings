@@ -2,7 +2,6 @@ import banner_1 from "./assets/banner-1.jpg";
 import banner_2 from "./assets/banner-2.jpg";
 import banner_3 from "./assets/banner-3.jpg";
 import { useState, useEffect } from "react";
-import { Carousel } from "flowbite-react";
 
 function Landing() {
   const banners = [
@@ -82,71 +81,6 @@ function Landing() {
         <div className="z-10">
           {/*service carousel*/}
           <div className="w-full h-[10dvh] bg-red-600 max-sm:hidden">
-            <Carousel indicators={false}>
-              <div className="w-3/4 h-full bg-white">
-                <ul className="flex items-center h-full px-6 text-center text-black justify-evenly">
-                  <li>
-                    <p className="uppercase">Residential</p>
-                    <p>Construction</p>
-                  </li>
-                  <li className="h-1/2 bg-black w-[1px]"></li>
-                  <li>
-                    <p className="uppercase">Commercial</p>
-                    <p>Construction</p>
-                  </li>
-                  <li className="h-1/2 bg-black w-[1px]"></li>
-                  <li>
-                    <p className="uppercase">Architectural</p>
-                    <p>Designing</p>
-                  </li>
-                  <li className="h-1/2 bg-black w-[1px]"></li>
-                  <li>
-                    <p className="uppercase">Interior</p>
-                    <p>Designing</p>
-                  </li>
-                </ul>
-              </div>
-              <div className="w-3/4 h-full bg-white">
-                <ul className="flex items-center h-full px-6 text-center text-black justify-evenly">
-                  <li>
-                    <p className="uppercase">Aluminium</p>
-                    <p>Fabrication</p>
-                  </li>
-                  <li className="h-1/2 bg-black w-[1px]"></li>
-                  <li>
-                    <p className="uppercase">Electrical</p>
-                    <p>Services</p>
-                  </li>
-                  <li className="h-1/2 bg-black w-[1px]"></li>
-                  <li>
-                    <p className="uppercase">Property</p>
-                    <p>Management</p>
-                  </li>
-                  <li className="h-1/2 bg-black w-[1px]"></li>
-                  <li>
-                    <p className="uppercase">Janitorial</p>
-                    <p>Services</p>
-                  </li>
-                </ul>
-              </div>
-              <div className="w-3/4 h-full bg-white">
-                <ul className="flex items-center h-full px-6 text-center text-black justify-evenly">
-                  <li>
-                    <p className="uppercase">Landscape</p>
-                    <p>Designing</p>
-                  </li>
-                  <li className="h-1/2 bg-black w-[1px]"></li>
-                  <li>
-                    <p className="uppercase">Garden</p>
-                    <p>Maintenance</p>
-                  </li>
-                  <li className="h-1/2 bg-black w-[1px]"></li>
-                  <li>
-                    <p className="uppercase">Getaways</p>
-                  </li>
-                </ul>
-              </div>
-            </Carousel>
           </div>
           {/*spacing*/}
           <div className="w-full h-[5dvh]"></div>
