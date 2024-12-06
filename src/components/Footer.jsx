@@ -72,7 +72,7 @@ function Footer() {
         </ul>
       </div>
       <div className="h-1/4 border-t-2 border-t-[#C10000] flex items-center">
-        <p>2023 © All Rights Reserved | Anuradha Sewing Academy (Pvt) Ltd | Designed & Developed by Silicon Radon Networks (Pvt) Ltd.</p>
+        <p>2024 © All Rights Reserved | JKI Holdings | Designed & Developed by Silicon Radon Networks (Pvt) Ltd.</p>
       </div>
     </footer>
   );
