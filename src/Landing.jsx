@@ -121,14 +121,19 @@ function Landing() {
             care.
           </p>
         </div>
-        <div className="flex items-center justify-center gap-6 p-6 max-md:flex-col">
-          <ServiceCard img={Card_1} text={"Construction"}></ServiceCard>
-          <ServiceCard img={Card_2} text={"Facility Management"}></ServiceCard>
-          <ServiceCard img={Card_3} text={"Getaways"}></ServiceCard>
-          <ServiceCard
-            img={Card_4}
-            text={"Architectural Designing"}
-          ></ServiceCard>
+        <div className="flex justify-center">
+          <div className="grid grid-cols-4 gap-6 p-6 w-fit max-sm:w-full place-items-center max-md:grid-cols-2 max-sm:grid-cols-1">
+            <ServiceCard img={Card_1} text={"Construction"}></ServiceCard>
+            <ServiceCard
+              img={Card_2}
+              text={"Facility Management"}
+            ></ServiceCard>
+            <ServiceCard img={Card_3} text={"Getaways"}></ServiceCard>
+            <ServiceCard
+              img={Card_4}
+              text={"Architectural Designing"}
+            ></ServiceCard>
+          </div>
         </div>
       </div>
       {/*Mission*/}
