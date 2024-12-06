@@ -1,8 +1,9 @@
+@import url("https://fonts.cdnfonts.com/css/optima-nova-lt-pro");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.cdnfonts.com/css/optima-nova-lt-pro");
 
 :root {
   font-family: "Optima nova LT Pro", Inter, system-ui, Avenir, Helvetica, Arial,
