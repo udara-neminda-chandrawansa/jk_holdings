@@ -2,6 +2,7 @@
 import { Route, Switch } from "wouter";
 import Nav from './components/Nav';
 import Landing from "./Landing";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <div>
         <Nav></Nav>
         <Route path="/" component={Landing} />
+        <Footer></Footer>
       </div>
     </Switch>
   )

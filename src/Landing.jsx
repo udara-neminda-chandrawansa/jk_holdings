@@ -398,6 +398,9 @@ function Landing() {
             </div>
           </div>
         </div>
+        <span className="flex justify-end w-full px-6 underline">
+        <a href="https://www.google.com">View All</a>
+        </span>
       </div>
     </>
   );
