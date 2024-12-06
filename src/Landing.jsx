@@ -189,7 +189,7 @@ function Landing() {
               <span className="hidden lg:inline text-[60px] max-md:text-2xl max-lg:text-3xl max-xl:text-5xl">
                 “
               </span>
-              <span className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+              <span className="z-10 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
                 Taniya Group, a pioneer in building construction industry, came
                 to be known as JKI Holdings in the year 2001. Since then, we
                 have expanded our services from building construction to
