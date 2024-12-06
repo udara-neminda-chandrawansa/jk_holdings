@@ -1,10 +1,10 @@
 import banner_1 from "./assets/banner-1.jpg";
 import banner_2 from "./assets/banner-2.jpg";
 import banner_3 from "./assets/banner-3.jpg";
-import Card_1 from "./assets/ServiceCards/Card_1.jpg";
-import Card_2 from "./assets/ServiceCards/Card_2.jpg";
-import Card_3 from "./assets/ServiceCards/Card_3.jpg";
-import Card_4 from "./assets/ServiceCards/Card_4.png";
+import Card_1 from "./assets/ServiceCards/card_1.jpg";
+import Card_2 from "./assets/ServiceCards/card_2.jpg";
+import Card_3 from "./assets/ServiceCards/card_3.jpg";
+import Card_4 from "./assets/ServiceCards/card_4.png";
 import misson_banner from "./assets/mission_bg.jpg";
 import { useState, useEffect } from "react";
 import Carousel from "./components/LandingServiceCar";
