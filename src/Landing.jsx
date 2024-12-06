@@ -5,6 +5,7 @@ import Card_1 from "./assets/ServiceCards/Card_1.jpg";
 import Card_2 from "./assets/ServiceCards/Card_2.jpg";
 import Card_3 from "./assets/ServiceCards/Card_3.jpg";
 import Card_4 from "./assets/ServiceCards/Card_4.png";
+import misson_banner from "./assets/mission_bg.jpg";
 import { useState, useEffect } from "react";
 import Carousel from "./components/LandingServiceCar";
 import ServiceCard from "./components/ServiceCard";
@@ -98,7 +99,7 @@ function Landing() {
         {/*text*/}
         <div className="flex flex-col gap-6 p-6 max-md:p-3">
           <h1 className="text-[30px] text-[#C10000]">Our Services</h1>
-          <p>
+          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
             At A J I Construction, we are dedicated to transforming your visions
             into reality with unparalleled expertise and craftsmanship. Our
             comprehensive range of services ensures every aspect of your
@@ -114,6 +115,29 @@ function Landing() {
             img={Card_4}
             text={"Architectural Designing"}
           ></ServiceCard>
+        </div>
+      </div>
+      {/*Mission*/}
+      <div
+        className="flex flex-col justify-center relative h-[60dvh] bg-no-repeat bg-cover bg-fixed bg-center"
+        style={{ backgroundImage: `url(${misson_banner})` }}
+      >
+        {/*Top layer (backdrop)*/}
+        <div className="absolute bottom-0 h-[60dvh] inset-0 bg-gradient-to-br from-[#4B4B4BB5] to-[#000000B5]"></div>
+        {/*text*/}
+        <div className="z-10 flex flex-col gap-6 pl-12 text-white max-md:pl-6">
+          <div className="flex flex-col gap-6">
+            <h1 className="text-[30px] lg:text-[50px] xl:text-[70px]">Our Mission</h1>
+            <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+              Build everlasting relationships through architectonic
+              constructions & innovative, economic & exceptional customer
+              service, and evolve continuously along with advanced technology
+            </p>
+          </div>
+          <div className="flex flex-col gap-6">
+            <h1 className="text-[30px] lg:text-[50px] xl:text-[70px]">Our Services</h1>
+            <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">To be the epitome of Service Providing industry</p>
+          </div>
         </div>
       </div>
     </>
