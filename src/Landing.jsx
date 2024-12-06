@@ -114,7 +114,7 @@ function Landing() {
         <div className="flex flex-col gap-6 p-6 max-md:p-3">
           <h1 className="text-[30px] text-[#C10000]">Our Services</h1>
           <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
-            At A J I Construction, we are dedicated to transforming your visions
+            At JKI Construction, we are dedicated to transforming your visions
             into reality with unparalleled expertise and craftsmanship. Our
             comprehensive range of services ensures every aspect of your
             construction project is handled with precision, innovation, and
@@ -187,7 +187,7 @@ function Landing() {
             alt="about-img"
           />
           <div className="absolute text-white pr-12 max-md:pr-6 max-sm:pr-3 right-0 bottom-0 w-full h-0 border-b-[45dvh] border-b-[#C10000] border-l-[400px] border-r-0 border-l-transparent max-lg:hidden"></div>
-          <div className="absolute flex items-center justify-end w-full h-full pr-12 max-md:relative max-md:items-start max-md:justify-center max-md:text-center max-md:py-6 max-lg:pr-0 max-lg:text-end">
+          <div className="absolute flex items-center justify-end w-full h-full pr-12 max-md:relative max-md:items-start max-md:justify-center max-md:text-center max-md:py-6 max-lg:pr-0 max-lg:text-end min-h-fit">
             <h1 className="w-1/2 text-white max-md:w-full max-md:text-center lg:line-height-abt max-lg:text-black">
               <span className="hidden lg:inline text-[60px] max-md:text-2xl max-lg:text-3xl max-xl:text-5xl">
                 “
@@ -221,7 +221,7 @@ function Landing() {
         <div className="flex flex-col gap-6 p-6 max-md:p-3">
           <h1 className="text-[30px] text-[#C10000]">Our Main Clients</h1>
           <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
-            At A J I Construction, our clients are at the heart of everything we
+            At JKI Construction, our clients are at the heart of everything we
             do. We are proud to have partnered with individuals, businesses, and
             organizations across diverse industries to bring their construction
             visions to life.
