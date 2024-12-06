@@ -177,7 +177,7 @@ function Landing() {
             continuous improvement
           </p>
         </div>
-        <div className="relative flex h-[45dvh] max-md:h-fit max-md:flex-col">
+        <div className="relative flex h-[45dvh] min-h-fit max-md:h-fit max-md:flex-col">
           <img
             src={abt_man}
             className="absolute max-md:relative max-md:h-[300px] max-md:object-contain bottom-0 z-10 max-2xl:h-[55dvh] h-[50dvh] object-cover"
