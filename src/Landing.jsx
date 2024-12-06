@@ -6,6 +6,7 @@ import Card_2 from "./assets/ServiceCards/card_2.jpg";
 import Card_3 from "./assets/ServiceCards/card_3.jpg";
 import Card_4 from "./assets/ServiceCards/card_4.png";
 import misson_banner from "./assets/mission_bg.jpg";
+import abt_man from "./assets/about_man.png";
 import { useState, useEffect } from "react";
 import Carousel from "./components/LandingServiceCar";
 import ServiceCard from "./components/ServiceCard";
@@ -127,7 +128,9 @@ function Landing() {
         {/*text*/}
         <div className="z-10 flex flex-col gap-6 pl-12 text-white max-md:pl-6">
           <div className="flex flex-col gap-6">
-            <h1 className="text-[30px] lg:text-[50px] xl:text-[70px]">Our Mission</h1>
+            <h1 className="text-[30px] lg:text-[50px] xl:text-[70px]">
+              Our Mission
+            </h1>
             <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
               Build everlasting relationships through architectonic
               constructions & innovative, economic & exceptional customer
@@ -135,8 +138,54 @@ function Landing() {
             </p>
           </div>
           <div className="flex flex-col gap-6">
-            <h1 className="text-[30px] lg:text-[50px] xl:text-[70px]">Our Services</h1>
-            <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">To be the epitome of Service Providing industry</p>
+            <h1 className="text-[30px] lg:text-[50px] xl:text-[70px]">
+              Our Services
+            </h1>
+            <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+              To be the epitome of Service Providing industry
+            </p>
+          </div>
+        </div>
+      </div>
+      {/*About*/}
+      <div className="flex flex-col gap-6 p-12 h-fit max-md:p-6">
+        <div>
+          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+            JKI Holdings is a Pioneer in Construction, Facility Management, and
+            Landscaping services in Sri Lanka since 2001. The company commenced
+            its journey with 2 employees. By 2014, the company established its
+            trademark with 300+ employees and it was recognized and awarded for
+            its 'Excellence' at the Star Awards Ceremony organized by the
+            Department of Industrial Development & Enterprise Promotion along
+            with National Enterprise Development Authority (NEDA) of Sri Lanka
+            in 2015 to 2020. The company provides teams of dynamic and
+            professional achievers, who excel through enthusiasm, determination
+            and commitment, delivering an outstanding service, surpassing client
+            expectations at every opportunity. We, at JKI Holdings, value
+            Transparency, Integrity and Ethics more than anything, and we are
+            dedicated to cater to our clients' needs through innovation and
+            continuous improvement
+          </p>
+        </div>
+        <div className="relative flex h-[45dvh] max-md:h-fit max-md:flex-col">
+          <img
+            src={abt_man}
+            className="absolute max-md:relative max-md:h-[300px] max-md:object-contain bottom-0 z-10 max-2xl:h-[55dvh] h-[50dvh] object-cover"
+            alt="about-img"
+          />
+          <div className="absolute text-white pr-12 max-md:pr-6 max-sm:pr-3 right-0 bottom-0 w-full h-0 border-b-[45dvh] border-b-[#C10000] border-l-[400px] border-r-0 border-l-transparent max-lg:hidden"></div>
+          <div className="absolute flex items-center justify-end w-full h-full pr-12 max-md:relative max-md:items-start max-md:justify-center max-md:text-center max-md:py-6 max-lg:pr-0 max-lg:text-end">
+          <h1 className="w-1/2 text-white max-md:w-full max-md:text-center lg:line-height-abt max-lg:text-black">
+              <span className="hidden lg:inline text-[60px] max-md:text-2xl max-lg:text-3xl max-xl:text-5xl">
+                “
+              </span>
+              <span className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+              Taniya Group, a pioneer in building construction  industry, came to be known as JKI Holdings in the year 2001. Since then, we have expanded our services from building construction to Interior Designing, Landscaping, Aluminum Fabrication, Pest Control and Facility Management, to fulfil al our clients' requirements in commercial and residential establishments.  We have already commenced our operations in Tourism Industry, and we are determined to commence our operations in the Information Technology Industry as wel. As the Founder, I started this organization, so that we as a “Nation” can grow together and sustain our footprint in the world as a Proud Nation and bring international revenues into the 
+              </span>
+              <span className="hidden lg:inline absolute text-[60px] max-md:text-[30px] max-lg:text-[40px] max-xl:text-5xl">
+                ”
+              </span>
+            </h1>
           </div>
         </div>
       </div>
