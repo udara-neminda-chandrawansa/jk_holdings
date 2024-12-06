@@ -1,8 +1,13 @@
 import banner_1 from "./assets/banner-1.jpg";
 import banner_2 from "./assets/banner-2.jpg";
 import banner_3 from "./assets/banner-3.jpg";
+import Card_1 from "./assets/ServiceCards/Card_1.jpg";
+import Card_2 from "./assets/ServiceCards/Card_2.jpg";
+import Card_3 from "./assets/ServiceCards/Card_3.jpg";
+import Card_4 from "./assets/ServiceCards/Card_4.png";
 import { useState, useEffect } from "react";
 import Carousel from "./components/LandingServiceCar";
+import ServiceCard from "./components/ServiceCard";
 
 function Landing() {
   const banners = [
@@ -81,7 +86,7 @@ function Landing() {
         {/*banner bottom*/}
         <div className="z-10">
           {/*service carousel*/}
-          <div className="w-full h-[10dvh] bg-red-600 max-sm:hidden">
+          <div className="w-full h-[10dvh] bg-[#C10000] max-sm:hidden">
             <Carousel></Carousel>
           </div>
           {/*spacing*/}
@@ -89,7 +94,28 @@ function Landing() {
         </div>
       </div>
       {/*Services*/}
-      <div className="h-[30dvh]"></div>
+      <div className="h-fit">
+        {/*text*/}
+        <div className="flex flex-col gap-6 p-6 max-md:p-3">
+          <h1 className="text-[30px] text-[#C10000]">Our Services</h1>
+          <p>
+            At A J I Construction, we are dedicated to transforming your visions
+            into reality with unparalleled expertise and craftsmanship. Our
+            comprehensive range of services ensures every aspect of your
+            construction project is handled with precision, innovation, and
+            care.
+          </p>
+        </div>
+        <div className="flex items-center justify-center gap-6 p-6 max-md:flex-col">
+          <ServiceCard img={Card_1} text={"Construction"}></ServiceCard>
+          <ServiceCard img={Card_2} text={"Facility Management"}></ServiceCard>
+          <ServiceCard img={Card_3} text={"Getaways"}></ServiceCard>
+          <ServiceCard
+            img={Card_4}
+            text={"Architectural Designing"}
+          ></ServiceCard>
+        </div>
+      </div>
     </>
   );
 }
