@@ -227,12 +227,12 @@ function Landing() {
 
         <div
           id="animation-carousel"
-          className="relative w-full h-[300px] py-6"
+          className="relative w-full py-6 h-fit"
           data-carousel="static"
         >
           <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
             <div className="hidden duration-200 ease-linear" data-carousel-item>
-              <div className="grid w-full grid-cols-4 gap-6 h-fit place-content-center place-items-center">
+              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
                 <img src={client1} className="w-[100px]" alt="client-card" />
                 <img src={client2} className="w-[100px]" alt="client-card" />
                 <img src={client3} className="w-[100px]" alt="client-card" />
@@ -245,7 +245,7 @@ function Landing() {
             </div>
 
             <div className="hidden duration-200 ease-linear" data-carousel-item>
-              <div className="grid w-full grid-cols-4 gap-6 h-fit place-content-center place-items-center">
+              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
                 <img src={client1} className="w-[100px]" alt="client-card" />
                 <img src={client2} className="w-[100px]" alt="client-card" />
                 <img src={client3} className="w-[100px]" alt="client-card" />
@@ -261,7 +261,7 @@ function Landing() {
               className="hidden duration-200 ease-linear"
               data-carousel-item="active"
             >
-              <div className="grid w-full grid-cols-4 gap-6 h-fit place-content-center place-items-center">
+              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
                 <img src={client1} className="w-[100px]" alt="client-card" />
                 <img src={client2} className="w-[100px]" alt="client-card" />
                 <img src={client3} className="w-[100px]" alt="client-card" />
@@ -300,7 +300,7 @@ function Landing() {
       </div>
       {/*Milestones*/}
       <div className="h-[30dvh]">
-
+            
       </div>
     </>
   );
