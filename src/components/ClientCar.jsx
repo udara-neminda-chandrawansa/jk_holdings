@@ -31,7 +31,7 @@ const CLCarousel = ({ item1, item2, item3 }) => {
       </div>
 
       {/* Indicators */}
-      <div className="absolute flex justify-center w-full gap-2 bottom-2">
+      <div className="absolute flex justify-center w-full gap-2 py-3 bottom-2">
         {slides.map((_, index) => (
           <div
             key={index}
