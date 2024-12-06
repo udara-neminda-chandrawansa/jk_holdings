@@ -6,9 +6,19 @@ import Card_2 from "./assets/ServiceCards/card_2.jpg";
 import Card_3 from "./assets/ServiceCards/card_3.jpg";
 import Card_4 from "./assets/ServiceCards/card_4.png";
 import misson_banner from "./assets/mission_bg.jpg";
+import client_banner from "./assets/clients_bg.png";
+import client1 from "./assets/clients/brandix.png";
+import client2 from "./assets/clients/mas.png";
+import client3 from "./assets/clients/kanrich.png";
+import client4 from "./assets/clients/dimo.png";
+import client5 from "./assets/clients/cbl.png";
+import client6 from "./assets/clients/nestle.png";
+import client7 from "./assets/clients/hela.png";
+import client8 from "./assets/clients/esquel.png";
 import abt_man from "./assets/about_man.png";
 import { useState, useEffect } from "react";
-import Carousel from "./components/LandingServiceCar";
+import LSCarousel from "./components/LandingServiceCar";
+import CLCarousel from "./components/ClientCar";
 import ServiceCard from "./components/ServiceCard";
 
 function Landing() {
@@ -89,7 +99,7 @@ function Landing() {
         <div className="z-10">
           {/*service carousel*/}
           <div className="w-full h-[10dvh] bg-[#C10000] max-sm:hidden">
-            <Carousel></Carousel>
+            <LSCarousel></LSCarousel>
           </div>
           {/*spacing*/}
           <div className="w-full h-[5dvh]"></div>
@@ -175,12 +185,23 @@ function Landing() {
           />
           <div className="absolute text-white pr-12 max-md:pr-6 max-sm:pr-3 right-0 bottom-0 w-full h-0 border-b-[45dvh] border-b-[#C10000] border-l-[400px] border-r-0 border-l-transparent max-lg:hidden"></div>
           <div className="absolute flex items-center justify-end w-full h-full pr-12 max-md:relative max-md:items-start max-md:justify-center max-md:text-center max-md:py-6 max-lg:pr-0 max-lg:text-end">
-          <h1 className="w-1/2 text-white max-md:w-full max-md:text-center lg:line-height-abt max-lg:text-black">
+            <h1 className="w-1/2 text-white max-md:w-full max-md:text-center lg:line-height-abt max-lg:text-black">
               <span className="hidden lg:inline text-[60px] max-md:text-2xl max-lg:text-3xl max-xl:text-5xl">
                 “
               </span>
               <span className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
-              Taniya Group, a pioneer in building construction  industry, came to be known as JKI Holdings in the year 2001. Since then, we have expanded our services from building construction to Interior Designing, Landscaping, Aluminum Fabrication, Pest Control and Facility Management, to fulfil al our clients' requirements in commercial and residential establishments.  We have already commenced our operations in Tourism Industry, and we are determined to commence our operations in the Information Technology Industry as wel. As the Founder, I started this organization, so that we as a “Nation” can grow together and sustain our footprint in the world as a Proud Nation and bring international revenues into the 
+                Taniya Group, a pioneer in building construction industry, came
+                to be known as JKI Holdings in the year 2001. Since then, we
+                have expanded our services from building construction to
+                Interior Designing, Landscaping, Aluminum Fabrication, Pest
+                Control and Facility Management, to fulfil al our clients'
+                requirements in commercial and residential establishments. We
+                have already commenced our operations in Tourism Industry, and
+                we are determined to commence our operations in the Information
+                Technology Industry as wel. As the Founder, I started this
+                organization, so that we as a “Nation” can grow together and
+                sustain our footprint in the world as a Proud Nation and bring
+                international revenues into the
               </span>
               <span className="hidden lg:inline absolute text-[60px] max-md:text-[30px] max-lg:text-[40px] max-xl:text-5xl">
                 ”
@@ -188,6 +209,59 @@ function Landing() {
             </h1>
           </div>
         </div>
+      </div>
+      {/*Clients*/}
+      <div
+        className="flex flex-col justify-center relative h-[60dvh] bg-no-repeat bg-cover bg-fixed bg-center bg-opacity-0"
+        style={{ backgroundImage: `url(${client_banner})` }}
+      >
+        <div className="flex flex-col gap-6 p-6 max-md:p-3">
+          <h1 className="text-[30px] text-[#C10000]">Our Main Clients</h1>
+          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+            At A J I Construction, our clients are at the heart of everything we
+            do. We are proud to have partnered with individuals, businesses, and
+            organizations across diverse industries to bring their construction
+            visions to life.
+          </p>
+        </div>
+        <CLCarousel
+          item1={
+            <div className="grid w-full grid-cols-4 gap-6 h-fit place-content-center place-items-center">
+              <img src={client1} className="w-[100px]" alt="client-card" />
+              <img src={client2} className="w-[100px]" alt="client-card" />
+              <img src={client3} className="w-[100px]" alt="client-card" />
+              <img src={client4} className="w-[100px]" alt="client-card" />
+              <img src={client5} className="w-[100px]" alt="client-card" />
+              <img src={client6} className="w-[100px]" alt="client-card" />
+              <img src={client7} className="w-[100px]" alt="client-card" />
+              <img src={client8} className="w-[100px]" alt="client-card" />
+            </div>
+          }
+          item2={
+            <div className="grid w-full grid-cols-4 gap-6 h-fit place-content-center place-items-center">
+              <img src={client1} className="w-[100px]" alt="client-card" />
+              <img src={client2} className="w-[100px]" alt="client-card" />
+              <img src={client3} className="w-[100px]" alt="client-card" />
+              <img src={client4} className="w-[100px]" alt="client-card" />
+              <img src={client5} className="w-[100px]" alt="client-card" />
+              <img src={client6} className="w-[100px]" alt="client-card" />
+              <img src={client7} className="w-[100px]" alt="client-card" />
+              <img src={client8} className="w-[100px]" alt="client-card" />
+            </div>
+          }
+          item3={
+            <div className="grid w-full grid-cols-4 gap-6 h-fit place-content-center place-items-center">
+              <img src={client1} className="w-[100px]" alt="client-card" />
+              <img src={client2} className="w-[100px]" alt="client-card" />
+              <img src={client3} className="w-[100px]" alt="client-card" />
+              <img src={client4} className="w-[100px]" alt="client-card" />
+              <img src={client5} className="w-[100px]" alt="client-card" />
+              <img src={client6} className="w-[100px]" alt="client-card" />
+              <img src={client7} className="w-[100px]" alt="client-card" />
+              <img src={client8} className="w-[100px]" alt="client-card" />
+            </div>
+          }
+        ></CLCarousel>    
       </div>
     </>
   );
