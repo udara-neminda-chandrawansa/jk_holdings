@@ -227,7 +227,7 @@ function Landing() {
 
         <div
           id="animation-carousel"
-          className="relative w-full h-[300px]"
+          className="relative w-full h-[300px] py-6"
           data-carousel="static"
         >
           <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -297,6 +297,10 @@ function Landing() {
             ></button>
           </div>
         </div>
+      </div>
+      {/*Milestones*/}
+      <div className="h-[30dvh]">
+
       </div>
     </>
   );
