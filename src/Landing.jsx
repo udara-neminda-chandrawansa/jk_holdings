@@ -198,11 +198,11 @@ function Landing() {
           <div className="absolute text-white pr-12 max-md:pr-6 max-sm:pr-3 right-0 bottom-0 w-full h-0 border-b-[55dvh] border-b-[#C10000] border-l-[400px] border-r-0 border-l-transparent max-lg:hidden"></div>
           {/*trapezoid text*/}
           <div className="absolute flex items-end justify-end w-full h-full pr-12 overflow-y-scroll lg:items-center max-md:relative max-md:items-start max-md:justify-center max-md:text-center max-md:py-6 max-lg:pr-0 max-lg:text-end min-h-fit no-scrollbar">
-            <h1 className="z-20 w-1/2 text-white max-md:w-full max-md:text-center lg:line-height-abt max-lg:text-black">
+            <h1 className="z-20 w-1/2 text-white max-md:w-full max-md:text-start max-lg:text-black">
               <span className="hidden lg:inline text-[60px] max-md:text-2xl max-lg:text-3xl max-xl:text-5xl">
                 “
               </span>
-              <span className="z-10 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+              <span className="z-10 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base line-height-abt">
                 Taniya Group, a pioneer in building construction industry, came
                 to be known as JKI Holdings in the year 2001. Since then, we
                 have expanded our services from building construction to
@@ -327,7 +327,7 @@ function Landing() {
       {/*Milestones*/}
       <div className="h-fit">
         <div className="flex flex-col gap-6 p-12 h-fit max-md:p-6">
-          <h1 className="text-[30px] text-[#C10000]">Our Milestones</h1>
+          <h1 className="text-[30px] text-[#C10000] title">Our Milestones</h1>
           {/*for md*/}
           <div className="hidden h-full gap-3 text-white md:flex">
             <div className="flex flex-col flex-grow w-2/6 h-full gap-3">
