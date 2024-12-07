@@ -85,7 +85,7 @@ function Landing() {
         </div>
         {/*text*/}
         <div className="z-10 w-3/4 ml-6 text-white h-1/3 2xl:h-1/4">
-          <h1 className="text-[64px] max-sm:mb-3 sm:mb-1 lg:mb-3 xl:mb-6 max-md:text-[45px] max-sm:text-[30px]">
+          <h1 className="text-[64px] title max-sm:mb-3 sm:mb-1 lg:mb-3 xl:mb-6 max-md:text-[45px] max-sm:text-[30px]">
             To be the epitome of Service Providing industry.
           </h1>
           <p
@@ -111,8 +111,8 @@ function Landing() {
       {/*Services*/}
       <div className="h-fit">
         {/*text*/}
-        <div className="flex flex-col gap-6 p-6 max-md:p-3">
-          <h1 className="text-[30px] text-[#C10000]">Our Services</h1>
+        <div className="flex flex-col gap-6 p-12 max-md:p-6">
+          <h1 className="text-[30px] text-[#C10000] title">Our Services</h1>
           <p className="line-height-abt 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
             At JKI Construction, we are dedicated to transforming your visions
             into reality with unparalleled expertise and craftsmanship. Our
@@ -122,7 +122,7 @@ function Landing() {
           </p>
         </div>
         <div className="flex justify-center">
-          <div className="grid grid-cols-4 gap-6 p-6 w-fit max-sm:w-full place-items-center max-md:grid-cols-2 max-sm:grid-cols-1">
+          <div className="grid grid-cols-4 gap-6 p-12 w-fit max-sm:w-full place-items-center max-md:p-6 max-md:grid-cols-2 max-sm:grid-cols-1">
             <ServiceCard img={Card_1} text={"Construction"}></ServiceCard>
             <ServiceCard
               img={Card_2}
@@ -146,7 +146,7 @@ function Landing() {
         {/*text*/}
         <div className="z-10 flex flex-col w-3/4 gap-6 pl-12 text-white line-height-abt max-md:pl-6">
           <div className="flex flex-col gap-6">
-            <h1 className="text-[30px] lg:text-[50px] xl:text-[70px]">
+            <h1 className="text-[30px] lg:text-[50px] xl:text-[70px] title">
               Our Mission
             </h1>
             <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
@@ -156,7 +156,7 @@ function Landing() {
             </p>
           </div>
           <div className="flex flex-col gap-6">
-            <h1 className="text-[30px] lg:text-[50px] xl:text-[70px]">
+            <h1 className="text-[30px] lg:text-[50px] xl:text-[70px] title">
               Our Services
             </h1>
             <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
@@ -228,8 +228,8 @@ function Landing() {
         className="relative flex flex-col justify-center py-6 bg-fixed bg-opacity-0 bg-center bg-no-repeat bg-cover h-fit"
         style={{ backgroundImage: `url(${client_banner})` }}
       >
-        <div className="flex flex-col gap-6 p-6 max-md:p-3">
-          <h1 className="text-[30px] text-[#C10000]">Our Main Clients</h1>
+        <div className="flex flex-col gap-6 p-12 max-md:p-6">
+          <h1 className="text-[30px] text-[#C10000] title">Our Main Clients</h1>
           <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base line-height-abt">
             At JKI Construction, our clients are at the heart of everything we
             do. We are proud to have partnered with individuals, businesses, and
@@ -326,7 +326,7 @@ function Landing() {
       </div>
       {/*Milestones*/}
       <div className="h-fit">
-        <div className="flex flex-col gap-6 p-6 h-fit max-md:p-3">
+        <div className="flex flex-col gap-6 p-12 h-fit max-md:p-6">
           <h1 className="text-[30px] text-[#C10000]">Our Milestones</h1>
           {/*for md*/}
           <div className="hidden h-full gap-3 text-white md:flex">
@@ -403,7 +403,7 @@ function Landing() {
             </div>
           </div>
         </div>
-        <span className="flex justify-end w-full px-6 underline">
+        <span className="flex justify-end w-full px-12 py-3 underline max-md:px-6">
         <a href="https://www.google.com">View All</a>
         </span>
       </div>

@@ -4,7 +4,7 @@ import footer_bg from "./../assets/footer_bg.png";
 function Footer() {
   return (
     <footer
-      className="h-[50dvh] bg-no-repeat bg-center bg-contain px-24 max-md:px-12 max-sm:px-6 text-lg max-lg:text-base max-md:text-sm"
+      className="h-[50dvh] bg-no-repeat bg-center bg-contain px-12 max-md:px-6 max-sm:px-3 text-lg max-lg:text-base max-md:text-sm"
       style={{ backgroundImage: `url(${footer_bg})` }}
     >
       <div className="flex items-center justify-center gap-6 h-1/4 max-md:h-fit">
