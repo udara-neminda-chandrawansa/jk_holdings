@@ -89,7 +89,7 @@ function Landing() {
             To be the epitome of Service Providing industry.
           </h1>
           <p
-            className={`2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base transition-all duration-300 ${
+            className={`2xl:text-2xl line-height-abt xl:text-xl max-md:text-lg max-sm:text-base transition-all duration-300 ${
               isTransitioning
                 ? "opacity-0 translate-y-5"
                 : "opacity-100 translate-y-0"
@@ -101,7 +101,7 @@ function Landing() {
         {/*banner bottom*/}
         <div className="z-10">
           {/*service carousel*/}
-          <div className="w-full h-[10dvh] bg-[#C10000] max-sm:hidden">
+          <div className="w-full h-[15dvh] bg-[#C10000] max-sm:hidden">
             <LSCarousel></LSCarousel>
           </div>
           {/*spacing*/}
@@ -113,7 +113,7 @@ function Landing() {
         {/*text*/}
         <div className="flex flex-col gap-6 p-6 max-md:p-3">
           <h1 className="text-[30px] text-[#C10000]">Our Services</h1>
-          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+          <p className="line-height-abt 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
             At JKI Construction, we are dedicated to transforming your visions
             into reality with unparalleled expertise and craftsmanship. Our
             comprehensive range of services ensures every aspect of your
@@ -144,7 +144,7 @@ function Landing() {
         {/*Top layer (backdrop)*/}
         <div className="absolute bottom-0 h-[60dvh] inset-0 bg-gradient-to-br from-[#4B4B4BB5] to-[#000000B5]"></div>
         {/*text*/}
-        <div className="z-10 flex flex-col gap-6 pl-12 text-white max-md:pl-6">
+        <div className="z-10 flex flex-col w-3/4 gap-6 pl-12 text-white line-height-abt max-md:pl-6">
           <div className="flex flex-col gap-6">
             <h1 className="text-[30px] lg:text-[50px] xl:text-[70px]">
               Our Mission
@@ -166,7 +166,7 @@ function Landing() {
         </div>
       </div>
       {/*About*/}
-      <div className="flex flex-col gap-6 p-12 h-fit max-md:p-6">
+      <div className="flex flex-col p-12 h-fit max-md:p-6 line-height-abt">
         <div>
           <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
             JKI Holdings is a Pioneer in Construction, Facility Management, and
@@ -185,15 +185,20 @@ function Landing() {
             continuous improvement
           </p>
         </div>
-        <div className="relative flex h-[45dvh] min-h-fit max-md:h-fit max-md:flex-col">
+        {/*spacing div*/}
+        <div className="md:h-[20dvh]"></div>
+        <div className="relative flex h-[55dvh] min-h-fit max-md:h-fit max-md:flex-col">
+          {/*about-man*/}
           <img
             src={abt_man}
-            className="absolute max-md:relative max-md:h-[300px] max-md:object-contain bottom-0 z-10 max-2xl:h-[55dvh] h-[50dvh] object-cover"
+            className="absolute md:w-1/2 max-md:relative max-md:h-[300px] bottom-0 z-10 max-2xl:h-[70dvh] h-[60dvh] object-contain object-bottom"
             alt="about-img"
           />
-          <div className="absolute text-white pr-12 max-md:pr-6 max-sm:pr-3 right-0 bottom-0 w-full h-0 border-b-[45dvh] border-b-[#C10000] border-l-[400px] border-r-0 border-l-transparent max-lg:hidden"></div>
-          <div className="absolute flex items-center justify-end w-full h-full pr-12 max-md:relative max-md:items-start max-md:justify-center max-md:text-center max-md:py-6 max-lg:pr-0 max-lg:text-end min-h-fit">
-            <h1 className="w-1/2 text-white max-md:w-full max-md:text-center lg:line-height-abt max-lg:text-black">
+          {/*trapezoid*/}
+          <div className="absolute text-white pr-12 max-md:pr-6 max-sm:pr-3 right-0 bottom-0 w-full h-0 border-b-[55dvh] border-b-[#C10000] border-l-[400px] border-r-0 border-l-transparent max-lg:hidden"></div>
+          {/*trapezoid text*/}
+          <div className="absolute flex items-end justify-end w-full h-full pr-12 overflow-y-scroll lg:items-center max-md:relative max-md:items-start max-md:justify-center max-md:text-center max-md:py-6 max-lg:pr-0 max-lg:text-end min-h-fit no-scrollbar">
+            <h1 className="z-20 w-1/2 text-white max-md:w-full max-md:text-center lg:line-height-abt max-lg:text-black">
               <span className="hidden lg:inline text-[60px] max-md:text-2xl max-lg:text-3xl max-xl:text-5xl">
                 “
               </span>
@@ -225,7 +230,7 @@ function Landing() {
       >
         <div className="flex flex-col gap-6 p-6 max-md:p-3">
           <h1 className="text-[30px] text-[#C10000]">Our Main Clients</h1>
-          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base line-height-abt">
             At JKI Construction, our clients are at the heart of everything we
             do. We are proud to have partnered with individuals, businesses, and
             organizations across diverse industries to bring their construction

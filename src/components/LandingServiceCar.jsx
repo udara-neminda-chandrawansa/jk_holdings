@@ -80,7 +80,7 @@ const LSCarousel = () => {
   };
 
   return (
-    <div className="relative w-full h-[10dvh] flex items-center justify-center overflow-hidden">
+    <div className="relative w-full h-[15dvh] flex items-center justify-center overflow-hidden">
       <div className="absolute z-10 flex items-center justify-between w-full px-12 transform -translate-y-1/2 max-lg:px-6 top-1/2">
         <button
           onClick={goToPrevious}

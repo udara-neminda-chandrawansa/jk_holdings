@@ -1,6 +1,6 @@
 function ServiceCard({ img, text }) {
     return (
-      <div className="relative h-[20dvh] aspect-square bg-[#C10000] max-md:w-full group cursor-pointer">
+      <div className="relative aspect-square bg-[#C10000] max-md:w-full group cursor-pointer">
         <img
           src={img}
           alt="card-img"
