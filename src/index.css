@@ -41,6 +41,10 @@
   line-height: 30px;
 }
 
+.line-height-abt-2{
+  line-height: 75px;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }

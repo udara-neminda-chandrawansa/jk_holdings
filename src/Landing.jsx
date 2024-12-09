@@ -166,7 +166,7 @@ function Landing() {
         </div>
       </div>
       {/*About*/}
-      <div className="flex flex-col p-12 h-fit max-md:p-6 line-height-abt">
+      <div className="flex flex-col p-12 h-fit max-md:p-6">
         <div>
           <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
             JKI Holdings is a Pioneer in Construction, Facility Management, and
@@ -186,23 +186,23 @@ function Landing() {
           </p>
         </div>
         {/*spacing div*/}
-        <div className="md:h-[20dvh]"></div>
-        <div className="relative flex h-[55dvh] min-h-fit max-md:h-fit max-md:flex-col">
+        <div className="lg:h-[20dvh]"></div>
+        <div className="relative flex h-[55dvh] min-h-fit max-lg:h-fit max-lg:flex-col">
           {/*about-man*/}
           <img
             src={abt_man}
-            className="absolute md:w-1/2 max-md:relative max-md:h-[300px] bottom-0 z-10 max-2xl:h-[70dvh] h-[60dvh] object-contain object-bottom"
+            className="absolute lg:w-1/2 max-lg:relative max-lg:h-[300px] bottom-0 z-10 max-2xl:h-[70dvh] h-[60dvh] object-contain object-bottom"
             alt="about-img"
           />
           {/*trapezoid*/}
-          <div className="absolute text-white pr-12 max-md:pr-6 max-sm:pr-3 right-0 bottom-0 w-full h-0 border-b-[55dvh] border-b-[#C10000] border-l-[400px] border-r-0 border-l-transparent max-lg:hidden"></div>
+          <div className="absolute text-white pr-12 max-sm:pr-3 right-0 bottom-0 w-full h-0 border-b-[55dvh] border-b-[#C10000] border-l-[400px] border-r-0 border-l-transparent max-lg:hidden"></div>
           {/*trapezoid text*/}
-          <div className="absolute flex items-end justify-end w-full h-full pr-12 overflow-y-scroll lg:items-center max-md:relative max-md:items-start max-md:justify-center max-md:text-center max-md:py-6 max-lg:pr-0 max-lg:text-end min-h-fit no-scrollbar">
-            <h1 className="z-20 w-1/2 text-white max-md:w-full max-md:text-start max-lg:text-black">
+          <div className="absolute flex items-end justify-end w-full h-full pr-12 overflow-y-scroll lg:items-center max-lg:relative max-lg:items-start max-lg:justify-center max-lg:text-center max-lg:py-6 max-lg:pr-0 min-h-fit no-scrollbar">
+            <h1 className="z-20 w-1/2 lg:text-white max-lg:w-full max-lg:text-start">
               <span className="hidden lg:inline text-[60px] max-md:text-2xl max-lg:text-3xl max-xl:text-5xl">
                 “
               </span>
-              <span className="z-10 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base line-height-abt">
+              <span className="z-10 2xl:text-2xl xl:text-xl max-lg:text-lg max-sm:text-base line-height-abt">
                 Taniya Group, a pioneer in building construction industry, came
                 to be known as JKI Holdings in the year 2001. Since then, we
                 have expanded our services from building construction to
@@ -216,7 +216,7 @@ function Landing() {
                 sustain our footprint in the world as a Proud Nation and bring
                 international revenues into the
               </span>
-              <span className="hidden lg:inline absolute text-[60px] max-md:text-[30px] max-lg:text-[40px] max-xl:text-5xl">
+              <span className="hidden lg:inline absolute text-[60px] max-md:text-2xl max-lg:text-3xl max-xl:text-5xl">
                 ”
               </span>
             </h1>
