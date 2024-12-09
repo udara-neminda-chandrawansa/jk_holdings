@@ -1,4 +1,5 @@
 import misson_banner from "./assets/mission_bg.jpg";
+import jcb_banner from "./assets/banner-1.jpg";
 import client_banner from "./assets/clients_bg.png";
 import about_banner from "./assets/about_bg.png";
 import client1 from "./assets/clients/brandix.png";
@@ -20,19 +21,15 @@ import m_1 from "./assets/milestones/m-1.png";
 import m_2 from "./assets/milestones/m-2.png";
 import m_3 from "./assets/milestones/m-3.png";
 import m_4 from "./assets/milestones/m-4.png";
+import { useState, useEffect } from "react";
 
 function About() {
-  return (
-    <div>
-      {/*Mission*/}
-      <div
-        className="flex flex-col justify-center relative h-[60dvh] bg-no-repeat bg-cover bg-fixed bg-center"
-        style={{ backgroundImage: `url(${misson_banner})` }}
-      >
-        {/*Top layer (backdrop)*/}
-        <div className="absolute bottom-0 h-[60dvh] inset-0 bg-gradient-to-br from-[#4B4B4BB5] to-[#000000B5]"></div>
-        {/*text*/}
-        <div className="z-10 flex flex-col w-3/4 gap-6 pl-12 text-white line-height-abt max-md:pl-6">
+  const img_banners = [
+    // for storing banner images
+    {
+      img: misson_banner,
+      content: (
+        <div className="z-10 flex flex-col justify-center w-3/4 h-full gap-6 pl-12 text-white line-height-abt max-md:pl-6">
           <div className="flex flex-col gap-6">
             <h1 className="text-[30px] lg:text-[50px] xl:text-[70px] title">
               Our Mission
@@ -51,6 +48,83 @@ function About() {
               To be the epitome of Service Providing industry
             </p>
           </div>
+        </div>
+      ),
+    },
+    {
+      img: jcb_banner,
+      content: (
+        <div className="z-10 flex flex-col justify-center h-full gap-6 p-12 text-white max-md:p-6">
+          <div className="flex flex-col gap-6">
+            <p
+              className={`2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-sm ${window.innerWidth <= 640 ? "lh-base" : "lh-lg"}`}>
+              For JKI Holdings, 'people' are the single most important 'asset',
+              as they are the only aspect that can ensure delivery of high
+              quality services that in return ensure the progress of the
+              organization and its overal performance. Therefore, we treat our
+              employees as 'family' and ensure their wellbeing with highest
+              regard. We uphold our HR and pay role policies in alignment with
+              the best practices in the trade and provide a safe and healthy
+              work environment. Further, we take satisfaction in generating
+              novel employment opportunities in order to contribute our maximum
+              support to minimize the degrading local job market, thereby
+              assuring that people are financially stable and succeed in their
+              careers and achieve personal goals. We believe people can reach
+              great heights through learning and development. Moreover, we
+              reassure that al our employees are adept at executing their duties
+              and fairly evaluated and advanced throughout their careers.
+            </p>
+          </div>
+        </div>
+      ),
+    },
+  ];
+
+  const [currentBanner, setCurrentBanner] = useState(0); // initialize current banner
+  const [isTransitioning, setIsTransitioning] = useState(false); // initialize text transitioning
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentBanner((prev) => (prev + 1) % img_banners.length);
+        setIsTransitioning(false);
+      }, 300); // Match transition delay in bg
+    }, 5000); // 5 seconds
+
+    return () => clearInterval(interval);
+  });
+  return (
+    <div>
+      {/*Mission*/}
+      <div
+        className="relative flex flex-col justify-between bg-fixed bg-center bg-no-repeat bg-cover h-[90dvh]"
+        style={{ backgroundImage: `url(${img_banners[currentBanner].img})` }}
+      >
+        {/*Top layer (backdrop)*/}
+        <div className="absolute bottom-0 h-[90dvh] inset-0 bg-gradient-to-br from-[#4B4B4BB5] to-[#000000B5]"></div>
+        {/*carousel lines*/}
+        <div className="z-10 h-[10dvh] flex justify-end max-sm:justify-center max-sm:pr-0 items-center pr-12 gap-6">
+          <span
+            className={`w-[50px] h-[2px] transition-all ${
+              currentBanner === 0 ? "bg-red-600" : "bg-white"
+            }`}
+          ></span>
+          <span
+            className={`w-[50px] h-[2px] transition-all ${
+              currentBanner === 1 ? "bg-red-600" : "bg-white"
+            }`}
+          ></span>
+        </div>
+        {/*banner content*/}
+        <div
+          className={`h-full transition-all duration-300 ${
+            isTransitioning
+              ? "opacity-0 translate-y-5"
+              : "opacity-100 translate-y-0"
+          }`}
+        >
+          {img_banners[currentBanner].content}
         </div>
       </div>
       {/*About*/}

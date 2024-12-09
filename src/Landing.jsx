@@ -20,6 +20,7 @@ import m_1 from "./assets/milestones/m-1.png";
 import m_2 from "./assets/milestones/m-2.png";
 import m_3 from "./assets/milestones/m-3.png";
 import m_4 from "./assets/milestones/m-4.png";
+import add_1 from "./assets/adds/add-1.png";
 import { useState, useEffect } from "react";
 import LSCarousel from "./components/LandingServiceCar";
 import ServiceCard from "./components/ServiceCard";
@@ -220,6 +221,51 @@ function Landing() {
                 ”
               </span>
             </h1>
+          </div>
+        </div>
+      </div>
+      {/*Advertisements*/}
+      <div className="md:pb-12">
+        {/*addvertisement carousel*/}
+        <div
+          id="add-carousel"
+          className="relative w-full p-6 md:p-12 h-fit carousel slide"
+          data-coreui-ride="true"
+        >
+          <div className="bg-gray-300 rounded-full carousel-indicators max-sm:hidden">
+            <button
+              type="button"
+              data-coreui-target="#add-carousel"
+              data-coreui-slide-to="0"
+              className="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-coreui-target="#add-carousel"
+              data-coreui-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-coreui-target="#add-carousel"
+              data-coreui-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div className="h-fit max-sm:h-fit carousel-inner">
+            <div className="carousel-item active">
+              <img src={add_1} alt="" />
+            </div>
+
+            <div className="carousel-item">
+            <img src={add_1} alt="" />
+            </div>
+
+            <div className="carousel-item">
+            <img src={add_1} alt="" />
+            </div>
           </div>
         </div>
       </div>
