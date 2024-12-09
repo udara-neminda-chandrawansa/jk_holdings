@@ -390,7 +390,7 @@ function About() {
             a better future for all.
           </p>
           {/*for md*/}
-          <div className="flex flex-col max-md:hidden md:h-[700px] gap-3 overflow-y-scroll">
+          <div className="flex flex-col max-md:hidden md:h-[700px] gap-3 overflow-y-scroll red-custom-scroll">
             {/*first row*/}
             <div className="hidden h-[300px] gap-3 text-white md:flex">
               <div className="flex flex-col flex-grow w-2/4 h-full">
@@ -560,7 +560,7 @@ function About() {
           </div>
         </div>
         {/*phrase*/}
-        <div className="flex justify-center text-2xl poltawski">
+        <div className="flex justify-center pb-6 text-2xl poltawski">
           <span className="hidden lg:inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
             “
           </span>

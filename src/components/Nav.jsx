@@ -10,7 +10,7 @@ function Nav() {
         <ul className="flex items-center justify-start w-1/3 h-full">
           <Link href="/" className="text-white no-underline">
             <li className="flex items-center justify-center text-black text-nowrap px-3 cursor-pointer max-lg:text-sm max-[972px]:text-xs">
-              <img src={logo} alt="logo-for-nav" className='h-[8dvh]'/>
+              <img src={logo} alt="logo-for-nav" className='h-[8dvh] object-contain'/>
             </li>
           </Link>
           <Link href="/" className="text-white no-underline">
