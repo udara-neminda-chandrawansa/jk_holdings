@@ -122,90 +122,73 @@ function About() {
             visions to life.
           </p>
         </div>
-        {/*client carousel for md*/}
+        {/*client carousel*/}
         <div
           id="animation-carousel"
-          className="relative w-full py-6 h-fit max-md:hidden"
-          data-carousel="static"
+          className="relative w-full p-6 md:p-12 h-fit carousel slide"
+          data-coreui-ride="true"
         >
-          <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-            <div className="hidden duration-200 ease-linear" data-carousel-item>
-              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client1} className="w-[100px]" alt="client-card" />
-                <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client3} className="w-[100px]" alt="client-card" />
-                <img src={client4} className="w-[100px]" alt="client-card" />
-                <img src={client5} className="w-[100px]" alt="client-card" />
-                <img src={client6} className="w-[100px]" alt="client-card" />
-                <img src={client7} className="w-[100px]" alt="client-card" />
-                <img src={client8} className="w-[100px]" alt="client-card" />
-              </div>
-            </div>
-
-            <div className="hidden duration-200 ease-linear" data-carousel-item>
-              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client1} className="w-[100px]" alt="client-card" />
-                <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client3} className="w-[100px]" alt="client-card" />
-                <img src={client4} className="w-[100px]" alt="client-card" />
-                <img src={client5} className="w-[100px]" alt="client-card" />
-                <img src={client6} className="w-[100px]" alt="client-card" />
-                <img src={client7} className="w-[100px]" alt="client-card" />
-                <img src={client8} className="w-[100px]" alt="client-card" />
-              </div>
-            </div>
-
-            <div
-              className="hidden duration-200 ease-linear"
-              data-carousel-item="active"
-            >
-              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client1} className="w-[100px]" alt="client-card" />
-                <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client3} className="w-[100px]" alt="client-card" />
-                <img src={client4} className="w-[100px]" alt="client-card" />
-                <img src={client5} className="w-[100px]" alt="client-card" />
-                <img src={client6} className="w-[100px]" alt="client-card" />
-                <img src={client7} className="w-[100px]" alt="client-card" />
-                <img src={client8} className="w-[100px]" alt="client-card" />
-              </div>
-            </div>
-          </div>
-          <div className="absolute z-30 flex space-x-3 -translate-x-1/2 rtl:space-x-reverse bottom-5 left-1/2">
+          <div className="carousel-indicators max-sm:hidden">
             <button
               type="button"
-              className="w-[50px] h-1 rounded-full"
+              data-coreui-target="#animation-carousel"
+              data-coreui-slide-to="0"
+              className="active"
               aria-current="true"
               aria-label="Slide 1"
-              data-carousel-slide-to="0"
             ></button>
             <button
               type="button"
-              className="w-[50px] h-1 rounded-full"
-              aria-current="false"
+              data-coreui-target="#animation-carousel"
+              data-coreui-slide-to="1"
               aria-label="Slide 2"
-              data-carousel-slide-to="1"
             ></button>
             <button
               type="button"
-              className="w-[50px] h-1 rounded-full"
-              aria-current="false"
+              data-coreui-target="#animation-carousel"
+              data-coreui-slide-to="2"
               aria-label="Slide 3"
-              data-carousel-slide-to="2"
             ></button>
           </div>
-        </div>
-        {/*client grid for max-md*/}
-        <div className="p-3 md:hidden max-md:flex">
-          <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-            <img src={client1} className="w-[100px]" alt="client-card" />
-            <img src={client2} className="w-[100px]" alt="client-card" />
-            <img src={client3} className="w-[100px]" alt="client-card" />
-            <img src={client4} className="w-[100px]" alt="client-card" />
-            <img src={client5} className="w-[100px]" alt="client-card" />
-            <img src={client6} className="w-[100px]" alt="client-card" />
-            <img src={client7} className="w-[100px]" alt="client-card" />
-            <img src={client8} className="w-[100px]" alt="client-card" />
+          <div className="h-60 max-sm:h-fit carousel-inner">
+            <div className="carousel-item active">
+              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
+                <img src={client1} className="w-[100px]" alt="client-card" />
+                <img src={client2} className="w-[100px]" alt="client-card" />
+                <img src={client3} className="w-[100px]" alt="client-card" />
+                <img src={client4} className="w-[100px]" alt="client-card" />
+                <img src={client5} className="w-[100px]" alt="client-card" />
+                <img src={client6} className="w-[100px]" alt="client-card" />
+                <img src={client7} className="w-[100px]" alt="client-card" />
+                <img src={client8} className="w-[100px]" alt="client-card" />
+              </div>
+            </div>
+
+            <div className="carousel-item">
+              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
+                <img src={client1} className="w-[100px]" alt="client-card" />
+                <img src={client2} className="w-[100px]" alt="client-card" />
+                <img src={client3} className="w-[100px]" alt="client-card" />
+                <img src={client4} className="w-[100px]" alt="client-card" />
+                <img src={client5} className="w-[100px]" alt="client-card" />
+                <img src={client6} className="w-[100px]" alt="client-card" />
+                <img src={client7} className="w-[100px]" alt="client-card" />
+                <img src={client8} className="w-[100px]" alt="client-card" />
+              </div>
+            </div>
+
+            <div className="carousel-item">
+              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
+                <img src={client1} className="w-[100px]" alt="client-card" />
+                <img src={client2} className="w-[100px]" alt="client-card" />
+                <img src={client3} className="w-[100px]" alt="client-card" />
+                <img src={client4} className="w-[100px]" alt="client-card" />
+                <img src={client5} className="w-[100px]" alt="client-card" />
+                <img src={client6} className="w-[100px]" alt="client-card" />
+                <img src={client7} className="w-[100px]" alt="client-card" />
+                <img src={client8} className="w-[100px]" alt="client-card" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -217,7 +200,11 @@ function About() {
           <div className="hidden h-full gap-3 text-white md:flex">
             <div className="flex flex-col flex-grow w-2/6 h-full gap-3">
               <div className="flex flex-col cursor-pointer">
-                <img src={m_1} alt="milestone-grid-card" className="h-[500px] object-cover" />
+                <img
+                  src={m_1}
+                  alt="milestone-grid-card"
+                  className="h-[500px] object-cover"
+                />
                 <p className="bg-[#000000BD] p-3">
                   Best Coming Entrepreneur of 2015 in Central Province
                 </p>
@@ -225,13 +212,21 @@ function About() {
             </div>
             <div className="flex flex-col justify-between flex-grow w-1/6 gap-3">
               <div className="flex flex-col cursor-pointer h-1/2">
-                <img src={m_2} alt="milestone-grid-card" className="object-cover h-full" />
+                <img
+                  src={m_2}
+                  alt="milestone-grid-card"
+                  className="object-cover h-full"
+                />
                 <p className="bg-[#000000BD] p-3">
                   Best Performing Entrepreneur of 2016 in Central Province
                 </p>
               </div>
               <div className="flex flex-col cursor-pointer h-1/2">
-                <img src={m_3} alt="milestone-grid-card" className="object-cover h-full" />
+                <img
+                  src={m_3}
+                  alt="milestone-grid-card"
+                  className="object-cover h-full"
+                />
                 <p className="bg-[#000000BD] p-3">Star Awards in 2017</p>
               </div>
             </div>
@@ -264,13 +259,21 @@ function About() {
             </div>
             <div className="flex flex-col justify-between flex-grow w-full gap-3">
               <div className="flex flex-col h-1/2">
-                <img src={m_2} alt="milestone-grid-card" className="object-contain h-full" />
+                <img
+                  src={m_2}
+                  alt="milestone-grid-card"
+                  className="object-contain h-full"
+                />
                 <p className="bg-[#000000BD] p-3">
                   Best Performing Entrepreneur of 2016 in Central Province
                 </p>
               </div>
               <div className="flex flex-col h-1/2">
-                <img src={m_3} alt="milestone-grid-card" className="object-contain h-full" />
+                <img
+                  src={m_3}
+                  alt="milestone-grid-card"
+                  className="object-contain h-full"
+                />
                 <p className="bg-[#000000BD] p-3">Star Awards in 2017</p>
               </div>
             </div>
@@ -318,14 +321,26 @@ function About() {
             <div className="hidden h-[300px] gap-3 text-white md:flex">
               <div className="flex flex-col flex-grow w-2/4 h-full">
                 <div className="flex flex-col cursor-pointer">
-                  <img src={img1} alt="milestone-grid-card" className="h-[300px] object-cover" />
+                  <img
+                    src={img1}
+                    alt="milestone-grid-card"
+                    className="h-[300px] object-cover"
+                  />
                 </div>
               </div>
               <div className="flex flex-col w-1/4 h-full cursor-pointer">
-                <img src={img2} alt="milestone-grid-card" className="object-cover h-[300px]" />
+                <img
+                  src={img2}
+                  alt="milestone-grid-card"
+                  className="object-cover h-[300px]"
+                />
               </div>
               <div className="flex flex-col w-1/4 h-full cursor-pointer">
-                <img src={img3} alt="milestone-grid-card" className="object-cover h-[300px]" />
+                <img
+                  src={img3}
+                  alt="milestone-grid-card"
+                  className="object-cover h-[300px]"
+                />
               </div>
             </div>
             {/*second row*/}
@@ -340,25 +355,49 @@ function About() {
                 </div>
               </div>
               <div className="flex flex-col w-1/5 h-full gap-3 cursor-pointer">
-                <img src={img5} alt="milestone-grid-card" className="object-cover h-1/2" />
-                <img src={img6} alt="milestone-grid-card" className="object-cover h-1/2" />
+                <img
+                  src={img5}
+                  alt="milestone-grid-card"
+                  className="object-cover h-1/2"
+                />
+                <img
+                  src={img6}
+                  alt="milestone-grid-card"
+                  className="object-cover h-1/2"
+                />
               </div>
               <div className="flex flex-col w-1/5 h-full cursor-pointer">
-                <img src={img7} alt="milestone-grid-card" className="object-cover h-[400px]" />
+                <img
+                  src={img7}
+                  alt="milestone-grid-card"
+                  className="object-cover h-[400px]"
+                />
               </div>
             </div>
             {/*third row*/}
             <div className="hidden h-[300px] gap-3 text-white md:flex">
               <div className="flex flex-col flex-grow w-2/4 h-full">
                 <div className="flex flex-col cursor-pointer">
-                  <img src={img1} alt="milestone-grid-card" className="h-[300px] object-cover" />
+                  <img
+                    src={img1}
+                    alt="milestone-grid-card"
+                    className="h-[300px] object-cover"
+                  />
                 </div>
               </div>
               <div className="flex flex-col w-1/4 h-full cursor-pointer">
-                <img src={img2} alt="milestone-grid-card" className="object-cover h-[300px]" />
+                <img
+                  src={img2}
+                  alt="milestone-grid-card"
+                  className="object-cover h-[300px]"
+                />
               </div>
               <div className="flex flex-col w-1/4 h-full cursor-pointer">
-                <img src={img3} alt="milestone-grid-card" className="object-cover h-[300px]" />
+                <img
+                  src={img3}
+                  alt="milestone-grid-card"
+                  className="object-cover h-[300px]"
+                />
               </div>
             </div>
             {/*fourth row*/}
@@ -373,42 +412,76 @@ function About() {
                 </div>
               </div>
               <div className="flex flex-col w-1/5 h-full gap-3 cursor-pointer">
-                <img src={img5} alt="milestone-grid-card" className="object-cover h-1/2" />
-                <img src={img6} alt="milestone-grid-card" className="object-cover h-1/2" />
+                <img
+                  src={img5}
+                  alt="milestone-grid-card"
+                  className="object-cover h-1/2"
+                />
+                <img
+                  src={img6}
+                  alt="milestone-grid-card"
+                  className="object-cover h-1/2"
+                />
               </div>
               <div className="flex flex-col w-1/5 h-full cursor-pointer">
-                <img src={img7} alt="milestone-grid-card" className="object-cover h-[400px]" />
+                <img
+                  src={img7}
+                  alt="milestone-grid-card"
+                  className="object-cover h-[400px]"
+                />
               </div>
             </div>
           </div>
           {/*for max-md*/}
           <div className="flex flex-col gap-3 text-white md:hidden">
-          <div className="bg-[#000000BD]">
-
-            <img src={img1} alt="milestone-grid-card" className="w-full max-h-[400px] object-contain"/>
+            <div className="bg-[#000000BD]">
+              <img
+                src={img1}
+                alt="milestone-grid-card"
+                className="w-full max-h-[400px] object-contain"
+              />
             </div>
             <div className="bg-[#000000BD]">
-
-            <img src={img2} alt="milestone-grid-card" className="w-full max-h-[400px] object-contain"/>
+              <img
+                src={img2}
+                alt="milestone-grid-card"
+                className="w-full max-h-[400px] object-contain"
+              />
             </div>
             <div className="bg-[#000000BD]">
-
-            <img src={img3} alt="milestone-grid-card" className="w-full max-h-[400px] object-contain"/>
+              <img
+                src={img3}
+                alt="milestone-grid-card"
+                className="w-full max-h-[400px] object-contain"
+              />
             </div>
             <div className="bg-[#000000BD]">
-
-            <img src={img4} alt="milestone-grid-card" className="w-full max-h-[400px] object-contain"/>
+              <img
+                src={img4}
+                alt="milestone-grid-card"
+                className="w-full max-h-[400px] object-contain"
+              />
             </div>
             <div className="bg-[#000000BD]">
-
-            <img src={img5} alt="milestone-grid-card" className="w-full max-h-[400px] object-contain"/>
+              <img
+                src={img5}
+                alt="milestone-grid-card"
+                className="w-full max-h-[400px] object-contain"
+              />
             </div>
             <div className="bg-[#000000BD]">
-
-            <img src={img6} alt="milestone-grid-card" className="w-full max-h-[400px] object-contain"/>
+              <img
+                src={img6}
+                alt="milestone-grid-card"
+                className="w-full max-h-[400px] object-contain"
+              />
             </div>
             <div className="bg-[#000000BD]">
-            <img src={img7} alt="milestone-grid-card" className="w-full max-h-[400px] object-contain"/>
+              <img
+                src={img7}
+                alt="milestone-grid-card"
+                className="w-full max-h-[400px] object-contain"
+              />
             </div>
           </div>
         </div>

@@ -237,90 +237,73 @@ function Landing() {
             visions to life.
           </p>
         </div>
-        {/*client carousel for md*/}
+        {/*client carousel*/}
         <div
           id="animation-carousel"
-          className="relative w-full py-6 h-fit max-md:hidden"
-          data-carousel="static"
+          className="relative w-full p-6 md:p-12 h-fit carousel slide"
+          data-coreui-ride="true"
         >
-          <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-            <div className="hidden duration-200 ease-linear" data-carousel-item>
-              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client1} className="w-[100px]" alt="client-card" />
-                <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client3} className="w-[100px]" alt="client-card" />
-                <img src={client4} className="w-[100px]" alt="client-card" />
-                <img src={client5} className="w-[100px]" alt="client-card" />
-                <img src={client6} className="w-[100px]" alt="client-card" />
-                <img src={client7} className="w-[100px]" alt="client-card" />
-                <img src={client8} className="w-[100px]" alt="client-card" />
-              </div>
-            </div>
-
-            <div className="hidden duration-200 ease-linear" data-carousel-item>
-              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client1} className="w-[100px]" alt="client-card" />
-                <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client3} className="w-[100px]" alt="client-card" />
-                <img src={client4} className="w-[100px]" alt="client-card" />
-                <img src={client5} className="w-[100px]" alt="client-card" />
-                <img src={client6} className="w-[100px]" alt="client-card" />
-                <img src={client7} className="w-[100px]" alt="client-card" />
-                <img src={client8} className="w-[100px]" alt="client-card" />
-              </div>
-            </div>
-
-            <div
-              className="hidden duration-200 ease-linear"
-              data-carousel-item="active"
-            >
-              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client1} className="w-[100px]" alt="client-card" />
-                <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client3} className="w-[100px]" alt="client-card" />
-                <img src={client4} className="w-[100px]" alt="client-card" />
-                <img src={client5} className="w-[100px]" alt="client-card" />
-                <img src={client6} className="w-[100px]" alt="client-card" />
-                <img src={client7} className="w-[100px]" alt="client-card" />
-                <img src={client8} className="w-[100px]" alt="client-card" />
-              </div>
-            </div>
-          </div>
-          <div className="absolute z-30 flex space-x-3 -translate-x-1/2 rtl:space-x-reverse bottom-5 left-1/2">
+          <div className="carousel-indicators max-sm:hidden">
             <button
               type="button"
-              className="w-[50px] h-1 rounded-full"
+              data-coreui-target="#animation-carousel"
+              data-coreui-slide-to="0"
+              className="active"
               aria-current="true"
               aria-label="Slide 1"
-              data-carousel-slide-to="0"
             ></button>
             <button
               type="button"
-              className="w-[50px] h-1 rounded-full"
-              aria-current="false"
+              data-coreui-target="#animation-carousel"
+              data-coreui-slide-to="1"
               aria-label="Slide 2"
-              data-carousel-slide-to="1"
             ></button>
             <button
               type="button"
-              className="w-[50px] h-1 rounded-full"
-              aria-current="false"
+              data-coreui-target="#animation-carousel"
+              data-coreui-slide-to="2"
               aria-label="Slide 3"
-              data-carousel-slide-to="2"
             ></button>
           </div>
-        </div>
-        {/*client grid for max-md*/}
-        <div className="p-3 md:hidden max-md:flex">
-          <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-            <img src={client1} className="w-[100px]" alt="client-card" />
-            <img src={client2} className="w-[100px]" alt="client-card" />
-            <img src={client3} className="w-[100px]" alt="client-card" />
-            <img src={client4} className="w-[100px]" alt="client-card" />
-            <img src={client5} className="w-[100px]" alt="client-card" />
-            <img src={client6} className="w-[100px]" alt="client-card" />
-            <img src={client7} className="w-[100px]" alt="client-card" />
-            <img src={client8} className="w-[100px]" alt="client-card" />
+          <div className="h-60 max-sm:h-fit carousel-inner">
+            <div className="carousel-item active">
+              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
+                <img src={client1} className="w-[100px]" alt="client-card" />
+                <img src={client2} className="w-[100px]" alt="client-card" />
+                <img src={client3} className="w-[100px]" alt="client-card" />
+                <img src={client4} className="w-[100px]" alt="client-card" />
+                <img src={client5} className="w-[100px]" alt="client-card" />
+                <img src={client6} className="w-[100px]" alt="client-card" />
+                <img src={client7} className="w-[100px]" alt="client-card" />
+                <img src={client8} className="w-[100px]" alt="client-card" />
+              </div>
+            </div>
+
+            <div className="carousel-item">
+              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
+                <img src={client1} className="w-[100px]" alt="client-card" />
+                <img src={client2} className="w-[100px]" alt="client-card" />
+                <img src={client3} className="w-[100px]" alt="client-card" />
+                <img src={client4} className="w-[100px]" alt="client-card" />
+                <img src={client5} className="w-[100px]" alt="client-card" />
+                <img src={client6} className="w-[100px]" alt="client-card" />
+                <img src={client7} className="w-[100px]" alt="client-card" />
+                <img src={client8} className="w-[100px]" alt="client-card" />
+              </div>
+            </div>
+
+            <div className="carousel-item">
+              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
+                <img src={client1} className="w-[100px]" alt="client-card" />
+                <img src={client2} className="w-[100px]" alt="client-card" />
+                <img src={client3} className="w-[100px]" alt="client-card" />
+                <img src={client4} className="w-[100px]" alt="client-card" />
+                <img src={client5} className="w-[100px]" alt="client-card" />
+                <img src={client6} className="w-[100px]" alt="client-card" />
+                <img src={client7} className="w-[100px]" alt="client-card" />
+                <img src={client8} className="w-[100px]" alt="client-card" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -404,7 +387,7 @@ function Landing() {
           </div>
         </div>
         <span className="flex justify-end w-full px-12 py-3 underline max-md:px-6">
-        <a href="https://www.google.com">View All</a>
+          <a href="https://www.google.com">View All</a>
         </span>
       </div>
     </>
