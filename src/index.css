@@ -1,20 +1,20 @@
 @import url("https://fonts.cdnfonts.com/css/optima-nova-lt-pro");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial,
-    sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
 
-.title{
+.title {
   font-family: "Optima nova LT Pro", Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
   font-style: normal;
@@ -22,7 +22,22 @@
   line-height: normal;
 }
 
-.line-height-abt{
+.optima{
+  font-family: "Optima nova LT Pro", Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+}
+
+.poltawski {
+  font-family: "Poltawski Nowy", Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+}
+
+.sansita{
+  font-family: "Sansita Swashed", Inter, system-ui, Avenir, Helvetica, Arial,
+  sans-serif;
+}
+
+.line-height-abt {
   line-height: 30px;
 }
 

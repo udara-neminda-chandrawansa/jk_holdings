@@ -1,12 +1,6 @@
-import banner_1 from "./assets/banner-1.jpg";
-import banner_2 from "./assets/banner-2.jpg";
-import banner_3 from "./assets/banner-3.jpg";
-import Card_1 from "./assets/ServiceCards/card_1.jpg";
-import Card_2 from "./assets/ServiceCards/card_2.jpg";
-import Card_3 from "./assets/ServiceCards/card_3.jpg";
-import Card_4 from "./assets/ServiceCards/card_4.png";
 import misson_banner from "./assets/mission_bg.jpg";
 import client_banner from "./assets/clients_bg.png";
+import about_banner from "./assets/about_bg.png";
 import client1 from "./assets/clients/brandix.png";
 import client2 from "./assets/clients/mas.png";
 import client3 from "./assets/clients/kanrich.png";
@@ -15,46 +9,19 @@ import client5 from "./assets/clients/cbl.png";
 import client6 from "./assets/clients/nestle.png";
 import client7 from "./assets/clients/hela.png";
 import client8 from "./assets/clients/esquel.png";
-import abt_man from "./assets/about_man.png";
+import img1 from "./assets/AboutGrid/img-1.png";
+import img2 from "./assets/AboutGrid/img-2.png";
+import img3 from "./assets/AboutGrid/img-3.png";
+import img4 from "./assets/AboutGrid/img-4.png";
+import img5 from "./assets/AboutGrid/img-5.png";
+import img6 from "./assets/AboutGrid/img-6.png";
+import img7 from "./assets/AboutGrid/img-7.png";
 import m_1 from "./assets/milestones/m-1.png";
 import m_2 from "./assets/milestones/m-2.png";
 import m_3 from "./assets/milestones/m-3.png";
 import m_4 from "./assets/milestones/m-4.png";
-import { useState, useEffect } from "react";
-import LSCarousel from "./components/LandingServiceCar";
-import ServiceCard from "./components/ServiceCard";
 
 function About() {
-  const banners = [
-    // for storing images and banner text
-    {
-      img: banner_1,
-      text: "J K I Holdings is a leading construction company dedicated to delivering innovative, high-quality solutions for residential, commercial, and industrial projects. With a focus on excellence, sustainability, and client satisfaction, we bring visionary designs to life, creating spaces that inspire.",
-    },
-    {
-      img: banner_2,
-      text: "Build everlasting relationships through architectonic constructions & innovative, economic & exceptional customer service, and evolve continuously along with advanced technology.",
-    },
-    {
-      img: banner_3,
-      text: "To be the epitome of Service Providing industry.",
-    },
-  ];
-
-  const [currentBanner, setCurrentBanner] = useState(0); // initialize current banner
-  const [isTransitioning, setIsTransitioning] = useState(false); // initialize text transitioning
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsTransitioning(true);
-      setTimeout(() => {
-        setCurrentBanner((prev) => (prev + 1) % banners.length);
-        setIsTransitioning(false);
-      }, 300); // Match transition delay in bg
-    }, 5000); // 5 seconds
-
-    return () => clearInterval(interval);
-  });
   return (
     <div>
       {/*Mission*/}
@@ -87,7 +54,7 @@ function About() {
         </div>
       </div>
       {/*About*/}
-      <div className="flex flex-col p-12 h-fit max-md:p-6 line-height-abt">
+      <div className="flex flex-col gap-6 p-12 h-fit max-md:p-6 line-height-abt">
         <div>
           <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
             JKI Holdings is a Pioneer in Construction, Facility Management, and
@@ -103,27 +70,24 @@ function About() {
             expectations at every opportunity. We, at JKI Holdings, value
             Transparency, Integrity and Ethics more than anything, and we are
             dedicated to cater to our clients' needs through innovation and
-            continuous improvement
+            continuous improvement. JKI Holdings ensures healthy environmental
+            practices throughout al our operations by using eco-friendly
+            disinfectants and waste management systems to secure a minimal
+            ecological footprint.
           </p>
         </div>
-        {/*spacing div*/}
-        <div className="md:h-[20dvh]"></div>
-        <div className="relative flex h-[55dvh] min-h-fit max-md:h-fit max-md:flex-col">
-          {/*about-man*/}
-          <img
-            src={abt_man}
-            className="absolute md:w-1/2 max-md:relative max-md:h-[300px] bottom-0 z-10 max-2xl:h-[70dvh] h-[60dvh] object-contain object-bottom"
-            alt="about-img"
-          />
-          {/*trapezoid*/}
-          <div className="absolute text-white pr-12 max-md:pr-6 max-sm:pr-3 right-0 bottom-0 w-full h-0 border-b-[55dvh] border-b-[#C10000] border-l-[400px] border-r-0 border-l-transparent max-lg:hidden"></div>
-          {/*trapezoid text*/}
-          <div className="absolute flex items-end justify-end w-full h-full pr-12 overflow-y-scroll lg:items-center max-md:relative max-md:items-start max-md:justify-center max-md:text-center max-md:py-6 max-lg:pr-0 max-lg:text-end min-h-fit no-scrollbar">
-            <h1 className="z-20 w-1/2 text-white max-md:w-full max-md:text-start max-lg:text-black">
-              <span className="hidden lg:inline text-[60px] max-md:text-2xl max-lg:text-3xl max-xl:text-5xl">
+        {/*abt banner + txt*/}
+        <div
+          className="relative flex bg-center bg-no-repeat bg-contain md:py-6 h-fit min-h-fit max-md:h-fit max-md:flex-col"
+          style={{ backgroundImage: `url(${about_banner})` }}
+        >
+          {/*banner text*/}
+          <div className="flex items-end justify-end w-full h-full pr-12 overflow-y-scroll lg:items-center max-md:relative max-md:items-start max-md:justify-center max-md:text-center max-lg:pr-0 max-lg:text-end min-h-fit no-scrollbar">
+            <h1 className="z-20 w-1/2 text-black max-md:w-full max-md:text-start">
+              <span className="hidden lg:inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
                 “
               </span>
-              <span className="z-10 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base line-height-abt">
+              <span className="z-10 italic font-semibold 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base line-height-abt">
                 Taniya Group, a pioneer in building construction industry, came
                 to be known as JKI Holdings in the year 2001. Since then, we
                 have expanded our services from building construction to
@@ -137,7 +101,7 @@ function About() {
                 sustain our footprint in the world as a Proud Nation and bring
                 international revenues into the
               </span>
-              <span className="hidden lg:inline absolute text-[60px] max-md:text-[30px] max-lg:text-[40px] max-xl:text-5xl">
+              <span className="absolute hidden lg:inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
                 ”
               </span>
             </h1>
@@ -253,7 +217,7 @@ function About() {
           <div className="hidden h-full gap-3 text-white md:flex">
             <div className="flex flex-col flex-grow w-2/6 h-full gap-3">
               <div className="flex flex-col cursor-pointer">
-                <img src={m_1} alt="" className="h-[500px] object-cover" />
+                <img src={m_1} alt="milestone-grid-card" className="h-[500px] object-cover" />
                 <p className="bg-[#000000BD] p-3">
                   Best Coming Entrepreneur of 2015 in Central Province
                 </p>
@@ -261,13 +225,13 @@ function About() {
             </div>
             <div className="flex flex-col justify-between flex-grow w-1/6 gap-3">
               <div className="flex flex-col cursor-pointer h-1/2">
-                <img src={m_2} alt="" className="object-cover h-full" />
+                <img src={m_2} alt="milestone-grid-card" className="object-cover h-full" />
                 <p className="bg-[#000000BD] p-3">
                   Best Performing Entrepreneur of 2016 in Central Province
                 </p>
               </div>
               <div className="flex flex-col cursor-pointer h-1/2">
-                <img src={m_3} alt="" className="object-cover h-full" />
+                <img src={m_3} alt="milestone-grid-card" className="object-cover h-full" />
                 <p className="bg-[#000000BD] p-3">Star Awards in 2017</p>
               </div>
             </div>
@@ -300,13 +264,13 @@ function About() {
             </div>
             <div className="flex flex-col justify-between flex-grow w-full gap-3">
               <div className="flex flex-col h-1/2">
-                <img src={m_2} alt="" className="object-contain h-full" />
+                <img src={m_2} alt="milestone-grid-card" className="object-contain h-full" />
                 <p className="bg-[#000000BD] p-3">
                   Best Performing Entrepreneur of 2016 in Central Province
                 </p>
               </div>
               <div className="flex flex-col h-1/2">
-                <img src={m_3} alt="" className="object-contain h-full" />
+                <img src={m_3} alt="milestone-grid-card" className="object-contain h-full" />
                 <p className="bg-[#000000BD] p-3">Star Awards in 2017</p>
               </div>
             </div>
@@ -327,6 +291,140 @@ function About() {
         <span className="flex justify-end w-full px-12 py-3 underline max-md:px-6">
           <a href="https://www.google.com">View All</a>
         </span>
+      </div>
+      {/*Milestones - 2*/}
+      <div className="h-fit">
+        <div className="flex flex-col gap-6 p-12 h-fit max-md:p-6">
+          <span>
+            <h1 className="text-[30px] text-[#C10000] title">Our Milestones</h1>
+            <h1 className="text-[20px] sm:w-1/2 font-medium title text-center">
+              For a brighter future
+            </h1>
+          </span>
+          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+            At JKI Holdings, we believe in taking responsibility for our
+            actions, both as a company and as members of society. We acknowledge
+            the impact we have on the environment, the people we work with, and
+            the communities we operate in. Therefore, we have initiated a range
+            of projects and programs that aim to create a positive impact on the
+            world around us. Through our corporate social responsibility (CSR)
+            projects, we strive to promote sustainability, equality, diversity,
+            and inclusion. We are committed to making a difference and creating
+            a better future for all.
+          </p>
+          {/*for md*/}
+          <div className="flex flex-col max-md:hidden md:h-[700px] gap-3 overflow-y-scroll">
+            {/*first row*/}
+            <div className="hidden h-[300px] gap-3 text-white md:flex">
+              <div className="flex flex-col flex-grow w-2/4 h-full">
+                <div className="flex flex-col cursor-pointer">
+                  <img src={img1} alt="milestone-grid-card" className="h-[300px] object-cover" />
+                </div>
+              </div>
+              <div className="flex flex-col w-1/4 h-full cursor-pointer">
+                <img src={img2} alt="milestone-grid-card" className="object-cover h-[300px]" />
+              </div>
+              <div className="flex flex-col w-1/4 h-full cursor-pointer">
+                <img src={img3} alt="milestone-grid-card" className="object-cover h-[300px]" />
+              </div>
+            </div>
+            {/*second row*/}
+            <div className="hidden h-[400px] gap-3 text-white md:flex">
+              <div className="flex flex-col flex-grow w-3/5 h-full">
+                <div className="flex flex-col h-full cursor-pointer">
+                  <img
+                    src={img4}
+                    alt=""
+                    className="object-cover object-top h-full"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col w-1/5 h-full gap-3 cursor-pointer">
+                <img src={img5} alt="milestone-grid-card" className="object-cover h-1/2" />
+                <img src={img6} alt="milestone-grid-card" className="object-cover h-1/2" />
+              </div>
+              <div className="flex flex-col w-1/5 h-full cursor-pointer">
+                <img src={img7} alt="milestone-grid-card" className="object-cover h-[400px]" />
+              </div>
+            </div>
+            {/*third row*/}
+            <div className="hidden h-[300px] gap-3 text-white md:flex">
+              <div className="flex flex-col flex-grow w-2/4 h-full">
+                <div className="flex flex-col cursor-pointer">
+                  <img src={img1} alt="milestone-grid-card" className="h-[300px] object-cover" />
+                </div>
+              </div>
+              <div className="flex flex-col w-1/4 h-full cursor-pointer">
+                <img src={img2} alt="milestone-grid-card" className="object-cover h-[300px]" />
+              </div>
+              <div className="flex flex-col w-1/4 h-full cursor-pointer">
+                <img src={img3} alt="milestone-grid-card" className="object-cover h-[300px]" />
+              </div>
+            </div>
+            {/*fourth row*/}
+            <div className="hidden h-[400px] gap-3 text-white md:flex">
+              <div className="flex flex-col flex-grow w-3/5 h-full">
+                <div className="flex flex-col h-full cursor-pointer">
+                  <img
+                    src={img4}
+                    alt=""
+                    className="object-cover object-top h-full"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col w-1/5 h-full gap-3 cursor-pointer">
+                <img src={img5} alt="milestone-grid-card" className="object-cover h-1/2" />
+                <img src={img6} alt="milestone-grid-card" className="object-cover h-1/2" />
+              </div>
+              <div className="flex flex-col w-1/5 h-full cursor-pointer">
+                <img src={img7} alt="milestone-grid-card" className="object-cover h-[400px]" />
+              </div>
+            </div>
+          </div>
+          {/*for max-md*/}
+          <div className="flex flex-col gap-3 text-white md:hidden">
+          <div className="bg-[#000000BD]">
+
+            <img src={img1} alt="milestone-grid-card" className="w-full max-h-[400px] object-contain"/>
+            </div>
+            <div className="bg-[#000000BD]">
+
+            <img src={img2} alt="milestone-grid-card" className="w-full max-h-[400px] object-contain"/>
+            </div>
+            <div className="bg-[#000000BD]">
+
+            <img src={img3} alt="milestone-grid-card" className="w-full max-h-[400px] object-contain"/>
+            </div>
+            <div className="bg-[#000000BD]">
+
+            <img src={img4} alt="milestone-grid-card" className="w-full max-h-[400px] object-contain"/>
+            </div>
+            <div className="bg-[#000000BD]">
+
+            <img src={img5} alt="milestone-grid-card" className="w-full max-h-[400px] object-contain"/>
+            </div>
+            <div className="bg-[#000000BD]">
+
+            <img src={img6} alt="milestone-grid-card" className="w-full max-h-[400px] object-contain"/>
+            </div>
+            <div className="bg-[#000000BD]">
+            <img src={img7} alt="milestone-grid-card" className="w-full max-h-[400px] object-contain"/>
+            </div>
+          </div>
+        </div>
+        {/*phrase*/}
+        <div className="flex justify-center text-2xl poltawski">
+          <span className="hidden lg:inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
+            “
+          </span>
+          <h1 className="w-1/2 text-center max-sm:w-full max-sm:p-3">
+            Human Resources isn't a thing we do. It's the thing that runs our
+            business.
+          </h1>
+          <span className="hidden lg:inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
+            ”
+          </span>
+        </div>
       </div>
     </div>
   );

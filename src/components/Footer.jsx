@@ -4,12 +4,12 @@ import footer_bg from "./../assets/footer_bg.png";
 function Footer() {
   return (
     <footer
-      className="h-[50dvh] bg-no-repeat bg-center bg-contain px-12 max-md:px-6 max-sm:px-3 text-lg max-lg:text-base max-md:text-sm"
+      className="h-[50dvh] bg-no-repeat bg-center font-normal bg-contain px-12 max-md:px-6 max-sm:px-3 text-lg max-lg:text-base max-md:text-sm"
       style={{ backgroundImage: `url(${footer_bg})` }}
     >
       <div className="flex items-center justify-center gap-6 h-1/4 max-md:h-fit">
         <img src={logo} alt="logo" />
-        <p className="">
+        <p className="optima">
           Build everlasting relationships through architectonic constructions &
           innovative, economic & exceptional customer service, and evolve
           continuously along with advanced technology.To be the epitome of
@@ -17,7 +17,7 @@ function Footer() {
         </p>
       </div>
       <div className="flex items-center h-1/4 max-sm:h-fit max-sm:py-3">
-        <ul className="flex justify-between w-full h-fit max-sm:flex-col max-sm:gap-3">
+        <ul className="flex w-full justify-evenly h-fit max-sm:flex-col max-sm:gap-3">
           <li className="hover:text-red-500">
             <a href="/">Home</a>
           </li>
@@ -71,7 +71,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div className="h-1/4 border-t-2 border-t-[#C10000] flex items-center">
+      <div className="h-1/4 border-t-2 optima tracking-widest text-center border-t-[#C10000] flex items-center justify-center">
         <p>2024 © All Rights Reserved | JKI Holdings | Designed & Developed by Silicon Radon Networks (Pvt) Ltd.</p>
       </div>
     </footer>
