@@ -23,7 +23,7 @@ function Contact() {
         </div>
       </div>
       {/*form*/}
-      <div className="h-[80dvh] flex justify-between items-center p-12 max-md:p-6 max-sm:p-3 max-md:flex-col max-md:justify-center max-md:h-fit">
+      <div className="flex items-center justify-between p-12 h-fit max-md:p-6 max-sm:p-3 max-md:flex-col max-md:justify-center">
         {/*image*/}
         <div className="md:w-1/2">
             <img src={contact_img} alt="contact us" className="max-md:h-[300px] object-contain"/>
@@ -68,7 +68,7 @@ function Contact() {
             <span className="flex justify-end w-full">
               <button
                 type="button"
-                className="w-full flex justify-center text-black bg-white hover:bg-[#C10000] hover:text-white focus:ring-1 focus:outline-none focus:ring-black font-medium rounded-lg text-sm px-2.5 py-2.5 text-center items-center gap-6"
+                className="w-full flex justify-center text-black bg-[#C10000] text-white focus:ring-1 focus:outline-none focus:ring-black font-medium rounded-lg text-sm px-2.5 py-2.5 text-center items-center gap-6"
               >
                 Send
                 <svg
