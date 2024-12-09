@@ -5,6 +5,7 @@ import client1 from "./assets/clients/brandix.png";
 import client2 from "./assets/clients/cbl.png";
 import client3 from "./assets/clients/hela.png";
 import client4_bg from "./assets/clients/mas_bg.png";
+import client5_bg from "./assets/clients/esquel_bg.png";
 
 function Projects() {
   return (
@@ -132,7 +133,7 @@ function Projects() {
       {/*Groups*/}
       <div className="flex justify-center gap-12 px-12 pb-12 max-md:gap-6 max-md:flex-col max-md:px-6 max-md:pb-6">
         {/*grp-1*/}
-        <div className="flex flex-col gap-6 p-6 bg-center bg-no-repeat md:w-1/2" style={{ backgroundImage: `url(${client4_bg})` }}>
+        <div className="flex flex-col gap-6 p-6 bg-center bg-no-repeat bg-contain md:w-1/2" style={{ backgroundImage: `url(${client4_bg})` }}>
           <h1 className="text-[30px] text-[#C10000] title">MAS Holdings</h1>
           <ul className="flex flex-col gap-6">
             <li>Unichela (Pvt) Ltd., Panadura</li>
@@ -148,7 +149,7 @@ function Projects() {
           </ul>
         </div>
         {/*grp-2*/}
-        <div className="flex flex-col gap-6 p-6 md:w-1/2">
+        <div className="flex flex-col gap-6 p-6 bg-center bg-no-repeat bg-contain md:w-1/2" style={{ backgroundImage: `url(${client5_bg})` }}>
           <h1 className="text-[30px] text-[#C10000] title">Esquel Group</h1>
           <ul className="flex flex-col gap-6">
             <li>Polytex Garments (Pvt) Ltd.</li>
