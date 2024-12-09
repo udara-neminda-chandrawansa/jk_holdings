@@ -24,7 +24,7 @@ import { useState, useEffect } from "react";
 import LSCarousel from "./components/LandingServiceCar";
 import ServiceCard from "./components/ServiceCard";
 
-function Landing() {
+function About() {
   const banners = [
     // for storing images and banner text
     {
@@ -55,87 +55,8 @@ function Landing() {
 
     return () => clearInterval(interval);
   });
-
   return (
-    <>
-      {/*Banner*/}
-      <div
-        className="relative flex flex-col justify-between h-[90dvh] bg-no-repeat bg-cover transition-all delay-300"
-        style={{ backgroundImage: `url(${banners[currentBanner].img})` }}
-      >
-        {/*Top layer (backdrop)*/}
-        <div className="absolute bottom-0 h-[90dvh] inset-0 bg-gradient-to-br from-[#4B4B4BB5] to-[#000000B5]"></div>
-        {/*carousel lines*/}
-        <div className="z-10 h-[10dvh] flex justify-end max-sm:justify-center max-sm:pr-0 items-center pr-12 gap-6">
-          <span
-            className={`w-[50px] h-[2px] transition-all ${
-              currentBanner === 0 ? "bg-red-600" : "bg-white"
-            }`}
-          ></span>
-          <span
-            className={`w-[50px] h-[2px] transition-all ${
-              currentBanner === 1 ? "bg-red-600" : "bg-white"
-            }`}
-          ></span>
-          <span
-            className={`w-[50px] h-[2px] transition-all ${
-              currentBanner === 2 ? "bg-red-600" : "bg-white"
-            }`}
-          ></span>
-        </div>
-        {/*text*/}
-        <div className="z-10 w-3/4 ml-6 text-white h-1/3 2xl:h-1/4">
-          <h1 className="text-[64px] title max-sm:mb-3 sm:mb-1 lg:mb-3 xl:mb-6 max-md:text-[45px] max-sm:text-[30px]">
-            To be the epitome of Service Providing industry.
-          </h1>
-          <p
-            className={`2xl:text-2xl line-height-abt xl:text-xl max-md:text-lg max-sm:text-base transition-all duration-300 ${
-              isTransitioning
-                ? "opacity-0 translate-y-5"
-                : "opacity-100 translate-y-0"
-            }`}
-          >
-            {banners[currentBanner].text}
-          </p>
-        </div>
-        {/*banner bottom*/}
-        <div className="z-10">
-          {/*service carousel*/}
-          <div className="w-full h-[15dvh] bg-[#C10000] max-sm:hidden">
-            <LSCarousel></LSCarousel>
-          </div>
-          {/*spacing*/}
-          <div className="w-full h-[5dvh]"></div>
-        </div>
-      </div>
-      {/*Services*/}
-      <div className="h-fit">
-        {/*text*/}
-        <div className="flex flex-col gap-6 p-12 max-md:p-6">
-          <h1 className="text-[30px] text-[#C10000] title">Our Services</h1>
-          <p className="line-height-abt 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
-            At JKI Construction, we are dedicated to transforming your visions
-            into reality with unparalleled expertise and craftsmanship. Our
-            comprehensive range of services ensures every aspect of your
-            construction project is handled with precision, innovation, and
-            care.
-          </p>
-        </div>
-        <div className="flex justify-center">
-          <div className="grid grid-cols-4 gap-6 p-12 w-fit max-sm:w-full place-items-center max-md:p-6 max-md:grid-cols-2 max-sm:grid-cols-1">
-            <ServiceCard img={Card_1} text={"Construction"}></ServiceCard>
-            <ServiceCard
-              img={Card_2}
-              text={"Facility Management"}
-            ></ServiceCard>
-            <ServiceCard img={Card_3} text={"Getaways"}></ServiceCard>
-            <ServiceCard
-              img={Card_4}
-              text={"Architectural Designing"}
-            ></ServiceCard>
-          </div>
-        </div>
-      </div>
+    <div>
       {/*Mission*/}
       <div
         className="flex flex-col justify-center relative h-[60dvh] bg-no-repeat bg-cover bg-fixed bg-center"
@@ -404,11 +325,11 @@ function Landing() {
           </div>
         </div>
         <span className="flex justify-end w-full px-12 py-3 underline max-md:px-6">
-        <a href="https://www.google.com">View All</a>
+          <a href="https://www.google.com">View All</a>
         </span>
       </div>
-    </>
+    </div>
   );
 }
 
-export default Landing;
+export default About;
