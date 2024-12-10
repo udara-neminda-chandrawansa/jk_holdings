@@ -26,13 +26,13 @@ function CSR() {
       </div>
       {/*phrase*/}
       <div className="flex justify-center text-2xl poltawski">
-        <span className="hidden lg:inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
+        <span className="inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
           “
         </span>
-        <h1 className="px-3 text-center w-fit max-sm:w-full max-sm:p-3">
+        <h1 className="px-3 text-center w-fit max-sm:p-3">
           For a brighter future
         </h1>
-        <span className="hidden lg:inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
+        <span className="inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
           ”
         </span>
       </div>

@@ -561,14 +561,14 @@ function About() {
         </div>
         {/*phrase*/}
         <div className="flex justify-center pb-6 text-2xl poltawski">
-          <span className="hidden lg:inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
+          <span className="inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
             “
           </span>
-          <h1 className="w-1/2 text-center max-sm:w-full max-sm:p-3">
+          <h1 className="w-1/2 text-center max-sm:w-fit max-sm:py-3">
             Human Resources isn't a thing we do. It's the thing that runs our
             business.
           </h1>
-          <span className="hidden lg:inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
+          <span className="inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
             ”
           </span>
         </div>
