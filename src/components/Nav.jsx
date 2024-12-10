@@ -61,6 +61,7 @@ function Nav() {
         className="hidden place-items-center h-[10dvh] px-10 cursor-pointer place-content-center py-6 max-[940px]:grid text-black"
         data-modal-target="nav-modal"
         data-modal-toggle="nav-modal"
+        onClick={()=>alert("Test")}
       >
         <img src={burger} alt="burger-icon" />
       </div>
