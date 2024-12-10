@@ -61,18 +61,22 @@ function Services() {
               <ServiceCard
                 img={Card_5}
                 text={"Interior Designing"}
+                url={"interior-designing"}
               ></ServiceCard>
               <ServiceCard
                 img={Card_6}
                 text={"Masonry, Tile & Interlock Services"}
+                url={"masonry-tile-interlock-services"}
               ></ServiceCard>
               <ServiceCard
                 img={Card_7}
                 text={"Plumbing Services"}
+                url={"plumbing-services"}
               ></ServiceCard>
               <ServiceCard
                 img={Card_8}
                 text={"Wood-based Services"}
+                url={"wood-based-services"}
               ></ServiceCard>
             </>
           ) : pagination === 2 ? (

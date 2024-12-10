@@ -1,9 +1,19 @@
 import construction_banner from "./assets/Services/construction_banner.png";
 import gateway_banner from "./assets/Services/gateway_banner.png";
 import architecture_banner from "./assets/Services/architecture_banner.png";
+import interior_banner from "./assets/Services/interior_banner.png";
+import masonry_banner from "./assets/Services/masonry_banner.png";
+import plumbing_banner from "./assets/Services/plumbing_banner.png";
+import wood_banner from "./assets/Services/wood_banner.png";
+
 import construction_img from "./assets/ServiceCards/card_1.jpg";
 import gateway_img from "./assets/ServiceCards/card_3.jpg";
 import architecture_img from "./assets/ServiceCards/card_4.png";
+import interior_img from "./assets/Services/interior_img.png";
+import masonry_img from "./assets/Services/masonry_img.png";
+import plumbing_img from "./assets/Services/plumbing_img.png";
+import wood_img from "./assets/Services/wood_img.png";
+
 import email_icon from "./assets/Services/email_icon.png";
 import add_icon from "./assets/Services/add_icon.png";
 import phone_icon from "./assets/Services/phone_icon.png";
@@ -39,7 +49,7 @@ function SingleService({ serviceType }) {
 
       construction_banner,
       construction_img,
-      <ul className="flex flex-col gap-6 list-none">
+      <ul className="flex flex-col w-full gap-6 list-none">
         <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
           Commercial and Residential Construction and Consultation
         </li>
@@ -118,6 +128,66 @@ function SingleService({ serviceType }) {
         </p>
       </div>,
     ],
+    [
+      "Interior Designing",
+      "J K I Holdings is a leading construction company dedicated to delivering innovative, high-quality solutions for residential, commercial, and industrial projects. With a focus on excellence, sustainability, and client satisfaction, we bring visionary designs to life, creating spaces that inspire.",
+
+      interior_banner,
+      interior_img,
+      <div className="flex flex-col gap-3">
+        <p className="lh-lg">
+          The intent of being preferred turnkey interior design solution
+          provider in the industry with the objective of achieving complete
+          customer satisfaction
+        </p>
+      </div>,
+    ],
+    [
+      "Masonry, Tile & Interlock Services",
+      "J K I Holdings is a leading construction company dedicated to delivering innovative, high-quality solutions for residential, commercial, and industrial projects. With a focus on excellence, sustainability, and client satisfaction, we bring visionary designs to life, creating spaces that inspire.",
+
+      masonry_banner,
+      masonry_img,
+      <div className="flex flex-col gap-3">
+        <p className="lh-lg">
+          Should you require the services of a mason, make sure you don’t settle
+          for the second best. Our companies have skilled contractors to deliver
+          optimum results in brick installation, interlocking, paving stones and
+          much more all at competitive rates.
+        </p>
+      </div>,
+    ],
+    [
+      "Plumbing Services",
+      "J K I Holdings is a leading construction company dedicated to delivering innovative, high-quality solutions for residential, commercial, and industrial projects. With a focus on excellence, sustainability, and client satisfaction, we bring visionary designs to life, creating spaces that inspire.",
+
+      plumbing_banner,
+      plumbing_img,
+      <div className="flex flex-col gap-3">
+        <p className="lh-lg">
+          Plumbing problems can be a common issue, especially in older
+          properties. It could be a simple task starting from leaky faucet or
+          clogged drains to more complicated, like installing a slop sink or
+          adding a laundry room. What is more, we will do it efficiently, at an
+          affordable rate, and clear up after ourselves!
+        </p>
+      </div>,
+    ],
+    [
+      "Wood-Based Services",
+      "J K I Holdings is a leading construction company dedicated to delivering innovative, high-quality solutions for residential, commercial, and industrial projects. With a focus on excellence, sustainability, and client satisfaction, we bring visionary designs to life, creating spaces that inspire.",
+
+      wood_banner,
+      wood_img,
+      <div className="flex flex-col gap-3">
+        <p className="lh-lg">
+          J K I Holdings provides wood-based innovations and solutions for
+          everyday housing and commercial needs. It's product range covers all
+          areas of urban construction, from supporting structure to interior
+          design.
+        </p>
+      </div>,
+    ],
   ];
 
   // Adjust for incomplete serviceData here if required
@@ -134,7 +204,7 @@ function SingleService({ serviceType }) {
       </div>
       {/*banner*/}
       <div
-        className={`px-12 py-6 text-white bg-center bg-cover bg-no-repeat max-md:px-6 ${
+        className={`px-12 py-6 text-white bg-center bg-cover bg-no-repeat max-md:px-6 md:min-h-[300px] flex items-center ${
           window.innerWidth <= 640 ? "lh-base" : "lh-lg"
         }`}
         style={{ backgroundImage: `url(${serviceInfo[2]})` }}
@@ -143,14 +213,16 @@ function SingleService({ serviceType }) {
       </div>
       {/*info*/}
       <div className="flex justify-between gap-3 px-12 py-6 max-md:px-6 max-md:flex-col">
-        <div className="md:w-1/2">
+        <div className="md:1/3">
           <img
             src={serviceInfo[3]}
             alt="service-image"
-            className="w-full aspect-[11/12] object-cover max-md:w-full max-md:max-h-[300px]"
+            className="h-[400px] aspect-[11/12] object-cover max-md:w-full max-md:max-h-[300px]"
           />
         </div>
-        <div className="flex items-center justify-center md:w-1/2">{serviceInfo[4]}</div>
+        <div className="flex items-center justify-center md:w-2/3">
+          {serviceInfo[4]}
+        </div>
       </div>
       {/*common data*/}
       <div className="flex flex-col gap-12 px-12 py-6 max-md:px-6">
@@ -172,7 +244,8 @@ function SingleService({ serviceType }) {
         <span className="flex flex-col items-center justify-center gap-6">
           <p className="text-center md:w-2/3 lh-lg">
             We’d love to hear from you! Whether you have a question, need a
-            consultation, or want to schedule a fitting, the team at JKI Holdings is here to assist you.
+            consultation, or want to schedule a fitting, the team at JKI
+            Holdings is here to assist you.
           </p>
           <button className="rounded-lg bg-[#C10000] px-6 py-3 text-white hover:scale-90 transition-all">
             Contact Us

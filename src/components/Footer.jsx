@@ -34,7 +34,7 @@ function Footer() {
             <a href="/projects">Projects</a>
           </li>
           <li className="hover:text-red-500">
-            <a href="/cst">CSR Projects</a>
+            <a href="/csr">CSR Projects</a>
           </li>
         </ul>
       </div>
