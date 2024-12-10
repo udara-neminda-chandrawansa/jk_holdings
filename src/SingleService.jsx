@@ -172,8 +172,7 @@ function SingleService({ serviceType }) {
         <span className="flex flex-col items-center justify-center gap-6">
           <p className="text-center md:w-2/3">
             We’d love to hear from you! Whether you have a question, need a
-            consultation, or want to schedule a fitting, the team at Janaka
-            Tailors is here to assist you.
+            consultation, or want to schedule a fitting, the team at JKI Holdings is here to assist you.
           </p>
           <button className="rounded-lg bg-[#C10000] px-6 py-3 text-white hover:scale-90 transition-all">
             Contact Us
