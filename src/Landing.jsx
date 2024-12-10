@@ -124,15 +124,17 @@ function Landing() {
         </div>
         <div className="flex justify-center">
           <div className="grid grid-cols-4 gap-6 p-12 w-fit max-sm:w-full place-items-center max-md:p-6 max-md:grid-cols-2 max-sm:grid-cols-1">
-            <ServiceCard img={Card_1} text={"Construction"}></ServiceCard>
+            <ServiceCard img={Card_1} text={"Construction"} url={"construction"}></ServiceCard>
             <ServiceCard
               img={Card_2}
               text={"Facility Management"}
+              url={"facility-management"}
             ></ServiceCard>
-            <ServiceCard img={Card_3} text={"Getaways"}></ServiceCard>
+            <ServiceCard img={Card_3} text={"Getaways"} url={"getaways"}></ServiceCard>
             <ServiceCard
               img={Card_4}
               text={"Architectural Designing"}
+              url={"architectural-designing"}
             ></ServiceCard>
           </div>
         </div>

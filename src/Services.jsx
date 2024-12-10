@@ -38,15 +38,25 @@ function Services() {
         <div className="grid grid-cols-4 gap-6 px-12 pb-3 place-items-center max-md:px-6 max-md:grid-cols-2 max-sm:grid-cols-1">
           {pagination === 1 ? (
             <>
-              <ServiceCard img={Card_1} text={"Construction"}></ServiceCard>
+              <ServiceCard
+                img={Card_1}
+                text={"Construction"}
+                url={"construction"}
+              ></ServiceCard>
               <ServiceCard
                 img={Card_2}
                 text={"Facility Management"}
+                url={"facility-management"}
               ></ServiceCard>
-              <ServiceCard img={Card_3} text={"Getaways"}></ServiceCard>
+              <ServiceCard
+                img={Card_3}
+                text={"Getaways"}
+                url={"getaways"}
+              ></ServiceCard>
               <ServiceCard
                 img={Card_4}
                 text={"Architectural Designing"}
+                url={"architectural-designing"}
               ></ServiceCard>
               <ServiceCard
                 img={Card_5}

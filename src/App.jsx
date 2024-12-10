@@ -7,6 +7,7 @@ import About from "./About";
 import Services from "./Services";
 import Projects from "./Projects";
 import CSR from "./CSR";
+import SingleService from "./SingleService";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
       <Route path="/services" component={Services} />
       <Route path="/projects" component={Projects} />
       <Route path="/csr" component={CSR} />
+      <Route path="/services/:name">
+        {(params) => <SingleService serviceType={params.name} />}
+      </Route>
       <Footer></Footer>
     </div>
   );
