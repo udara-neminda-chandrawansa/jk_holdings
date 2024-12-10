@@ -170,7 +170,7 @@ function SingleService({ serviceType }) {
           </div>
         </div>
         <span className="flex flex-col items-center justify-center gap-6">
-          <p className="text-center md:w-2/3">
+          <p className="text-center md:w-2/3 lh-lg">
             We’d love to hear from you! Whether you have a question, need a
             consultation, or want to schedule a fitting, the team at JKI Holdings is here to assist you.
           </p>
