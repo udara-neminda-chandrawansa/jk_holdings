@@ -16,8 +16,11 @@ import Card_14 from "./assets/ServiceCards/card_14.png";
 import Card_15 from "./assets/ServiceCards/card_15.png";
 import Card_16 from "./assets/ServiceCards/card_16.png";
 import Card_17 from "./assets/ServiceCards/card_17.png";
+import { useState } from "react";
 
 function Services() {
+  const [pagination, setPagination] = useState(1); // for setting and retreiving pagination
+
   return (
     <div>
       {/**heading + text*/}
@@ -32,41 +35,139 @@ function Services() {
       </div>
       {/*card grid*/}
       <div>
-        <div className="grid grid-cols-4 gap-6 px-12 pb-12 place-items-center max-md:px-6 max-md:grid-cols-2 max-sm:grid-cols-1">
-          <ServiceCard img={Card_1} text={"Construction"}></ServiceCard>
-          <ServiceCard img={Card_2} text={"Facility Management"}></ServiceCard>
-          <ServiceCard img={Card_3} text={"Getaways"}></ServiceCard>
-          <ServiceCard
-            img={Card_4}
-            text={"Architectural Designing"}
-          ></ServiceCard>
-          <ServiceCard img={Card_5} text={"Interior Designing"}></ServiceCard>
-          <ServiceCard
-            img={Card_6}
-            text={"Masonry, Tile & Interlock Services"}
-          ></ServiceCard>
-          <ServiceCard img={Card_7} text={"Plumbing Services"}></ServiceCard>
-          <ServiceCard img={Card_8} text={"Wood-based Services"}></ServiceCard>
-          <ServiceCard img={Card_9} text={"Aluminum Fabrication"}></ServiceCard>
-          <ServiceCard img={Card_10} text={"Electrical Services"}></ServiceCard>
-          <ServiceCard img={Card_11} text={"Property Management"}></ServiceCard>
-          <ServiceCard img={Card_12} text={"Manpower Supply"}></ServiceCard>
-          <ServiceCard img={Card_13} text={"Janitorial Services"}></ServiceCard>
-          <ServiceCard img={Card_14} text={"Landscape Designing"}></ServiceCard>
-          <ServiceCard img={Card_15} text={"Garden Maintenance"}></ServiceCard>
-          <ServiceCard
-            img={Card_16}
-            text={"Residential Construction"}
-          ></ServiceCard>
-          <ServiceCard
-            img={Card_17}
-            text={"Commercial Construction"}
-            extraClasses={
-              "md:col-start-2 md:col-span-2 w-1/2 md:justify-self-center place-self-center"
-            }
-          ></ServiceCard>
+        <div className="grid grid-cols-4 gap-6 px-12 pb-3 place-items-center max-md:px-6 max-md:grid-cols-2 max-sm:grid-cols-1">
+          {pagination === 1 ? (
+            <>
+              <ServiceCard img={Card_1} text={"Construction"}></ServiceCard>
+              <ServiceCard
+                img={Card_2}
+                text={"Facility Management"}
+              ></ServiceCard>
+              <ServiceCard img={Card_3} text={"Getaways"}></ServiceCard>
+              <ServiceCard
+                img={Card_4}
+                text={"Architectural Designing"}
+              ></ServiceCard>
+              <ServiceCard
+                img={Card_5}
+                text={"Interior Designing"}
+              ></ServiceCard>
+              <ServiceCard
+                img={Card_6}
+                text={"Masonry, Tile & Interlock Services"}
+              ></ServiceCard>
+              <ServiceCard
+                img={Card_7}
+                text={"Plumbing Services"}
+              ></ServiceCard>
+              <ServiceCard
+                img={Card_8}
+                text={"Wood-based Services"}
+              ></ServiceCard>
+            </>
+          ) : pagination === 2 ? (
+            <>
+              <ServiceCard
+                img={Card_9}
+                text={"Aluminum Fabrication"}
+              ></ServiceCard>
+              <ServiceCard
+                img={Card_10}
+                text={"Electrical Services"}
+              ></ServiceCard>
+              <ServiceCard
+                img={Card_11}
+                text={"Property Management"}
+              ></ServiceCard>
+              <ServiceCard img={Card_12} text={"Manpower Supply"}></ServiceCard>
+              <ServiceCard
+                img={Card_13}
+                text={"Janitorial Services"}
+              ></ServiceCard>
+              <ServiceCard
+                img={Card_14}
+                text={"Landscape Designing"}
+              ></ServiceCard>
+              <ServiceCard
+                img={Card_15}
+                text={"Garden Maintenance"}
+              ></ServiceCard>
+              <ServiceCard
+                img={Card_16}
+                text={"Residential Construction"}
+              ></ServiceCard>
+            </>
+          ) : (
+            <ServiceCard
+              img={Card_17}
+              text={"Commercial Construction"}
+              extraClasses={
+                "md:col-start-2 md:col-span-2 w-1/2 md:justify-self-center place-self-center"
+              }
+            ></ServiceCard>
+          )}
         </div>
       </div>
+      {/*pagination*/}
+      <nav className="flex justify-center py-3">
+        <ul className="inline-flex -space-x-px text-sm">
+          <li>
+            <button
+              onClick={() =>
+                pagination > 1 ? setPagination(pagination - 1) : ""
+              }
+              className={`flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-200 ${
+                pagination === 1 ? "text-gray-100" : ""
+              }`}
+            >
+              Previous
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => setPagination(1)}
+              className={`items-center justify-center h-8 px-3 leading-tight bg-white border border-gray-300 flflex hover:bg-gray-100 hover:text-gray-700 ${
+                pagination === 1 ? " text-[#C10000]" : " text-gray-500"
+              }`}
+            >
+              1
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => setPagination(2)}
+              className={`items-center justify-center h-8 px-3 leading-tight bg-white border border-gray-300 flflex hover:bg-gray-100 hover:text-gray-700 ${
+                pagination === 2 ? " text-[#C10000]" : " text-gray-500"
+              }`}
+            >
+              2
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => setPagination(3)}
+              aria-current="page"
+              className={`items-center justify-center h-8 px-3 leading-tight bg-white border border-gray-300 flflex hover:bg-gray-100 hover:text-gray-700 ${
+                pagination === 3 ? " text-[#C10000]" : " text-gray-500"
+              }`}
+            >
+              3
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() =>
+                pagination < 3 ? setPagination(pagination + 1) : ""
+              }
+              className={`flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-200 ${
+                pagination === 3 ? "text-gray-100" : ""
+              }`}
+            >
+              Next
+            </button>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }
