@@ -116,7 +116,7 @@ function Services() {
               onClick={() =>
                 pagination > 1 ? setPagination(pagination - 1) : ""
               }
-              className={`flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-200 ${
+              className={`flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg md:hover:bg-gray-100 md:hover:text-gray-200 ${
                 pagination === 1 ? "text-gray-100" : ""
               }`}
             >
@@ -126,7 +126,7 @@ function Services() {
           <li>
             <button
               onClick={() => setPagination(1)}
-              className={`items-center justify-center h-8 px-3 leading-tight bg-white border border-gray-300 flflex hover:bg-gray-100 hover:text-gray-700 ${
+              className={`items-center justify-center h-8 px-3 leading-tight bg-white border border-gray-300 flflex md:hover:bg-gray-100 md:hover:text-gray-700 ${
                 pagination === 1 ? " text-[#C10000]" : " text-gray-500"
               }`}
             >
@@ -136,7 +136,7 @@ function Services() {
           <li>
             <button
               onClick={() => setPagination(2)}
-              className={`items-center justify-center h-8 px-3 leading-tight bg-white border border-gray-300 flflex hover:bg-gray-100 hover:text-gray-700 ${
+              className={`items-center justify-center h-8 px-3 leading-tight bg-white border border-gray-300 flflex md:hover:bg-gray-100 md:hover:text-gray-700 ${
                 pagination === 2 ? " text-[#C10000]" : " text-gray-500"
               }`}
             >
@@ -147,7 +147,7 @@ function Services() {
             <button
               onClick={() => setPagination(3)}
               aria-current="page"
-              className={`items-center justify-center h-8 px-3 leading-tight bg-white border border-gray-300 flflex hover:bg-gray-100 hover:text-gray-700 ${
+              className={`items-center justify-center h-8 px-3 leading-tight bg-white border border-gray-300 flflex md:hover:bg-gray-100 md:hover:text-gray-700 ${
                 pagination === 3 ? " text-[#C10000]" : " text-gray-500"
               }`}
             >
@@ -159,7 +159,7 @@ function Services() {
               onClick={() =>
                 pagination < 3 ? setPagination(pagination + 1) : ""
               }
-              className={`flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-200 ${
+              className={`flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg md:hover:bg-gray-100 md:hover:text-gray-200 ${
                 pagination === 3 ? "text-gray-100" : ""
               }`}
             >
