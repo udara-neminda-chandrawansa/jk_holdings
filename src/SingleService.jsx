@@ -134,7 +134,7 @@ function SingleService({ serviceType }) {
       </div>
       {/*banner*/}
       <div
-        className={`px-12 py-6 text-white max-md:px-6 ${
+        className={`px-12 py-6 text-white bg-center bg-cover bg-no-repeat max-md:px-6 ${
           window.innerWidth <= 640 ? "lh-base" : "lh-lg"
         }`}
         style={{ backgroundImage: `url(${serviceInfo[2]})` }}
