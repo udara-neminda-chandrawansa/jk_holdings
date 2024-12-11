@@ -1,4 +1,5 @@
-import { Route } from "wouter";
+import { Route, Router } from "wouter";
+import { useHashLocation } from "wouter/use-hash-location";
 import Nav from "./components/Nav";
 import Landing from "./Landing";
 import Footer from "./components/Footer";
@@ -13,15 +14,17 @@ function App() {
   return (
     <div>
       <Nav></Nav>
-      <Route path="/" component={Landing} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/aboutus" component={About} />
-      <Route path="/services" component={Services} />
-      <Route path="/projects" component={Projects} />
-      <Route path="/csr" component={CSR} />
-      <Route path="/services/:name">
-        {(params) => <SingleService serviceType={params.name} />}
-      </Route>
+      <Router hook={useHashLocation}>
+        <Route path="/" component={Landing} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/aboutus" component={About} />
+        <Route path="/services" component={Services} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/csr" component={CSR} />
+        <Route path="/services/:name">
+          {(params) => <SingleService serviceType={params.name} />}
+        </Route>
+      </Router>
       <Footer></Footer>
     </div>
   );
