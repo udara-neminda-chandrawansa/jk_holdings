@@ -94,7 +94,7 @@ function Nav() {
               ></button>
             </div>
             <div className="modal-body">
-              <ul className="flex flex-col items-center justify-start h-full gap-6">
+              <ul className="flex flex-col items-center justify-start h-full gap-6 font-medium">
                 <Link href="/" className="w-full text-white no-underline">
                   <li
                     className="flex items-center justify-center w-full text-black cursor-pointer text-nowrap max-lg:text-sm"
@@ -192,7 +192,7 @@ function Nav() {
           ></button>
         </div>
         <div className="offcanvas-body">
-          <ul className="grid grid-cols-4 gap-2 text-sm max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:text-xs">
+          <ul className="grid grid-cols-4 gap-2 text-sm font-medium max-md:grid-cols-2 max-sm:grid-cols-1">
             <li
               data-coreui-toggle="offcanvas"
               data-coreui-target="#offcanvasTop"
