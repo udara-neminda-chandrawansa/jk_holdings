@@ -1,5 +1,6 @@
 import logo from "./../assets/logo.png";
 import footer_bg from "./../assets/footer_bg.png";
+import { Link } from "wouter";
 
 function Footer() {
   return (
@@ -19,22 +20,22 @@ function Footer() {
       <div className="flex items-center h-1/4 max-sm:h-fit max-sm:py-3">
         <ul className="flex w-full justify-evenly h-fit max-sm:flex-col max-sm:gap-3">
           <li className="hover:text-red-500">
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li className="hover:text-red-500">
-            <a href="/aboutus">About Us</a>
+            <Link href="/aboutus">About Us</Link>
           </li>
           <li className="hover:text-red-500">
-            <a href="/contact">Contact Us</a>
+            <Link href="/contact">Contact Us</Link>
           </li>
           <li className="hover:text-red-500">
-            <a href="/services">Services</a>
+            <Link href="/services">Services</Link>
           </li>
           <li className="hover:text-red-500">
-            <a href="/projects">Projects</a>
+            <Link href="/projects">Projects</Link>
           </li>
           <li className="hover:text-red-500">
-            <a href="/csr">CSR Projects</a>
+            <Link href="/csr">CSR Projects</Link>
           </li>
         </ul>
       </div>
