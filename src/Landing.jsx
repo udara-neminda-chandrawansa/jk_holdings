@@ -85,7 +85,7 @@ function Landing() {
           ></span>
         </div>
         {/*text*/}
-        <div className="z-10 w-3/4 ml-6 text-white h-1/3 2xl:h-1/4">
+        <div className="z-10 w-3/4 pl-6 text-white max-sm:px-6 max-sm:w-full h-1/3 2xl:h-1/4">
           <h1 className="text-[64px] title max-sm:mb-3 sm:mb-1 lg:mb-3 xl:mb-6 max-md:text-[45px] max-sm:text-[30px]">
             To be the epitome of Service Providing industry.
           </h1>
