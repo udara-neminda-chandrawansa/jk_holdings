@@ -178,7 +178,6 @@ function Nav() {
       <div
         className="offcanvas offcanvas-top"
         data-coreui-backdrop="false"
-         data-coreui-scroll="true"
         tabIndex="-1"
         id="offcanvasTop"
         aria-labelledby="offcanvasTopLabel"
