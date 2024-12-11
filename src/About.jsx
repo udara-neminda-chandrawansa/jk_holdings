@@ -29,8 +29,8 @@ function About() {
     {
       img: misson_banner,
       content: (
-        <div className="z-10 flex flex-col justify-center w-3/4 h-full gap-6 pl-12 text-white line-height-abt max-md:pl-6">
-          <div className="flex flex-col gap-6">
+        <div className="z-10 flex flex-col justify-center w-3/4 h-full gap-6 pl-12 text-white max-sm:p-6 max-sm:w-full line-height-abt max-md:pl-6">
+          <div className="flex flex-col gap-6 max-sm:text-justify">
             <h1 className="text-[30px] lg:text-[50px] xl:text-[70px] title">
               Our Mission
             </h1>
@@ -57,7 +57,7 @@ function About() {
         <div className="z-10 flex flex-col justify-center h-full gap-6 p-12 text-white max-md:p-6">
           <div className="flex flex-col gap-6">
             <p
-              className={`2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-sm ${window.innerWidth <= 640 ? "lh-base" : "lh-lg"}`}>
+              className={`2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-sm max-sm:text-justify ${window.innerWidth <= 640 ? "lh-base" : "lh-lg"}`}>
               For JKI Holdings, 'people' are the single most important 'asset',
               as they are the only aspect that can ensure delivery of high
               quality services that in return ensure the progress of the
@@ -130,7 +130,7 @@ function About() {
       {/*About*/}
       <div className="flex flex-col gap-6 p-12 h-fit max-md:p-6 line-height-abt">
         <div>
-          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base max-sm:text-justify">
             JKI Holdings is a Pioneer in Construction, Facility Management, and
             Landscaping services in Sri Lanka since 2001. The company commenced
             its journey with 2 employees. By 2014, the company established its
@@ -157,7 +157,7 @@ function About() {
         >
           {/*banner text*/}
           <div className="flex items-end justify-end w-full h-full pr-12 overflow-y-scroll lg:items-center max-md:relative max-md:items-start max-md:justify-center max-md:text-center max-lg:pr-0 max-lg:text-end min-h-fit no-scrollbar">
-            <h1 className="z-20 w-1/2 text-black max-md:w-full max-md:text-start">
+            <h1 className="z-20 w-1/2 text-black max-md:w-full max-md:text-start max-sm:text-justify">
               <span className="hidden lg:inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
                 “
               </span>
@@ -189,7 +189,7 @@ function About() {
       >
         <div className="flex flex-col gap-6 p-12 max-md:p-6">
           <h1 className="text-[30px] text-[#C10000] title">Our Main Clients</h1>
-          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base line-height-abt">
+          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base line-height-abt max-sm:text-justify">
             At JKI Construction, our clients are at the heart of everything we
             do. We are proud to have partnered with individuals, businesses, and
             organizations across diverse industries to bring their construction
@@ -378,7 +378,7 @@ function About() {
               For a brighter future
             </h1>
           </span>
-          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base max-sm:text-justify">
             At JKI Holdings, we believe in taking responsibility for our
             actions, both as a company and as members of society. We acknowledge
             the impact we have on the environment, the people we work with, and

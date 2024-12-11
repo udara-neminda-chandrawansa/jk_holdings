@@ -13,7 +13,7 @@ function Projects() {
       {/*heading + text*/}
       <div className="flex flex-col gap-6 p-12 max-md:p-6">
         <h1 className="text-[30px] text-[#C10000] title">Our Projects</h1>
-        <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base line-height-abt">
+        <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base line-height-abt max-sm:text-justify">
           Here, we showcase the diverse range of construction projects we’ve
           successfully completed. Each project reflects our commitment to
           excellence, innovation, and delivering on time with unmatched quality.

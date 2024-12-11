@@ -10,12 +10,12 @@ function Contact() {
         style={{ backgroundImage: `url(${contact_banner})` }}
       >
         {/*text*/}
-        <div className="z-10 flex flex-col w-3/4 gap-6 pl-24 text-black line-height-abt max-md:pl-6">
+        <div className="z-10 flex flex-col w-3/4 gap-6 pl-24 text-black line-height-abt max-md:pl-6 max-sm:w-full max-sm:p-6">
           <div className="flex flex-col gap-6">
             <h1 className=" title text-[30px] lg:text-[50px] text-[#C10000] underline font-extralight xl:text-[70px]">
               Contact Us
             </h1>
-            <p className="font-semibold 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+            <p className="font-semibold 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base max-sm:text-justify">
               We’re delighted that you’re reaching out to J K I Holdings Pvt
               Ltd.Your inquiries and feedback are important to us.
             </p>
