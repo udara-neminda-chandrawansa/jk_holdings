@@ -158,7 +158,6 @@ function Projects() {
             <li>CN BodyMatrix (Pvt) Ltd.</li>
             <li>Esquel Group</li>
             <li>Polytex Garments (Pvt) Ltd.</li>
-            <li>Kanrich Finance (Pvt) Ltd., Kandy.</li>
             <li>Smart Shirts (Pvt) Ltd.,Pallekele.</li>
             <li>Nestle Lanka (pvt)Ltd., Pannala.</li>
             <li>Ruhunu Foods (pvt) Ltd., Pallekele.</li>
