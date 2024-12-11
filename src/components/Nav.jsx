@@ -4,7 +4,7 @@ import { Link } from "wouter";
 
 function Nav() {
   return (
-    <div className="h-fit flex justify-center items-center font-thin text-lg bg-white z-50 max-[940px]:h-full max-[940px]:justify-start">
+    <div className="h-fit flex justify-center items-center font-thin text-lg bg-white z-50 max-[940px]:h-full max-[940px]:justify-between">
       {/*normal nav*/}
       <div className="flex justify-between w-full px-10 h-[10dvh] max-[940px]:hidden">
         <ul className="flex items-center justify-start w-1/3 h-full">
@@ -62,7 +62,11 @@ function Nav() {
         data-coreui-toggle="modal"
         data-coreui-target="#staticBackdrop"
       >
-        <img src={burger} alt="burger-icon" />
+        <img src={burger} alt="burger-icon" className="scale-150"/>
+      </div>
+      {/*logo for small screen nav*/}
+      <div className="hidden max-[940px]:block pr-6">
+        <img src={logo} alt="logo-for-small-screen" />
       </div>
       {/*Nav Modal for small screens*/}
       <div
