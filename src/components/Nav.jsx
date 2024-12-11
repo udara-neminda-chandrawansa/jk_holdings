@@ -22,8 +22,13 @@ function Nav() {
               Home
             </li>
           </Link>
-          <Link href="/menu" className="text-white no-underline">
-            <li className="flex items-center justify-center text-black text-nowrap px-3 cursor-pointer max-lg:text-sm max-[972px]:text-xs">
+          <Link href="#" className="text-white no-underline">
+            <li
+              className="flex items-center justify-center text-black text-nowrap px-3 cursor-pointer max-lg:text-sm max-[972px]:text-xs"
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
               Menu
             </li>
           </Link>
@@ -62,11 +67,11 @@ function Nav() {
         data-coreui-toggle="modal"
         data-coreui-target="#staticBackdrop"
       >
-        <img src={burger} alt="burger-icon" className="scale-150"/>
+        <img src={burger} alt="burger-icon" className="scale-150" />
       </div>
       {/*logo for small screen nav*/}
       <div className="hidden max-[940px]:block pr-6">
-        <img src={logo} alt="logo-for-small-screen" className="scale-75"/>
+        <img src={logo} alt="logo-for-small-screen" className="scale-75" />
       </div>
       {/*Nav Modal for small screens*/}
       <div
@@ -98,7 +103,13 @@ function Nav() {
                     Home
                   </li>
                 </Link>
-                <Link href="/menu" className="w-full text-white no-underline">
+                <Link
+                  href="#"
+                  className="w-full text-white no-underline"
+                  data-coreui-toggle="offcanvas"
+                  data-coreui-target="#offcanvasTop"
+                  aria-controls="offcanvasTop"
+                >
                   <li
                     className="flex items-center justify-center w-full text-black cursor-pointer text-nowrap max-lg:text-sm"
                     data-coreui-dismiss="modal"
@@ -161,6 +172,173 @@ function Nav() {
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+      {/*offcanvas for menu*/}
+      <div
+        className="offcanvas offcanvas-top"
+        data-coreui-backdrop="false"
+         data-coreui-scroll="true"
+        tabIndex="-1"
+        id="offcanvasTop"
+        aria-labelledby="offcanvasTopLabel"
+      >
+        <div className="offcanvas-header">
+          <button
+            type="button"
+            className="btn-close"
+            data-coreui-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div className="offcanvas-body">
+          <ul className="grid grid-cols-4 gap-2 text-sm max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:text-xs">
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/construction">Construction</Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/facility-management">
+                Facility Management
+              </Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/getaways">Getaways</Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/architectural-designing">
+                Architectural Designing
+              </Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/interior-designing">
+                Interior Designing
+              </Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/masonry-tile-interlock-services">
+                Masonry, Tile & Interlock Services
+              </Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/plumbing-services">Plumbing Services</Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/wood-based-services">
+                Wood-based Services
+              </Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/aluminum-fabrication">
+                Aluminum Fabrication
+              </Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/electrical-services">
+                Electrical Services
+              </Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/property-management">
+                Property Management
+              </Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/manpower-supply">Manpower Supply</Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/janitorial-services">
+                Janitorial Services
+              </Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/landscape-designing">
+                Landscape Designing
+              </Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/garden-maintenance">
+                Garden Maintenance
+              </Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/residential-construction">
+                Residential Construction
+              </Link>
+            </li>
+            <li
+              data-coreui-toggle="offcanvas"
+              data-coreui-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <Link href="/services/commercial-construction">
+                Commercial Construction
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
