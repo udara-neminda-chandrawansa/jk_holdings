@@ -66,7 +66,7 @@ function Nav() {
       </div>
       {/*logo for small screen nav*/}
       <div className="hidden max-[940px]:block pr-6">
-        <img src={logo} alt="logo-for-small-screen" />
+        <img src={logo} alt="logo-for-small-screen" className="scale-75"/>
       </div>
       {/*Nav Modal for small screens*/}
       <div
