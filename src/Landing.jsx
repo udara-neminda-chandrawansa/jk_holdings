@@ -9,7 +9,7 @@ import misson_banner from "./assets/mission_bg.jpg";
 import client_banner from "./assets/clients_bg.png";
 import client1 from "./assets/clients/brandix.png";
 import client2 from "./assets/clients/mas.png";
-import client3 from "./assets/clients/kanrich.png";
+//import client3 from "./assets/clients/kanrich.png";
 import client4 from "./assets/clients/dimo.png";
 import client5 from "./assets/clients/cbl.png";
 import client6 from "./assets/clients/nestle.png";
@@ -124,13 +124,21 @@ function Landing() {
         </div>
         <div className="flex justify-center">
           <div className="grid grid-cols-4 gap-6 p-12 w-fit max-sm:w-full place-items-center max-md:p-6 max-md:grid-cols-2 max-sm:grid-cols-1">
-            <ServiceCard img={Card_1} text={"Construction"} url={"construction"}></ServiceCard>
+            <ServiceCard
+              img={Card_1}
+              text={"Construction"}
+              url={"construction"}
+            ></ServiceCard>
             <ServiceCard
               img={Card_2}
               text={"Facility Management"}
               url={"facility-management"}
             ></ServiceCard>
-            <ServiceCard img={Card_3} text={"Getaways"} url={"getaways"}></ServiceCard>
+            <ServiceCard
+              img={Card_3}
+              text={"Getaways"}
+              url={"getaways"}
+            ></ServiceCard>
             <ServiceCard
               img={Card_4}
               text={"Architectural Designing"}
@@ -262,11 +270,11 @@ function Landing() {
             </div>
 
             <div className="carousel-item">
-            <img src={add_1} alt="" />
+              <img src={add_1} alt="" />
             </div>
 
             <div className="carousel-item">
-            <img src={add_1} alt="" />
+              <img src={add_1} alt="" />
             </div>
           </div>
         </div>
@@ -316,9 +324,9 @@ function Landing() {
           <div className="h-60 max-sm:h-fit carousel-inner">
             <div className="carousel-item active">
               <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client1} className="w-[100px]" alt="client-card" />
                 <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client3} className="w-[100px]" alt="client-card" />
+                <img src={client1} className="w-[100px]" alt="client-card" />
+                {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
                 <img src={client4} className="w-[100px]" alt="client-card" />
                 <img src={client5} className="w-[100px]" alt="client-card" />
                 <img src={client6} className="w-[100px]" alt="client-card" />
@@ -329,9 +337,9 @@ function Landing() {
 
             <div className="carousel-item">
               <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client1} className="w-[100px]" alt="client-card" />
                 <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client3} className="w-[100px]" alt="client-card" />
+                <img src={client1} className="w-[100px]" alt="client-card" />
+                {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
                 <img src={client4} className="w-[100px]" alt="client-card" />
                 <img src={client5} className="w-[100px]" alt="client-card" />
                 <img src={client6} className="w-[100px]" alt="client-card" />
@@ -342,9 +350,9 @@ function Landing() {
 
             <div className="carousel-item">
               <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client1} className="w-[100px]" alt="client-card" />
                 <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client3} className="w-[100px]" alt="client-card" />
+                <img src={client1} className="w-[100px]" alt="client-card" />
+                {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
                 <img src={client4} className="w-[100px]" alt="client-card" />
                 <img src={client5} className="w-[100px]" alt="client-card" />
                 <img src={client6} className="w-[100px]" alt="client-card" />

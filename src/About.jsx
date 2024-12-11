@@ -4,7 +4,7 @@ import client_banner from "./assets/clients_bg.png";
 import about_banner from "./assets/about_bg.png";
 import client1 from "./assets/clients/brandix.png";
 import client2 from "./assets/clients/mas.png";
-import client3 from "./assets/clients/kanrich.png";
+//import client3 from "./assets/clients/kanrich.png";
 import client4 from "./assets/clients/dimo.png";
 import client5 from "./assets/clients/cbl.png";
 import client6 from "./assets/clients/nestle.png";
@@ -57,7 +57,10 @@ function About() {
         <div className="z-10 flex flex-col justify-center h-full gap-6 p-12 text-white max-md:p-6">
           <div className="flex flex-col gap-6">
             <p
-              className={`2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-sm max-sm:text-justify ${window.innerWidth <= 640 ? "lh-base" : "lh-lg"}`}>
+              className={`2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-sm max-sm:text-justify ${
+                window.innerWidth <= 640 ? "lh-base" : "lh-lg"
+              }`}
+            >
               For JKI Holdings, 'people' are the single most important 'asset',
               as they are the only aspect that can ensure delivery of high
               quality services that in return ensure the progress of the
@@ -227,9 +230,9 @@ function About() {
           <div className="h-60 max-sm:h-fit carousel-inner">
             <div className="carousel-item active">
               <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client1} className="w-[100px]" alt="client-card" />
                 <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client3} className="w-[100px]" alt="client-card" />
+                <img src={client1} className="w-[100px]" alt="client-card" />
+                {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
                 <img src={client4} className="w-[100px]" alt="client-card" />
                 <img src={client5} className="w-[100px]" alt="client-card" />
                 <img src={client6} className="w-[100px]" alt="client-card" />
@@ -240,9 +243,9 @@ function About() {
 
             <div className="carousel-item">
               <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client1} className="w-[100px]" alt="client-card" />
                 <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client3} className="w-[100px]" alt="client-card" />
+                <img src={client1} className="w-[100px]" alt="client-card" />
+                {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
                 <img src={client4} className="w-[100px]" alt="client-card" />
                 <img src={client5} className="w-[100px]" alt="client-card" />
                 <img src={client6} className="w-[100px]" alt="client-card" />
@@ -253,9 +256,9 @@ function About() {
 
             <div className="carousel-item">
               <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client1} className="w-[100px]" alt="client-card" />
                 <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client3} className="w-[100px]" alt="client-card" />
+                <img src={client1} className="w-[100px]" alt="client-card" />
+                {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
                 <img src={client4} className="w-[100px]" alt="client-card" />
                 <img src={client5} className="w-[100px]" alt="client-card" />
                 <img src={client6} className="w-[100px]" alt="client-card" />
