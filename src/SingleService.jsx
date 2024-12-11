@@ -1,4 +1,5 @@
 import construction_banner from "./assets/Services/construction_banner.png";
+import facility_banner from "./assets/Services/facility_banner.png";
 import gateway_banner from "./assets/Services/gateway_banner.png";
 import architecture_banner from "./assets/Services/architecture_banner.png";
 import interior_banner from "./assets/Services/interior_banner.png";
@@ -16,6 +17,7 @@ import residential_banner from "./assets/Services/residential_banner.png";
 import commercial_banner from "./assets/Services/commercial_banner.png";
 
 import construction_img from "./assets/ServiceCards/card_1.jpg";
+import facility_img from "./assets/Services/facility_img.png";
 import gateway_img from "./assets/ServiceCards/card_3.jpg";
 import architecture_img from "./assets/ServiceCards/card_4.png";
 import interior_img from "./assets/Services/interior_img.png";
@@ -97,11 +99,20 @@ function SingleService({ serviceType }) {
     ],
     [
       "Facility Management",
-      "facility mgmt text here.",
+      "J K I Holdings is a leading construction company dedicated to delivering innovative, high-quality solutions for residential, commercial, and industrial projects. With a focus on excellence, sustainability, and client satisfaction, we bring visionary designs to life, creating spaces that inspire.",
 
-      "banner-image-here",
-      "small-image-here",
-      "Facility Management description here.",
+      facility_banner,
+      facility_img,
+      <div className="flex flex-col gap-3">
+        <p className="lh-lg">
+          JKI Holdings offers comprehensive facility management services to
+          ensure your spaces remain clean, safe, and sustainable. Our expertise
+          includes professional janitorial services, effective pest control,
+          eco-friendly chemical supplies, high-quality equipment provision, and
+          meticulous garden maintenance. We prioritize efficiency and
+          environmental responsibility in every service we provide.
+        </p>
+      </div>,
     ],
     [
       "JKI Getaways",
