@@ -104,24 +104,29 @@ function Services() {
               <ServiceCard
                 img={Card_13}
                 text={"Janitorial Services"}
+                url={"janitorial-services"}
               ></ServiceCard>
               <ServiceCard
                 img={Card_14}
                 text={"Landscape Designing"}
+                url={"landscape-designing"}
               ></ServiceCard>
               <ServiceCard
                 img={Card_15}
                 text={"Garden Maintenance"}
+                url={"garden-maintenance"}
               ></ServiceCard>
               <ServiceCard
                 img={Card_16}
                 text={"Residential Construction"}
+                url={"residential-construction"}
               ></ServiceCard>
             </>
           ) : (
             <ServiceCard
               img={Card_17}
               text={"Commercial Construction"}
+              url={"commercial-construction"}
               extraClasses={
                 "md:col-start-2 md:col-span-2 w-1/2 md:justify-self-center place-self-center"
               }

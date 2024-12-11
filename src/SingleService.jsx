@@ -9,6 +9,11 @@ import aluminum_banner from "./assets/Services/aluminum_banner.png";
 import electrical_banner from "./assets/Services/electrical_banner.png";
 import property_banner from "./assets/Services/property_banner.png";
 import manpower_banner from "./assets/Services/manpower_banner.png";
+import janitorial_banner from "./assets/Services/janitorial_banner.png";
+import landscape_banner from "./assets/Services/landscape_banner.png";
+import garden_banner from "./assets/Services/garden_banner.png";
+import residential_banner from "./assets/Services/residential_banner.png";
+import commercial_banner from "./assets/Services/commercial_banner.png";
 
 import construction_img from "./assets/ServiceCards/card_1.jpg";
 import gateway_img from "./assets/ServiceCards/card_3.jpg";
@@ -21,6 +26,11 @@ import aluminum_img from "./assets/Services/aluminum_img.png";
 import electrical_img from "./assets/Services/electrical_img.png";
 import property_img from "./assets/Services/property_img.png";
 import manpower_img from "./assets/Services/manpower_img.png";
+import janitorial_img from "./assets/Services/janitorial_img.png";
+import landscape_img from "./assets/Services/landscape_img.png";
+import garden_img from "./assets/Services/garden_img.png";
+import residential_img from "./assets/Services/residential_img.png";
+import commercial_img from "./assets/Services/commercial_img.png";
 
 import email_icon from "./assets/Services/email_icon.png";
 import add_icon from "./assets/Services/add_icon.png";
@@ -45,6 +55,7 @@ function SingleService({ serviceType }) {
     "landscape-designing": 13,
     "garden-maintenance": 14,
     "residential-construction": 15,
+    "commercial-construction": 16,
   };
 
   // Get the integer index from the map or default to 16
@@ -259,6 +270,94 @@ function SingleService({ serviceType }) {
           clients and candidates. The company managers in charge do visit our
           clients to ensure the candidate’s performance and skills fit our
           clients working culture and surroundings
+        </p>
+      </div>,
+    ],
+    [
+      "Janitorial Services",
+      "J K I Holdings is a leading construction company dedicated to delivering innovative, high-quality solutions for residential, commercial, and industrial projects. With a focus on excellence, sustainability, and client satisfaction, we bring visionary designs to life, creating spaces that inspire.",
+
+      janitorial_banner,
+      janitorial_img,
+      <div className="flex flex-col gap-3">
+        <p className="lh-lg">
+          The work-culture at J K I Holdings – Pvt Ltd continuously incorporates
+          honesty, proven cleaning systems and eyes for detail. We place huge
+          emphasis on floor cleaning, top to bottom dusting and glass cleaning,
+          to name a few. We believe, when we focus on excellent cleaning
+          standards, not only can we be proud of our work, but our customers
+          will also realize JKI Holdings is a company that they can rely on.
+        </p>
+      </div>,
+    ],
+    [
+      "Landscape Designing",
+      "J K I Holdings is a leading construction company dedicated to delivering innovative, high-quality solutions for residential, commercial, and industrial projects. With a focus on excellence, sustainability, and client satisfaction, we bring visionary designs to life, creating spaces that inspire.",
+
+      landscape_banner,
+      landscape_img,
+      <div className="flex flex-col gap-3">
+        <p className="lh-lg">
+          J K I Holdings find ourselves to be immensely proud of being on top
+          based on the uniqueness reflected in our entire landscape designing,
+          planning & maintaining island-wide. We believe your garden must be
+          tailored to suit your specific need to ultimately bring you a sense of
+          tranquility. Our staff on site is landscapers trained, qualified and
+          experienced. They take great care in the artistic creation of your
+          garden and will settle for nothing less than the absolute elegance.
+          The plants used for the landscaping will be sourced, supplied and
+          delivered by selected growers across the country.
+        </p>
+      </div>,
+    ],
+    [
+      "Garden Maintenance",
+      "J K I Holdings is a leading construction company dedicated to delivering innovative, high-quality solutions for residential, commercial, and industrial projects. With a focus on excellence, sustainability, and client satisfaction, we bring visionary designs to life, creating spaces that inspire.",
+
+      garden_banner,
+      garden_img,
+      <div className="flex flex-col gap-3">
+        <p className="lh-lg">
+          We believe that maintain a garden merely does not mean watering,
+          pruning and cleaning: It carries a lot of sacrifices and
+          responsibilities. We bring an aesthetic and perfect view to the
+          appearance of the premises which enables and awakens one’s mind to
+          support the increase of productivity as employee.
+        </p>
+      </div>,
+    ],
+    [
+      "Residential Construction",
+      "J K I Holdings is a leading construction company dedicated to delivering innovative, high-quality solutions for residential, commercial, and industrial projects. With a focus on excellence, sustainability, and client satisfaction, we bring visionary designs to life, creating spaces that inspire.",
+
+      residential_banner,
+      residential_img,
+      <div className="flex flex-col gap-3">
+        <p className="lh-lg">
+          At JKI Holdings (Pvt) Ltd. we pride ourselves in doing more than just
+          building houses across Sri Lanka. While quality is our hallmark,
+          dedication is our stamp. We assist you in building the lifestyle you
+          have always desired. Our aim is to connect with you to construct a
+          home that reflects your individual tastes, so you feel right at home
+          from the moment you step inside. Throughout the building process, JKI
+          Holdings (Pvt) Ltd. will work with you to ensure you are completely
+          satisfied with every detail of your new home.
+        </p>
+      </div>,
+    ],
+    [
+      "Commercial Construction",
+      "J K I Holdings is a leading construction company dedicated to delivering innovative, high-quality solutions for residential, commercial, and industrial projects. With a focus on excellence, sustainability, and client satisfaction, we bring visionary designs to life, creating spaces that inspire.",
+
+      commercial_banner,
+      commercial_img,
+      <div className="flex flex-col gap-3">
+        <p className="lh-lg">
+          JKI Holdings (Pvt) Ltd. provides design and construction services with
+          experienced professionals in place to deliver. JKI Holdings team
+          consists of qualified Architects who act as design coordinators and
+          manage the consultants through the design process to ensure the most
+          buildable outcome is delivered.
         </p>
       </div>,
     ],
