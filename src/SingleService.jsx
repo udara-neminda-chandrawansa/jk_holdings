@@ -5,6 +5,10 @@ import interior_banner from "./assets/Services/interior_banner.png";
 import masonry_banner from "./assets/Services/masonry_banner.png";
 import plumbing_banner from "./assets/Services/plumbing_banner.png";
 import wood_banner from "./assets/Services/wood_banner.png";
+import aluminum_banner from "./assets/Services/aluminum_banner.png";
+import electrical_banner from "./assets/Services/electrical_banner.png";
+import property_banner from "./assets/Services/property_banner.png";
+import manpower_banner from "./assets/Services/manpower_banner.png";
 
 import construction_img from "./assets/ServiceCards/card_1.jpg";
 import gateway_img from "./assets/ServiceCards/card_3.jpg";
@@ -13,6 +17,10 @@ import interior_img from "./assets/Services/interior_img.png";
 import masonry_img from "./assets/Services/masonry_img.png";
 import plumbing_img from "./assets/Services/plumbing_img.png";
 import wood_img from "./assets/Services/wood_img.png";
+import aluminum_img from "./assets/Services/aluminum_img.png";
+import electrical_img from "./assets/Services/electrical_img.png";
+import property_img from "./assets/Services/property_img.png";
+import manpower_img from "./assets/Services/manpower_img.png";
 
 import email_icon from "./assets/Services/email_icon.png";
 import add_icon from "./assets/Services/add_icon.png";
@@ -185,6 +193,72 @@ function SingleService({ serviceType }) {
           everyday housing and commercial needs. It's product range covers all
           areas of urban construction, from supporting structure to interior
           design.
+        </p>
+      </div>,
+    ],
+    [
+      "Aluminum Fabrication",
+      "J K I Holdings is a leading construction company dedicated to delivering innovative, high-quality solutions for residential, commercial, and industrial projects. With a focus on excellence, sustainability, and client satisfaction, we bring visionary designs to life, creating spaces that inspire.",
+
+      aluminum_banner,
+      aluminum_img,
+      <div className="flex flex-col gap-3">
+        <p className="lh-lg">
+          We offer a full range of Aluminum Fabrication services which includes
+          Fabric Partitions, windows and much more. The designs delivered to the
+          customer will be customized and prepared according to the customer's
+          budget and desire.
+        </p>
+      </div>,
+    ],
+    [
+      "Electrical Services",
+      "J K I Holdings is a leading construction company dedicated to delivering innovative, high-quality solutions for residential, commercial, and industrial projects. With a focus on excellence, sustainability, and client satisfaction, we bring visionary designs to life, creating spaces that inspire.",
+
+      electrical_banner,
+      electrical_img,
+      <div className="flex flex-col gap-3">
+        <p className="lh-lg">
+          Electrical services are a vital component in any building; thus, it is
+          the responsibility of our construction professionals to provide you
+          the relevant services, adhering to the basic principles of service
+          design
+        </p>
+      </div>,
+    ],
+    [
+      "Property Management",
+      "J K I Holdings is a leading construction company dedicated to delivering innovative, high-quality solutions for residential, commercial, and industrial projects. With a focus on excellence, sustainability, and client satisfaction, we bring visionary designs to life, creating spaces that inspire.",
+
+      property_banner,
+      property_img,
+      <div className="flex flex-col gap-3">
+        <p className="lh-lg">
+          Your house, apartment or building may be your most valuable financial
+          asset, which is one very good reason why it is important to keep your
+          property in good condition. In order to do that, you need access to
+          professional services that meet all your requirements. J K I Holdings
+          (Pvt) Ltd. is an experienced organization in refurbishing or
+          renovating buildings and old factories. Through our in- house team of
+          experts and network of trusted and experienced professionals, we
+          source the right people for the job you need done.
+        </p>
+      </div>,
+    ],
+    [
+      "Manpower Supply",
+      "J K I Holdings is a leading construction company dedicated to delivering innovative, high-quality solutions for residential, commercial, and industrial projects. With a focus on excellence, sustainability, and client satisfaction, we bring visionary designs to life, creating spaces that inspire.",
+
+      manpower_banner,
+      manpower_img,
+      <div className="flex flex-col gap-3">
+        <p className="lh-lg">
+          J K I Holdings (Pvt) Ltd. provides a total manpower supply solutions
+          for our clients and ensure a successful recruitment. We highly
+          concentrate the value of trust and faith bestowed to us by both our
+          clients and candidates. The company managers in charge do visit our
+          clients to ensure the candidate’s performance and skills fit our
+          clients working culture and surroundings
         </p>
       </div>,
     ],

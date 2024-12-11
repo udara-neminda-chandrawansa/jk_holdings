@@ -84,16 +84,23 @@ function Services() {
               <ServiceCard
                 img={Card_9}
                 text={"Aluminum Fabrication"}
+                url={"aluminum-fabrication"}
               ></ServiceCard>
               <ServiceCard
                 img={Card_10}
                 text={"Electrical Services"}
+                url={"electrical-services"}
               ></ServiceCard>
               <ServiceCard
                 img={Card_11}
                 text={"Property Management"}
+                url={"property-management"}
               ></ServiceCard>
-              <ServiceCard img={Card_12} text={"Manpower Supply"}></ServiceCard>
+              <ServiceCard
+                img={Card_12}
+                text={"Manpower Supply"}
+                url={"manpower-supply"}
+              ></ServiceCard>
               <ServiceCard
                 img={Card_13}
                 text={"Janitorial Services"}
