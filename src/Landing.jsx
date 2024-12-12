@@ -1,12 +1,15 @@
 import banner_1 from "./assets/banner-1.jpg";
 import banner_2 from "./assets/banner-2.jpg";
 import banner_3 from "./assets/banner-3.jpg";
+
 import Card_1 from "./assets/ServiceCards/card_1.jpg";
 import Card_2 from "./assets/ServiceCards/card_2.jpg";
 import Card_3 from "./assets/ServiceCards/card_3.jpg";
 import Card_4 from "./assets/ServiceCards/card_4.png";
+
 import misson_banner from "./assets/mission_bg.jpg";
 import client_banner from "./assets/clients_bg.png";
+
 import client1 from "./assets/clients/brandix.png";
 import client2 from "./assets/clients/mas.png";
 //import client3 from "./assets/clients/kanrich.png";
@@ -16,12 +19,30 @@ import client6 from "./assets/clients/nestle.png";
 import client7 from "./assets/clients/hela.png";
 import client8 from "./assets/clients/esquel.png";
 import abt_man from "./assets/about_man.png";
+
+import linea_clothing from "./assets/clients/linea_clothing.png";
+import linea_intimo from "./assets/clients/linea_intimo.png";
+import cashual_line from "./assets/clients/cashual_line.png";
+import cn_body from "./assets/clients/cn_body.png";
+import fabric_park from "./assets/clients/fabric_park.png";
+import heineken from "./assets/clients/heineken.png";
+import mas_active from "./assets/clients/mas_active.png";
+import mas_shadowline from "./assets/clients/mas_shadowline.png";
+import nestle_round from "./assets/clients/nestle_round.png";
+import noyon from "./assets/clients/noyon.png";
+import ruhunu from "./assets/clients/ruhunu.png";
+import screenline from "./assets/clients/screenline.png";
+import smart_shirts from "./assets/clients/smart_shirts.png";
+import unichela from "./assets/clients/unichela.png";
+
 import m_1 from "./assets/milestones/m-1.png";
 import m_2 from "./assets/milestones/m-2.png";
 import m_3 from "./assets/milestones/m-3.png";
 import m_4 from "./assets/milestones/m-4.png";
-import add_1 from "./assets/adds/add-1.png";
+
+//import add_1 from "./assets/adds/add-1.png";
 import add_2 from "./assets/adds/add-2.png";
+
 import { useState, useEffect } from "react";
 import LSCarousel from "./components/LandingServiceCar";
 import ServiceCard from "./components/ServiceCard";
@@ -214,7 +235,7 @@ function Landing() {
       {/*About*/}
       <div className="flex flex-col p-12 h-fit max-md:p-6">
         <div>
-          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base max-sm:text-justify">
+          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base max-sm:text-justify line-height-abt">
             JKI Holdings is a Pioneer in Construction, Facility Management, and
             Landscaping services in Sri Lanka since 2001. The company commenced
             its journey with 2 employees. By 2014, the company established its
@@ -232,7 +253,7 @@ function Landing() {
           </p>
         </div>
         {/*spacing div*/}
-        <div className="lg:h-[20dvh] flex flex-col lg:items-end lg:justify-end lg:pr-14 gap-2">
+        <div className="lg:h-[20dvh] flex flex-col lg:items-end lg:justify-end lg:pr-14 gap-2 max-lg:pt-6">
           <p className="lg:w-1/2 2xl:text-5xl xl:text-4xl max-xl:text-3xl max-lg:text-3xl max-sm:text-2xl max-lg:pt-3 title">
             Message from the Managing Director
           </p>
@@ -250,29 +271,37 @@ function Landing() {
           {/*trapezoid*/}
           <div className="absolute text-white pr-12 max-sm:pr-3 right-0 bottom-0 w-full h-0 border-b-[55dvh] border-b-[#C10000] border-l-[400px] border-r-0 border-l-transparent max-lg:hidden"></div>
           {/*trapezoid text*/}
-          <div className="absolute flex items-end justify-end w-full h-full pr-12 overflow-y-scroll lg:items-center max-lg:relative max-lg:items-start max-lg:justify-center max-lg:text-center max-lg:py-6 max-lg:pr-0 min-h-fit black-custom-scroll">
-            <h1 className="z-20 w-1/2 h-full lg:text-white max-lg:w-full max-lg:text-start max-sm:text-justify">
+          <div className="absolute flex items-end justify-end w-full h-full pr-12 overflow-y-scroll lg:items-center max-lg:relative max-lg:items-start max-lg:justify-center max-lg:text-center max-lg:py-6 max-lg:pb-0 max-lg:pr-0 min-h-fit black-custom-scroll">
+            <h1 className="z-20 w-1/2 h-full lg:text-white max-lg:w-full max-lg:text-start max-sm:text-justify line-height-abt">
               <span className="hidden lg:inline text-[60px] max-md:text-2xl max-lg:text-3xl max-xl:text-5xl">
                 “
               </span>
-              <span className="z-10 2xl:text-2xl xl:text-xl max-lg:text-lg max-sm:text-base">
+              <span className="z-10 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
                 Taniya Group, a pioneer in building construction industry, came
                 to be known as JKI Holdings in the year 2001. Since then, we
                 have expanded our services from building construction to
                 Interior Designing, Landscaping, Aluminum Fabrication, Pest
                 Control and Facility Management, to fulfill all our clients'
-                requirements in commercial and residential establishments. We
+                requirements in commercial and residential establishments. 
+                <br /><br />
+                We
                 have already commenced our operations in Tourism Industry, and
                 we are determined to commence our operations in the Information
-                Technology Industry as well. As the Founder, I started this
+                Technology Industry as well. 
+                <br /><br />
+                As the Founder, I started this
                 organization, so that we as a “Nation” can grow together and
                 sustain our footprint in the world as a Proud Nation and bring
                 international revenues into the country, from which our people
-                can grow and thrive to reach the Global Market. We are
+                can grow and thrive to reach the Global Market. 
+                <br /><br />
+                We are
                 continuously expanding, exploring new opportunities, and
                 facilitating exceptional levels of customer satisfaction and
                 looking for dynamic, enthusiastic and committed individuals to
-                grow with us. The sole reason we were recognized and awarded was
+                grow with us. 
+                <br /><br />
+                The sole reason we were recognized and awarded was
                 the 'exceptional service' that we extend through our
                 well-trained, professional, and committed workforce.
               </span>
@@ -284,11 +313,11 @@ function Landing() {
         </div>
       </div>
       {/*HR Message*/}
-      <div className="flex flex-col gap-3 p-12 h-fit max-md:p-6">
+      <div className="flex flex-col gap-3 p-12 h-fit max-md:p-6 max-lg:pt-0">
         <p className="2xl:text-5xl xl:text-4xl max-xl:text-3xl max-lg:text-3xl max-sm:text-2xl title">
           Message from our HR Team
         </p>
-        <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base max-sm:text-justify">
+        <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base max-sm:text-justify line-height-abt">
           For JKI Holdings, 'people' are the single most important 'asset', as
           they are the only aspect that can ensure delivery of high quality
           services that in return ensure the progress of the organization and
@@ -302,7 +331,7 @@ function Landing() {
           succeed in their careers and achieve personal goals. We believe people
           can reach great heights through learning and development. Moreover, we
           reassure that al our employees are adept at executing their duties and
-          fairly evaluated and advanced throughout their careers
+          fairly evaluated and advanced throughout their careers.
         </p>
       </div>
       {/*Advertisements*/}
@@ -365,43 +394,260 @@ function Landing() {
           </div>
           <div className="h-60 max-sm:h-fit carousel-inner">
             <div className="carousel-item active">
-              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client1} className="w-[100px]" alt="client-card" />
-                {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
-                <img src={client4} className="w-[100px]" alt="client-card" />
-                <img src={client5} className="w-[100px]" alt="client-card" />
-                <img src={client6} className="w-[100px]" alt="client-card" />
-                <img src={client7} className="w-[100px]" alt="client-card" />
-                <img src={client8} className="w-[100px]" alt="client-card" />
+              <div className="flex flex-col gap-6">
+                <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
+                  <img src={client2} className="w-[100px]" alt="client-card" />
+                  <img src={client1} className="w-[100px]" alt="client-card" />
+                  {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
+                  <img src={client4} className="w-[100px]" alt="client-card" />
+                  <img src={client5} className="w-[100px]" alt="client-card" />
+                </div>
+                <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
+                  <img src={client6} className="w-[100px]" alt="client-card" />
+                  <img src={client7} className="w-[100px]" alt="client-card" />
+                  <img src={client8} className="w-[100px]" alt="client-card" />
+                </div>
               </div>
             </div>
 
             <div className="carousel-item">
-              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client1} className="w-[100px]" alt="client-card" />
-                {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
-                <img src={client4} className="w-[100px]" alt="client-card" />
-                <img src={client5} className="w-[100px]" alt="client-card" />
-                <img src={client6} className="w-[100px]" alt="client-card" />
-                <img src={client7} className="w-[100px]" alt="client-card" />
-                <img src={client8} className="w-[100px]" alt="client-card" />
+              <div className="flex flex-col gap-6">
+                <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
+                  <img src={client2} className="w-[100px]" alt="client-card" />
+                  <img src={client1} className="w-[100px]" alt="client-card" />
+                  {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
+                  <img src={client4} className="w-[100px]" alt="client-card" />
+                  <img src={client5} className="w-[100px]" alt="client-card" />
+                </div>
+                <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
+                  <img src={client6} className="w-[100px]" alt="client-card" />
+                  <img src={client7} className="w-[100px]" alt="client-card" />
+                  <img src={client8} className="w-[100px]" alt="client-card" />
+                </div>
               </div>
             </div>
 
             <div className="carousel-item">
-              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client1} className="w-[100px]" alt="client-card" />
-                {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
-                <img src={client4} className="w-[100px]" alt="client-card" />
-                <img src={client5} className="w-[100px]" alt="client-card" />
-                <img src={client6} className="w-[100px]" alt="client-card" />
-                <img src={client7} className="w-[100px]" alt="client-card" />
-                <img src={client8} className="w-[100px]" alt="client-card" />
+              <div className="flex flex-col gap-6">
+                <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
+                  <img src={client2} className="w-[100px]" alt="client-card" />
+                  <img src={client1} className="w-[100px]" alt="client-card" />
+                  {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
+                  <img src={client4} className="w-[100px]" alt="client-card" />
+                  <img src={client5} className="w-[100px]" alt="client-card" />
+                </div>
+                <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
+                  <img src={client6} className="w-[100px]" alt="client-card" />
+                  <img src={client7} className="w-[100px]" alt="client-card" />
+                  <img src={client8} className="w-[100px]" alt="client-card" />
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      {/*MAS*/}
+      <div className="flex flex-col items-center gap-6 py-6">
+        <img src={client2} alt="mas-logo" className="w-fit h-fit" />
+        <div className="bg-[#C10000] h-fit w-full text-white py-6 max-md:py-3 px-12 max-md:px-6 max-sm:text-justify line-height-abt">
+          <p>
+            JKI Holdings has demonstrated exceptional professionalism and
+            expertise in the construction industry. Their ability to deliver
+            high-quality projects on time and within budget is truly
+            commendable. The team’s attention to detail and commitment to
+            excellence ensure that every project meets and often exceeds
+            expectations. The blend of innovation and adherence to industry
+            standards sets JKI Holdings apart as a trustworthy partner for
+            construction needs. Their focus on sustainable practices and client
+            satisfaction further enhances their reputation as a reliable and
+            forward-thinking company.
+          </p>
+        </div>
+        <div className="grid w-full grid-cols-2 gap-6 px-12 max-md:px-6 max-sm:grid-cols-1 max-sm:text-end">
+        <div className="flex items-center gap-3 h-[80px]">
+            <img
+              src={linea_clothing}
+              alt=""
+              className="w-[100px] h-[60px] object-contain"
+            />
+            <span className="flex flex-col gap-1 max-sm:w-full">
+              <p>Linea Clothing (Pvt) Ltd., BOI,</p>
+              <p className="text-sm text-[#C10000]">Pallekele</p>
+            </span>
+          </div>
+          <div className="flex items-center gap-3 h-[80px]">
+            <img
+              src={linea_intimo}
+              alt=""
+              className="w-[100px] h-[60px] object-contain"
+            />
+            <span className="flex flex-col gap-1 max-sm:w-full">
+              <p> Linea Intimo (Pvt) Ltd., EPZ,</p>
+              <p className="text-sm text-[#C10000]"> Biyagama</p>
+            </span>
+          </div>
+          <div className="flex items-center gap-3 h-[80px]">
+            <img
+              src={mas_active}
+              alt=""
+              className="w-[100px] h-[60px] object-contain"
+            />
+            <span className="flex flex-col gap-1 max-sm:w-full">
+              <p>MAS Active Contourline, BOI,</p>
+              <p className="text-sm text-[#C10000]">Pallekele</p>
+            </span>
+          </div>
+          <div className="flex items-center gap-3 h-[80px]">
+            <img
+              src={mas_shadowline}
+              alt=""
+              className="w-[100px] h-[60px] object-contain"
+            />
+            <span className="flex flex-col gap-1 max-sm:w-full">
+              <p>MAS Active Shadowline (Pvt) Ltd., EPZ,</p>
+              <p className="text-sm text-[#C10000]">Katunayake</p>
+            </span>
+          </div>
+          <div className="flex items-center gap-3 h-[80px]">
+            <img
+              src={noyon}
+              alt=""
+              className="w-[100px] h-[60px] object-contain"
+            />
+            <span className="flex flex-col gap-1 max-sm:w-full">
+              <p> Noyon Lanka (Pvt) Ltd., EPZ,</p>
+              <p className="text-sm text-[#C10000]">Biyagama</p>
+            </span>
+          </div>
+          <div className="flex items-center gap-3 h-[80px]">
+            <img
+              src={unichela}
+              alt=""
+              className="w-[100px] h-[60px] object-contain"
+            />
+            <span className="flex flex-col gap-1 max-sm:w-full">
+              <p> Unichela (Pvt) Ltd.,</p>
+              <p className="text-sm text-[#C10000]"> Panadura</p>
+            </span>
+          </div>
+          <div className="flex items-center gap-3 h-[80px]">
+            <img
+              src={cashual_line}
+              alt=""
+              className="w-[100px] h-[60px] object-contain"
+            />
+            <span className="flex flex-col gap-1 max-sm:w-full">
+              <p>Casual line (Pvt) Ltd., Mawathagama.</p>
+              <p className="text-sm text-[#C10000]">Biyagama</p>
+            </span>
+          </div>
+          <div className="flex items-center gap-3 h-[80px]">
+            <img
+              src={fabric_park}
+              alt=""
+              className="w-[100px] h-[60px] object-contain"
+            />
+            <span className="flex flex-col gap-1 max-sm:w-full">
+              <p>MAS Fabric Park, Kurunegala Road, Thulhiriya.</p>
+              <p className="text-sm text-[#C10000]">Pallekele</p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <span className="flex justify-center">
+      <hr className="w-11/12"/>
+      </span>
+      {/*ESQUEL*/}
+      <div className="flex flex-col items-center gap-6 py-6">
+        <img src={client8} alt="mas-logo" className="w-fit h-fit" />
+        <div className="bg-[#C10000] h-fit w-full text-white py-6 max-md:py-3 px-12 max-md:px-6 max-sm:text-justify line-height-abt">
+          <p>
+            JKI Holdings has demonstrated exceptional professionalism and
+            expertise in the construction industry. Their ability to deliver
+            high-quality projects on time and within budget is truly
+            commendable. The team’s attention to detail and commitment to
+            excellence ensure that every project meets and often exceeds
+            expectations. The blend of innovation and adherence to industry
+            standards sets JKI Holdings apart as a trustworthy partner for
+            construction needs. Their focus on sustainable practices and client
+            satisfaction further enhances their reputation as a reliable and
+            forward-thinking company.
+          </p>
+        </div>
+        <div className="grid w-full grid-cols-2 gap-6 px-12 max-md:px-6 max-sm:grid-cols-1 max-sm:text-end">
+        <div className="flex items-center gap-3 h-[80px]">
+            <img
+              src={heineken}
+              alt=""
+              className="w-[100px] h-[60px] object-contain"
+            />
+            <span className="flex flex-col gap-1 max-sm:w-full">
+              <p>Heineken Lanka (Pvt) Ltd.,</p>
+              <p className="text-sm text-[#C10000]">Mawathagama</p>
+            </span>
+          </div>
+          <div className="flex items-center gap-3 h-[80px]">
+            <img
+              src={nestle_round}
+              alt=""
+              className="w-[100px] h-[60px] object-contain"
+            />
+            <span className="flex flex-col gap-1 max-sm:w-full">
+              <p> Nestle Lanka (pvt)Ltd.,</p>
+              <p className="text-sm text-[#C10000]">Pannala</p>
+            </span>
+          </div>
+          <div className="flex items-center gap-3 h-[80px]">
+            <img
+              src={client8}
+              alt=""
+              className="w-[100px] h-[60px] object-contain"
+            />
+            <span className="flex flex-col gap-1 max-sm:w-full">
+              <p> Esquel Group</p>
+            </span>
+          </div>
+          <div className="flex items-center gap-3 h-[80px]">
+            <img
+              src={ruhunu}
+              alt=""
+              className="w-[100px] h-[60px] object-contain"
+            />
+            <span className="flex flex-col gap-1 max-sm:w-full">
+              <p> Ruhunu Foods (pvt) Ltd.,</p>
+              <p className="text-sm text-[#C10000]">Pallekele</p>
+            </span>
+          </div>
+          <div className="flex items-center gap-3 h-[80px]">
+            <img
+              src={screenline}
+              alt=""
+              className="w-[100px] h-[60px] object-contain"
+            />
+            <span className="flex flex-col gap-1 max-sm:w-full">
+              <p>  Screenline Group of Companies</p>
+            </span>
+          </div>
+          <div className="flex items-center gap-3 h-[80px]">
+            <img
+              src={smart_shirts}
+              alt=""
+              className="w-[100px] h-[60px] object-contain"
+            />
+            <span className="flex flex-col gap-1 max-sm:w-full">
+              <p> Smart Shirts (Pvt) Ltd.,</p>
+              <p className="text-sm text-[#C10000]"> Pallekele</p>
+            </span>
+          </div>
+          <div className="flex items-center gap-3 h-[80px]">
+            <img
+              src={cn_body}
+              alt=""
+              className="w-[100px] h-[60px] object-contain"
+            />
+            <span className="flex flex-col gap-1 max-sm:w-full">
+              <p> CN BodyMatrix (Pvt) Ltd.</p>
+            </span>
           </div>
         </div>
       </div>
