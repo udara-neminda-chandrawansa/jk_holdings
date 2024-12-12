@@ -1,6 +1,10 @@
 import logo from "./../assets/logo.png";
 import footer_bg from "./../assets/footer_bg.png";
 import { Link } from "wouter";
+import fb from "./../assets/Footer/fb_icon.png";
+import tk from "./../assets/Footer/tk_icon.png";
+import wa from "./../assets/Footer/wa_icon.png";
+import ins from "./../assets/Footer/in_icon.png";
 
 function Footer() {
   return (
@@ -17,6 +21,7 @@ function Footer() {
           Service Providing industry.
         </p>
       </div>
+      {/*
       <div className="flex items-center h-1/4 max-sm:h-fit max-sm:py-3">
         <ul className="flex w-full justify-evenly h-fit max-sm:flex-col max-sm:gap-3">
           <li className="hover:text-red-500">
@@ -39,6 +44,7 @@ function Footer() {
           </li>
         </ul>
       </div>
+      */}
       <div className="flex items-center h-1/4">
         <ul className="flex justify-between w-full max-sm:flex-col max-sm:gap-3">
           <li className="flex items-center gap-6">
@@ -68,12 +74,39 @@ function Footer() {
             >
               <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
             </svg>
-            <p> +94 773 606 487 / +94 773 037238 </p>
+            <p> No: 10, Theldeniya Road, Balagolla,Kengalla, Kandy.</p>
+          </li>
+        </ul>
+      </div>
+      <div className="flex items-center h-1/4">
+        <ul className="flex justify-start w-full gap-6 max-sm:justify-center max-sm:gap-3">
+          <li className="flex items-center gap-6 transition-all hover:scale-90">
+            <a href="https://www.facebook.com/">
+              <img src={fb} alt="fb-icon" />
+            </a>
+          </li>
+          <li className="flex items-center gap-6 transition-all hover:scale-90">
+            <a href="https://www.tiktok.com/">
+              <img src={tk} alt="tk-icon" />
+            </a>
+          </li>
+          <li className="flex items-center gap-6 transition-all hover:scale-90">
+            <a href="https://www.whatsapp.com/">
+              <img src={wa} alt="fb-icon" />
+            </a>
+          </li>
+          <li className="flex items-center gap-6 transition-all hover:scale-90">
+            <a href="https://www.instagram.com/">
+              <img src={ins} alt="tk-icon" />
+            </a>
           </li>
         </ul>
       </div>
       <div className="h-1/4 border-t-2 optima tracking-widest text-center border-t-[#C10000] flex items-center justify-center">
-        <p>2024 © All Rights Reserved | JKI Holdings | Designed & Developed by Silicon Radon Networks (Pvt) Ltd.</p>
+        <p>
+          2024 © All Rights Reserved | JKI Holdings | Designed & Developed by
+          Silicon Radon Networks (Pvt) Ltd.
+        </p>
       </div>
     </footer>
   );

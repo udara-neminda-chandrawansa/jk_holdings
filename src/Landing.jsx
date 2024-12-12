@@ -21,6 +21,7 @@ import m_2 from "./assets/milestones/m-2.png";
 import m_3 from "./assets/milestones/m-3.png";
 import m_4 from "./assets/milestones/m-4.png";
 import add_1 from "./assets/adds/add-1.png";
+import add_2 from "./assets/adds/add-2.png";
 import { useState, useEffect } from "react";
 import LSCarousel from "./components/LandingServiceCar";
 import ServiceCard from "./components/ServiceCard";
@@ -149,11 +150,11 @@ function Landing() {
       </div>
       {/*Mission*/}
       <div
-        className="flex flex-col justify-center relative h-[60dvh] bg-no-repeat bg-cover bg-fixed bg-center"
+        className="relative flex flex-col justify-center py-12 tracking-wider bg-fixed bg-center bg-no-repeat bg-cover h-fit optima"
         style={{ backgroundImage: `url(${misson_banner})` }}
       >
         {/*Top layer (backdrop)*/}
-        <div className="absolute bottom-0 h-[60dvh] inset-0 bg-gradient-to-br from-[#4B4B4BB5] to-[#000000B5]"></div>
+        <div className="absolute bottom-0 h-full inset-0 bg-gradient-to-br from-[#4B4B4BB5] to-[#000000B5]"></div>
         {/*text*/}
         <div className="z-10 flex flex-col w-3/4 gap-6 pl-12 text-white max-sm:p-6 max-sm:w-full line-height-abt max-md:pl-6 max-sm:text-justify">
           <div className="flex flex-col gap-6">
@@ -174,6 +175,40 @@ function Landing() {
               To be the epitome of Service Providing industry
             </p>
           </div>
+          <div className="flex flex-col gap-6">
+            <h1 className="text-[30px] lg:text-[50px] xl:text-[70px] title">
+              Our Core Values
+            </h1>
+            <ul className="flex flex-col gap-3">
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+                Customer satisfaction
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+                Credibility
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+                Assuarance
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+                Neatness
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+                Uniqueness
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+                Integrity
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+                Professionalism
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+                Innovation
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+                Partnership
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       {/*About*/}
@@ -193,11 +228,18 @@ function Landing() {
             expectations at every opportunity. We, at JKI Holdings, value
             Transparency, Integrity and Ethics more than anything, and we are
             dedicated to cater to our clients' needs through innovation and
-            continuous improvement
+            continuous improvement.
           </p>
         </div>
         {/*spacing div*/}
-        <div className="lg:h-[20dvh]"></div>
+        <div className="lg:h-[20dvh] flex flex-col lg:items-end lg:justify-end lg:pr-14 gap-2">
+          <p className="lg:w-1/2 2xl:text-5xl xl:text-4xl max-xl:text-3xl max-lg:text-3xl max-sm:text-2xl max-lg:pt-3 title">
+            Message from the Managing Director
+          </p>
+          <p className="pb-3 lg:w-1/2 2xl:text-3xl xl:text-2xl max-xl:text-xl max-lg:text-lg max-sm:text-base title">
+            Deshabandhu Vidyananda Jagath Karunarathna
+          </p>
+        </div>
         <div className="relative flex h-[55dvh] min-h-fit max-lg:h-fit max-lg:flex-col">
           {/*about-man*/}
           <img
@@ -208,8 +250,8 @@ function Landing() {
           {/*trapezoid*/}
           <div className="absolute text-white pr-12 max-sm:pr-3 right-0 bottom-0 w-full h-0 border-b-[55dvh] border-b-[#C10000] border-l-[400px] border-r-0 border-l-transparent max-lg:hidden"></div>
           {/*trapezoid text*/}
-          <div className="absolute flex items-end justify-end w-full h-full pr-12 overflow-y-scroll lg:items-center max-lg:relative max-lg:items-start max-lg:justify-center max-lg:text-center max-lg:py-6 max-lg:pr-0 min-h-fit no-scrollbar">
-            <h1 className="z-20 w-1/2 lg:text-white max-lg:w-full max-lg:text-start max-sm:text-justify">
+          <div className="absolute flex items-end justify-end w-full h-full pr-12 overflow-y-scroll lg:items-center max-lg:relative max-lg:items-start max-lg:justify-center max-lg:text-center max-lg:py-6 max-lg:pr-0 min-h-fit black-custom-scroll">
+            <h1 className="z-20 w-1/2 h-full lg:text-white max-lg:w-full max-lg:text-start max-sm:text-justify">
               <span className="hidden lg:inline text-[60px] max-md:text-2xl max-lg:text-3xl max-xl:text-5xl">
                 “
               </span>
@@ -218,14 +260,21 @@ function Landing() {
                 to be known as JKI Holdings in the year 2001. Since then, we
                 have expanded our services from building construction to
                 Interior Designing, Landscaping, Aluminum Fabrication, Pest
-                Control and Facility Management, to fulfil al our clients'
+                Control and Facility Management, to fulfill all our clients'
                 requirements in commercial and residential establishments. We
                 have already commenced our operations in Tourism Industry, and
                 we are determined to commence our operations in the Information
-                Technology Industry as wel. As the Founder, I started this
+                Technology Industry as well. As the Founder, I started this
                 organization, so that we as a “Nation” can grow together and
                 sustain our footprint in the world as a Proud Nation and bring
-                international revenues into the
+                international revenues into the country, from which our people
+                can grow and thrive to reach the Global Market. We are
+                continuously expanding, exploring new opportunities, and
+                facilitating exceptional levels of customer satisfaction and
+                looking for dynamic, enthusiastic and committed individuals to
+                grow with us. The sole reason we were recognized and awarded was
+                the 'exceptional service' that we extend through our
+                well-trained, professional, and committed workforce.
               </span>
               <span className="hidden lg:inline absolute text-[60px] max-md:text-2xl max-lg:text-3xl max-xl:text-5xl">
                 ”
@@ -234,48 +283,41 @@ function Landing() {
           </div>
         </div>
       </div>
+      {/*HR Message*/}
+      <div className="flex flex-col gap-3 p-12 h-fit max-md:p-6">
+        <p className="2xl:text-5xl xl:text-4xl max-xl:text-3xl max-lg:text-3xl max-sm:text-2xl title">
+          Message from our HR Team
+        </p>
+        <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base max-sm:text-justify">
+          For JKI Holdings, 'people' are the single most important 'asset', as
+          they are the only aspect that can ensure delivery of high quality
+          services that in return ensure the progress of the organization and
+          its overal performance. Therefore, we treat our employees as 'family'
+          and ensure their wellbeing with highest regard. We uphold our HR and
+          pay role policies in alignment with the best practices in the trade
+          and provide a safe and healthy work environment. Further, we take
+          satisfaction in generating novel employment opportunities in order to
+          contribute our maximum support to minimize the degrading local job
+          market, thereby assuring that people are financially stable and
+          succeed in their careers and achieve personal goals. We believe people
+          can reach great heights through learning and development. Moreover, we
+          reassure that al our employees are adept at executing their duties and
+          fairly evaluated and advanced throughout their careers
+        </p>
+      </div>
       {/*Advertisements*/}
-      <div className="md:pb-12">
-        {/*addvertisement carousel*/}
-        <div
-          id="add-carousel"
-          className="relative w-full p-6 md:p-12 h-fit carousel slide"
-          data-coreui-ride="true"
-        >
-          <div className="bg-gray-300 rounded-full carousel-indicators max-sm:hidden">
-            <button
-              type="button"
-              data-coreui-target="#add-carousel"
-              data-coreui-slide-to="0"
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-coreui-target="#add-carousel"
-              data-coreui-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-coreui-target="#add-carousel"
-              data-coreui-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div className="h-fit max-sm:h-fit carousel-inner">
-            <div className="carousel-item active">
-              <img src={add_1} alt="" />
-            </div>
-
-            <div className="carousel-item">
-              <img src={add_1} alt="" />
-            </div>
-
-            <div className="carousel-item">
-              <img src={add_1} alt="" />
-            </div>
+      <div className="p-12 max-md:p-6">
+        <div className="border ">
+          <div className="flex items-center w-full h-full max-md:flex-col max-md:justify-center">
+            <img
+              src={add_2}
+              alt=""
+              className="object-cover w-1/2 h-full max-md:w-full max-md:h-1/2 max-md:object-contain"
+            />
+            <p className="px-12 text-xl font-medium tracking-widest text-center max-md:px-6 h-fit max-md:py-6 title">
+              Shining a spotlight on exceptional dedication & performance at
+              Brandix Fast Fashion, Awissawella
+            </p>
           </div>
         </div>
       </div>
