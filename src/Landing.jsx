@@ -282,28 +282,30 @@ function Landing() {
                 have expanded our services from building construction to
                 Interior Designing, Landscaping, Aluminum Fabrication, Pest
                 Control and Facility Management, to fulfill all our clients'
-                requirements in commercial and residential establishments. 
-                <br /><br />
-                We
-                have already commenced our operations in Tourism Industry, and
-                we are determined to commence our operations in the Information
-                Technology Industry as well. 
-                <br /><br />
-                As the Founder, I started this
-                organization, so that we as a “Nation” can grow together and
-                sustain our footprint in the world as a Proud Nation and bring
-                international revenues into the country, from which our people
-                can grow and thrive to reach the Global Market. 
-                <br /><br />
-                We are
-                continuously expanding, exploring new opportunities, and
+                requirements in commercial and residential establishments.
+                <br />
+                <br />
+                We have already commenced our operations in Tourism Industry,
+                and we are determined to commence our operations in the
+                Information Technology Industry as well.
+                <br />
+                <br />
+                As the Founder, I started this organization, so that we as a
+                “Nation” can grow together and sustain our footprint in the
+                world as a Proud Nation and bring international revenues into
+                the country, from which our people can grow and thrive to reach
+                the Global Market.
+                <br />
+                <br />
+                We are continuously expanding, exploring new opportunities, and
                 facilitating exceptional levels of customer satisfaction and
                 looking for dynamic, enthusiastic and committed individuals to
-                grow with us. 
-                <br /><br />
-                The sole reason we were recognized and awarded was
-                the 'exceptional service' that we extend through our
-                well-trained, professional, and committed workforce.
+                grow with us.
+                <br />
+                <br />
+                The sole reason we were recognized and awarded was the
+                'exceptional service' that we extend through our well-trained,
+                professional, and committed workforce.
               </span>
               <span className="hidden lg:inline absolute text-[60px] max-md:text-2xl max-lg:text-3xl max-xl:text-5xl">
                 ”
@@ -333,22 +335,6 @@ function Landing() {
           reassure that al our employees are adept at executing their duties and
           fairly evaluated and advanced throughout their careers.
         </p>
-      </div>
-      {/*Advertisements*/}
-      <div className="p-12 max-md:p-6">
-        <div className="border ">
-          <div className="flex items-center w-full h-full max-md:flex-col max-md:justify-center">
-            <img
-              src={add_2}
-              alt=""
-              className="object-cover w-1/2 h-full max-md:w-full max-md:h-1/2 max-md:object-contain"
-            />
-            <p className="px-12 text-xl font-medium tracking-widest text-center max-md:px-6 h-fit max-md:py-6 title">
-              Shining a spotlight on exceptional dedication & performance at
-              Brandix Fast Fashion, Awissawella
-            </p>
-          </div>
-        </div>
       </div>
       {/*Clients*/}
       <div
@@ -398,7 +384,6 @@ function Landing() {
                 <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
                   <img src={client2} className="w-[100px]" alt="client-card" />
                   <img src={client1} className="w-[100px]" alt="client-card" />
-                  {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
                   <img src={client4} className="w-[100px]" alt="client-card" />
                   <img src={client5} className="w-[100px]" alt="client-card" />
                 </div>
@@ -412,34 +397,72 @@ function Landing() {
 
             <div className="carousel-item">
               <div className="flex flex-col gap-6">
-                <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                  <img src={client2} className="w-[100px]" alt="client-card" />
-                  <img src={client1} className="w-[100px]" alt="client-card" />
-                  {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
-                  <img src={client4} className="w-[100px]" alt="client-card" />
-                  <img src={client5} className="w-[100px]" alt="client-card" />
+                <div className="grid w-full grid-cols-4 gap-3 h-[100px] place-content-center place-items-center">
+                  <img
+                    src={noyon}
+                    className="w-[100px] h-1/2 object-contain"
+                    alt="client-card"
+                  />
+                  <img
+                    src={heineken}
+                    className="w-[100px] h-1/2 object-contain"
+                    alt="client-card"
+                  />
+                  <img src={ruhunu} className="w-[100px]" alt="client-card" />
+                  <img
+                    src={screenline}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
                 </div>
-                <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
-                  <img src={client6} className="w-[100px]" alt="client-card" />
-                  <img src={client7} className="w-[100px]" alt="client-card" />
-                  <img src={client8} className="w-[100px]" alt="client-card" />
+                <div className="grid w-full grid-cols-3 gap-6 h-1/2 place-content-center place-items-center">
+                  <img
+                    src={smart_shirts}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
+                  <img src={cn_body} className="w-[100px]" alt="client-card" />
+                  <img
+                    src={mas_shadowline}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
                 </div>
               </div>
             </div>
 
             <div className="carousel-item">
               <div className="flex flex-col gap-6">
-                <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                  <img src={client2} className="w-[100px]" alt="client-card" />
-                  <img src={client1} className="w-[100px]" alt="client-card" />
-                  {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
-                  <img src={client4} className="w-[100px]" alt="client-card" />
-                  <img src={client5} className="w-[100px]" alt="client-card" />
+                <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
+                  <img
+                    src={mas_active}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
+
+                  <img
+                    src={linea_clothing}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
+                  <img
+                    src={linea_intimo}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
                 </div>
                 <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
-                  <img src={client6} className="w-[100px]" alt="client-card" />
-                  <img src={client7} className="w-[100px]" alt="client-card" />
-                  <img src={client8} className="w-[100px]" alt="client-card" />
+                  <img
+                    src={cashual_line}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
+                  <img src={unichela} className="w-[100px]" alt="client-card" />
+                  <img
+                    src={fabric_park}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
                 </div>
               </div>
             </div>
@@ -464,7 +487,7 @@ function Landing() {
           </p>
         </div>
         <div className="grid w-full grid-cols-2 gap-6 px-12 max-md:px-6 max-sm:grid-cols-1 max-sm:text-end">
-        <div className="flex items-center gap-3 h-[80px]">
+          <div className="flex items-center gap-3 h-[80px]">
             <img
               src={linea_clothing}
               alt=""
@@ -504,7 +527,7 @@ function Landing() {
               className="w-[100px] h-[60px] object-contain"
             />
             <span className="flex flex-col gap-1 max-sm:w-full">
-              <p>MAS Active Shadowline (Pvt) Ltd., EPZ,</p>
+              <p>MAS Active Shadeline (Pvt) Ltd., EPZ,</p>
               <p className="text-sm text-[#C10000]">Katunayake</p>
             </span>
           </div>
@@ -555,7 +578,7 @@ function Landing() {
         </div>
       </div>
       <span className="flex justify-center">
-      <hr className="w-11/12"/>
+        <hr className="w-11/12" />
       </span>
       {/*ESQUEL*/}
       <div className="flex flex-col items-center gap-6 py-6">
@@ -575,7 +598,7 @@ function Landing() {
           </p>
         </div>
         <div className="grid w-full grid-cols-2 gap-6 px-12 max-md:px-6 max-sm:grid-cols-1 max-sm:text-end">
-        <div className="flex items-center gap-3 h-[80px]">
+          <div className="flex items-center gap-3 h-[80px]">
             <img
               src={heineken}
               alt=""
@@ -625,7 +648,7 @@ function Landing() {
               className="w-[100px] h-[60px] object-contain"
             />
             <span className="flex flex-col gap-1 max-sm:w-full">
-              <p>  Screenline Group of Companies</p>
+              <p> Screenline Group of Companies</p>
             </span>
           </div>
           <div className="flex items-center gap-3 h-[80px]">
@@ -733,6 +756,22 @@ function Landing() {
         <span className="flex justify-end w-full px-12 py-3 underline max-md:px-6">
           <a href="https://www.google.com">View All</a>
         </span>
+      </div>
+      {/*Advertisements*/}
+      <div className="p-12 max-md:p-6">
+        <div className="border ">
+          <div className="flex items-center w-full h-full max-md:flex-col max-md:justify-center">
+            <img
+              src={add_2}
+              alt=""
+              className="object-cover w-1/2 h-full max-md:w-full max-md:h-1/2 max-md:object-contain"
+            />
+            <p className="px-12 text-xl font-medium tracking-widest text-center max-md:px-6 h-fit max-md:py-6 title">
+              Shining a spotlight on exceptional dedication & performance at
+              Brandix Fast Fashion, Awissawella
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
