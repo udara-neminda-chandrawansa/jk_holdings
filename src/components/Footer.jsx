@@ -14,7 +14,7 @@ function Footer() {
     >
       <div className="flex items-center justify-center gap-6 h-1/4 max-md:h-fit">
         <img src={logo} alt="logo" />
-        <p className="optima max-sm:text-justify">
+        <p className="text-justify optima">
           Build everlasting relationships through architectonic constructions &
           innovative, economic & exceptional customer service, and evolve
           continuously along with advanced technology.To be the epitome of

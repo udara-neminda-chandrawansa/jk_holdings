@@ -26,7 +26,7 @@ function Services() {
       {/**heading + text*/}
       <div className="flex flex-col gap-6 p-12 max-md:p-6">
         <h1 className="text-[30px] text-[#C10000] title">Our Services</h1>
-        <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base line-height-abt max-sm:text-justify">
+        <p className="text-justify 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base line-height-abt">
           At JKI Construction, we are dedicated to transforming your visions
           into reality with unparalleled expertise and craftsmanship. Our
           comprehensive range of services ensures every aspect of your

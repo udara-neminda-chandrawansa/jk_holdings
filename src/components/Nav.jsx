@@ -197,14 +197,22 @@ function Nav() {
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/construction">Construction</Link>
+              <Link
+                href="/services/construction"
+                className="hover:text-[#C10000]"
+              >
+                Construction
+              </Link>
             </li>
             <li
               data-coreui-toggle="offcanvas"
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/facility-management">
+              <Link
+                href="/services/facility-management"
+                className="hover:text-[#C10000]"
+              >
                 Facility Management
               </Link>
             </li>
@@ -213,14 +221,19 @@ function Nav() {
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/getaways">Getaways</Link>
+              <Link href="/services/getaways" className="hover:text-[#C10000]">
+                Getaways
+              </Link>
             </li>
             <li
               data-coreui-toggle="offcanvas"
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/architectural-designing">
+              <Link
+                href="/services/architectural-designing"
+                className="hover:text-[#C10000]"
+              >
                 Architectural Designing
               </Link>
             </li>
@@ -229,7 +242,10 @@ function Nav() {
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/interior-designing">
+              <Link
+                href="/services/interior-designing"
+                className="hover:text-[#C10000]"
+              >
                 Interior Designing
               </Link>
             </li>
@@ -238,7 +254,10 @@ function Nav() {
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/masonry-tile-interlock-services">
+              <Link
+                href="/services/masonry-tile-interlock-services"
+                className="hover:text-[#C10000]"
+              >
                 Masonry, Tile & Interlock Services
               </Link>
             </li>
@@ -247,14 +266,22 @@ function Nav() {
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/plumbing-services">Plumbing Services</Link>
+              <Link
+                href="/services/plumbing-services"
+                className="hover:text-[#C10000]"
+              >
+                Plumbing Services
+              </Link>
             </li>
             <li
               data-coreui-toggle="offcanvas"
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/wood-based-services">
+              <Link
+                href="/services/wood-based-services"
+                className="hover:text-[#C10000]"
+              >
                 Wood-based Services
               </Link>
             </li>
@@ -263,7 +290,10 @@ function Nav() {
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/aluminum-fabrication">
+              <Link
+                href="/services/aluminum-fabrication"
+                className="hover:text-[#C10000]"
+              >
                 Aluminum Fabrication
               </Link>
             </li>
@@ -272,7 +302,10 @@ function Nav() {
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/electrical-services">
+              <Link
+                href="/services/electrical-services"
+                className="hover:text-[#C10000]"
+              >
                 Electrical Services
               </Link>
             </li>
@@ -281,7 +314,10 @@ function Nav() {
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/property-management">
+              <Link
+                href="/services/property-management"
+                className="hover:text-[#C10000]"
+              >
                 Property Management
               </Link>
             </li>
@@ -290,14 +326,22 @@ function Nav() {
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/manpower-supply">Manpower Supply</Link>
+              <Link
+                href="/services/manpower-supply"
+                className="hover:text-[#C10000]"
+              >
+                Manpower Supply
+              </Link>
             </li>
             <li
               data-coreui-toggle="offcanvas"
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/janitorial-services">
+              <Link
+                href="/services/janitorial-services"
+                className="hover:text-[#C10000]"
+              >
                 Janitorial Services
               </Link>
             </li>
@@ -306,7 +350,10 @@ function Nav() {
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/landscape-designing">
+              <Link
+                href="/services/landscape-designing"
+                className="hover:text-[#C10000]"
+              >
                 Landscape Designing
               </Link>
             </li>
@@ -315,7 +362,10 @@ function Nav() {
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/garden-maintenance">
+              <Link
+                href="/services/garden-maintenance"
+                className="hover:text-[#C10000]"
+              >
                 Garden Maintenance
               </Link>
             </li>
@@ -324,7 +374,10 @@ function Nav() {
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/residential-construction">
+              <Link
+                href="/services/residential-construction"
+                className="hover:text-[#C10000]"
+              >
                 Residential Construction
               </Link>
             </li>
@@ -333,7 +386,10 @@ function Nav() {
               data-coreui-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              <Link href="/services/commercial-construction">
+              <Link
+                href="/services/commercial-construction"
+                className="hover:text-[#C10000]"
+              >
                 Commercial Construction
               </Link>
             </li>

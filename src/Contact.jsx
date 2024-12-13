@@ -15,7 +15,7 @@ function Contact() {
             <h1 className=" title text-[30px] lg:text-[50px] text-[#C10000] underline font-extralight xl:text-[70px]">
               Contact Us
             </h1>
-            <p className="font-semibold 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base max-sm:text-justify">
+            <p className="font-semibold text-justify 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
               We’re delighted that you’re reaching out to J K I Holdings Pvt
               Ltd.Your inquiries and feedback are important to us.
             </p>

@@ -393,7 +393,7 @@ function SingleService({ serviceType }) {
         }`}
         style={{ backgroundImage: `url(${serviceInfo[2]})` }}
       >
-        <p className=" max-sm:text-justify">{serviceInfo[1]}</p>
+        <p className="text-justify">{serviceInfo[1]}</p>
       </div>
       {/*info*/}
       <div className="flex justify-between gap-3 px-12 py-6 max-md:px-6 max-md:flex-col">
@@ -404,7 +404,7 @@ function SingleService({ serviceType }) {
             className="h-[400px] aspect-[11/12] object-cover max-md:w-full max-md:max-h-[300px]"
           />
         </div>
-        <div className="flex items-center justify-center md:w-2/3 max-sm:text-justify">
+        <div className="flex items-center justify-center text-justify md:w-2/3">
           {serviceInfo[4]}
         </div>
       </div>

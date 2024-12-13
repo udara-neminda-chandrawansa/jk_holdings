@@ -2,6 +2,7 @@ import misson_banner from "./assets/mission_bg.jpg";
 import jcb_banner from "./assets/banner-1.jpg";
 import client_banner from "./assets/clients_bg.png";
 import about_banner from "./assets/about_bg.png";
+
 import client1 from "./assets/clients/brandix.png";
 import client2 from "./assets/clients/mas.png";
 //import client3 from "./assets/clients/kanrich.png";
@@ -10,6 +11,22 @@ import client5 from "./assets/clients/cbl.png";
 import client6 from "./assets/clients/nestle.png";
 import client7 from "./assets/clients/hela.png";
 import client8 from "./assets/clients/esquel.png";
+
+import linea_clothing from "./assets/clients/linea_clothing.png";
+import linea_intimo from "./assets/clients/linea_intimo.png";
+import cashual_line from "./assets/clients/cashual_line.png";
+import cn_body from "./assets/clients/cn_body.png";
+import fabric_park from "./assets/clients/fabric_park.png";
+import heineken from "./assets/clients/heineken.png";
+import mas_active from "./assets/clients/mas_active.png";
+import mas_shadowline from "./assets/clients/mas_shadowline.png";
+import nestle_round from "./assets/clients/nestle_round.png";
+import noyon from "./assets/clients/noyon.png";
+import ruhunu from "./assets/clients/ruhunu.png";
+import screenline from "./assets/clients/screenline.png";
+import smart_shirts from "./assets/clients/smart_shirts.png";
+import unichela from "./assets/clients/unichela.png";
+
 import img1 from "./assets/AboutGrid/img-1.png";
 import img2 from "./assets/AboutGrid/img-2.png";
 import img3 from "./assets/AboutGrid/img-3.png";
@@ -17,10 +34,12 @@ import img4 from "./assets/AboutGrid/img-4.png";
 import img5 from "./assets/AboutGrid/img-5.png";
 import img6 from "./assets/AboutGrid/img-6.png";
 import img7 from "./assets/AboutGrid/img-7.png";
+
 import m_1 from "./assets/milestones/m-1.png";
 import m_2 from "./assets/milestones/m-2.png";
 import m_3 from "./assets/milestones/m-3.png";
 import m_4 from "./assets/milestones/m-4.png";
+
 import { useState, useEffect } from "react";
 
 function About() {
@@ -30,7 +49,7 @@ function About() {
       img: misson_banner,
       content: (
         <div className="z-10 flex flex-col justify-center w-3/4 h-full gap-6 pl-12 text-white max-sm:p-6 max-sm:w-full line-height-abt max-md:pl-6">
-          <div className="flex flex-col gap-6 max-sm:text-justify">
+          <div className="flex flex-col gap-6 text-justify">
             <h1 className="text-[30px] lg:text-[50px] xl:text-[70px] title">
               Our Mission
             </h1>
@@ -57,7 +76,7 @@ function About() {
         <div className="z-10 flex flex-col justify-center h-full gap-6 p-12 text-white max-md:p-6">
           <div className="flex flex-col gap-6">
             <p
-              className={`2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-sm max-sm:text-justify ${
+              className={`2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-sm text-justify ${
                 window.innerWidth <= 640 ? "lh-base" : "lh-lg"
               }`}
             >
@@ -133,7 +152,7 @@ function About() {
       {/*About*/}
       <div className="flex flex-col gap-6 p-12 h-fit max-md:p-6 line-height-abt">
         <div>
-          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base max-sm:text-justify">
+          <p className="text-justify 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
             JKI Holdings is a Pioneer in Construction, Facility Management, and
             Landscaping services in Sri Lanka since 2001. The company commenced
             its journey with 2 employees. By 2014, the company established its
@@ -155,12 +174,12 @@ function About() {
         </div>
         {/*abt banner + txt*/}
         <div
-          className="relative flex bg-center bg-no-repeat bg-contain md:py-6 h-fit min-h-fit max-md:h-fit max-md:flex-col"
+          className="relative flex h-full bg-center bg-no-repeat bg-contain md:py-6 min-h-fit max-md:h-fit max-md:flex-col"
           style={{ backgroundImage: `url(${about_banner})` }}
         >
           {/*banner text*/}
-          <div className="flex items-end justify-end w-full h-full pr-12 overflow-y-scroll lg:items-center max-md:relative max-md:items-start max-md:justify-center max-md:text-center max-lg:pr-0 max-lg:text-end min-h-fit no-scrollbar">
-            <h1 className="z-20 w-1/2 text-black max-md:w-full max-md:text-start max-sm:text-justify">
+          <div className="flex items-end justify-end w-full h-full pr-12 overflow-y-scroll lg:items-center max-lg:relative max-lg:items-start max-lg:justify-center max-lg:text-center max-lg:py-6 max-lg:pb-0 max-lg:pr-0 min-h-fit no-scrollbar">
+            <h1 className="z-20 w-1/2 py-3 text-justify text-black max-md:w-full max-md:text-start">
               <span className="hidden lg:inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
                 “
               </span>
@@ -176,7 +195,7 @@ function About() {
                 Technology Industry as wel. As the Founder, I started this
                 organization, so that we as a “Nation” can grow together and
                 sustain our footprint in the world as a Proud Nation and bring
-                international revenues into the
+                international revenues into the country.
               </span>
               <span className="absolute hidden lg:inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
                 ”
@@ -192,7 +211,7 @@ function About() {
       >
         <div className="flex flex-col gap-6 p-12 max-md:p-6">
           <h1 className="text-[30px] text-[#C10000] title">Our Main Clients</h1>
-          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base line-height-abt max-sm:text-justify">
+          <p className="text-justify 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base line-height-abt">
             At JKI Construction, our clients are at the heart of everything we
             do. We are proud to have partnered with individuals, businesses, and
             organizations across diverse industries to bring their construction
@@ -228,45 +247,94 @@ function About() {
             ></button>
           </div>
           <div className="h-60 max-sm:h-fit carousel-inner">
-            <div className="carousel-item active">
-              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client1} className="w-[100px]" alt="client-card" />
-                {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
-                <img src={client4} className="w-[100px]" alt="client-card" />
-                <img src={client5} className="w-[100px]" alt="client-card" />
-                <img src={client6} className="w-[100px]" alt="client-card" />
-                <img src={client7} className="w-[100px]" alt="client-card" />
-                <img src={client8} className="w-[100px]" alt="client-card" />
-              </div>
-            </div>
-
-            <div className="carousel-item">
-              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client1} className="w-[100px]" alt="client-card" />
-                {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
-                <img src={client4} className="w-[100px]" alt="client-card" />
-                <img src={client5} className="w-[100px]" alt="client-card" />
-                <img src={client6} className="w-[100px]" alt="client-card" />
-                <img src={client7} className="w-[100px]" alt="client-card" />
-                <img src={client8} className="w-[100px]" alt="client-card" />
-              </div>
-            </div>
-
-            <div className="carousel-item">
-              <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                <img src={client2} className="w-[100px]" alt="client-card" />
-                <img src={client1} className="w-[100px]" alt="client-card" />
-                {/*<img src={client3} className="w-[100px]" alt="client-card" />*/}
-                <img src={client4} className="w-[100px]" alt="client-card" />
-                <img src={client5} className="w-[100px]" alt="client-card" />
-                <img src={client6} className="w-[100px]" alt="client-card" />
-                <img src={client7} className="w-[100px]" alt="client-card" />
-                <img src={client8} className="w-[100px]" alt="client-card" />
-              </div>
-            </div>
-          </div>
+                      <div className="carousel-item active">
+                        <div className="flex flex-col gap-6">
+                          <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
+                            <img src={client2} className="w-[100px]" alt="client-card" />
+                            <img src={client1} className="w-[100px]" alt="client-card" />
+                            <img src={client4} className="w-[100px]" alt="client-card" />
+                            <img src={client5} className="w-[100px]" alt="client-card" />
+                          </div>
+                          <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
+                            <img src={client6} className="w-[100px]" alt="client-card" />
+                            <img src={client7} className="w-[100px]" alt="client-card" />
+                            <img src={client8} className="w-[100px]" alt="client-card" />
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div className="carousel-item">
+                        <div className="flex flex-col gap-6">
+                          <div className="grid w-full grid-cols-4 gap-3 h-[100px] place-content-center place-items-center">
+                            <img
+                              src={noyon}
+                              className="w-[100px] h-1/2 object-contain"
+                              alt="client-card"
+                            />
+                            <img
+                              src={heineken}
+                              className="w-[100px] h-1/2 object-contain"
+                              alt="client-card"
+                            />
+                            <img src={ruhunu} className="w-[100px]" alt="client-card" />
+                            <img
+                              src={screenline}
+                              className="w-[100px]"
+                              alt="client-card"
+                            />
+                          </div>
+                          <div className="grid w-full grid-cols-3 gap-6 h-1/2 place-content-center place-items-center">
+                            <img
+                              src={smart_shirts}
+                              className="w-[100px]"
+                              alt="client-card"
+                            />
+                            <img src={cn_body} className="w-[100px]" alt="client-card" />
+                            <img
+                              src={mas_shadowline}
+                              className="w-[100px]"
+                              alt="client-card"
+                            />
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div className="carousel-item">
+                        <div className="flex flex-col gap-6">
+                          <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
+                            <img
+                              src={mas_active}
+                              className="w-[100px]"
+                              alt="client-card"
+                            />
+          
+                            <img
+                              src={linea_clothing}
+                              className="w-[100px]"
+                              alt="client-card"
+                            />
+                            <img
+                              src={linea_intimo}
+                              className="w-[100px]"
+                              alt="client-card"
+                            />
+                          </div>
+                          <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
+                            <img
+                              src={cashual_line}
+                              className="w-[100px]"
+                              alt="client-card"
+                            />
+                            <img src={unichela} className="w-[100px]" alt="client-card" />
+                            <img
+                              src={fabric_park}
+                              className="w-[100px]"
+                              alt="client-card"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
         </div>
       </div>
       {/*Milestones*/}
@@ -381,7 +449,7 @@ function About() {
               For a brighter future
             </h1>
           </span>
-          <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base max-sm:text-justify">
+          <p className="text-justify 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
             At JKI Holdings, we believe in taking responsibility for our
             actions, both as a company and as members of society. We acknowledge
             the impact we have on the environment, the people we work with, and
