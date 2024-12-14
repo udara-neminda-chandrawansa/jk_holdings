@@ -40,6 +40,11 @@ import m_2 from "./assets/milestones/m-2.png";
 import m_3 from "./assets/milestones/m-3.png";
 import m_4 from "./assets/milestones/m-4.png";
 
+import a_1 from "./assets/Awards/award-1.png";
+import a_2 from "./assets/Awards/award-2.png";
+import a_3 from "./assets/Awards/award-3.png";
+import a_4 from "./assets/Awards/award-4.png";
+
 //import add_1 from "./assets/adds/add-1.png";
 import add_2 from "./assets/adds/add-2.png";
 
@@ -577,6 +582,7 @@ function Landing() {
           </div>
         </div>
       </div>
+      {/*hr*/}
       <span className="flex justify-center">
         <hr className="w-11/12" />
       </span>
@@ -674,102 +680,147 @@ function Landing() {
           </div>
         </div>
       </div>
-      {/*Milestones*/}
-      <div className="h-fit">
-        <div className="flex flex-col gap-6 p-12 h-fit max-md:p-6">
-          <h1 className="text-[30px] text-[#C10000] title">Our Milestones</h1>
-          {/*for md*/}
-          <div className="hidden h-full gap-3 text-white md:flex">
-            <div className="flex flex-col flex-grow w-2/6 h-full gap-3">
-              <div className="flex flex-col cursor-pointer">
-                <img src={m_1} alt="" className="h-[500px] object-cover" />
-                <p className="bg-[#000000BD] p-3">
-                  Best Coming Entrepreneur of 2015 in Central Province
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col justify-between flex-grow w-1/6 gap-3">
-              <div className="flex flex-col cursor-pointer h-1/2">
-                <img src={m_2} alt="" className="object-cover h-full" />
-                <p className="bg-[#000000BD] p-3">
-                  Best Performing Entrepreneur of 2016 in Central Province
-                </p>
-              </div>
-              <div className="flex flex-col cursor-pointer h-1/2">
-                <img src={m_3} alt="" className="object-cover h-full" />
-                <p className="bg-[#000000BD] p-3">Star Awards in 2017</p>
-              </div>
-            </div>
-            <div className="flex flex-col flex-grow w-2/6 gap-3">
-              <div className="flex flex-col cursor-pointer">
-                <img
-                  src={m_4}
-                  alt=""
-                  className="h-[500px] object-cover object-center"
-                />
-                <p className="bg-[#000000BD] p-3">
-                  Best Performing Entrepreneur of 2016 in Central Province
-                </p>
-              </div>
-            </div>
+      {/*hr*/}
+      <span className="flex justify-center">
+        <hr className="w-11/12" />
+      </span>
+      {/*Awards*/}
+      <div>
+        {/*text*/}
+        <div className="flex flex-col gap-6 p-12 max-md:p-6">
+          <h1 className="text-[30px] text-[#C10000] title">Our Awards</h1>
+          <p className="text-justify line-height-abt 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
+            Awards & Recognition - JKI Holdings At JKI Holdings, our commitment
+            to excellence, innovation, and quality has earned us prestigious
+            accolades over the years. Each award is a testament to our
+            dedication to delivering exceptional construction solutions and
+            upholding the highest industry standards .From sustainable building
+            practices to pioneering designs and outstanding customer service,
+            our achievements highlight the trust and satisfaction of our clients
+            and stakeholders. These recognitions inspire us to continually raise
+            the bar in the construction industry and solidify our position as a
+            leader in the field. Explore our award-winning journey, where
+            passion meets precision, and excellence is a tradition.
+          </p>
+        </div>
+        {/*awards grid*/}
+        <div className="flex justify-center">
+        <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
+          <div className="relative flex flex-col items-center">
+            <img src={a_1} alt="" className="z-10 object-contain w-full h-5/6"/>
+            <p className="w-full text-center h-1/6 bg-[#C10000] text-white flex items-center justify-center absolute bottom-10 max-md:bottom-8">Star Awards 2015</p>
           </div>
-          {/*for max-md*/}
-          <div className="flex flex-col h-full gap-3 text-white md:hidden">
-            <div className="flex flex-col flex-grow w-full h-full gap-3">
-              <div className="flex flex-col">
-                <img
-                  src={m_1}
-                  alt=""
-                  className="h-fit max-h-[400px] object-contain bg-[#000000BD]"
-                />
-                <p className="bg-[#000000BD] p-3">
-                  Best Coming Entrepreneur of 2015 in Central Province
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col justify-between flex-grow w-full gap-3">
-              <div className="flex flex-col h-1/2">
-                <img src={m_2} alt="" className="object-contain h-full" />
-                <p className="bg-[#000000BD] p-3">
-                  Best Performing Entrepreneur of 2016 in Central Province
-                </p>
-              </div>
-              <div className="flex flex-col h-1/2">
-                <img src={m_3} alt="" className="object-contain h-full" />
-                <p className="bg-[#000000BD] p-3">Star Awards in 2017</p>
-              </div>
-            </div>
-            <div className="flex flex-col flex-grow w-full gap-3">
-              <div className="flex flex-col">
-                <img
-                  src={m_4}
-                  alt=""
-                  className="h-fit max-h-[400px] object-contain object-center bg-[#000000BD]"
-                />
-                <p className="bg-[#000000BD] p-3">
-                  Best Performing Entrepreneur of 2016 in Central Province
-                </p>
-              </div>
-            </div>
+          <div className="relative flex flex-col items-center">
+            <img src={a_2} alt="" className="z-10 object-contain w-full h-5/6"/>
+            <p className="w-full text-center h-1/6 bg-[#C10000] text-white flex items-center justify-center absolute bottom-10 max-md:bottom-8">Star Awards 2016</p>
+          </div>
+          <div className="relative flex flex-col items-center">
+            <img src={a_3} alt="" className="z-10 object-contain w-full h-5/6"/>
+            <p className="w-full text-center h-1/6 bg-[#C10000] text-white flex items-center justify-center absolute bottom-10 max-md:bottom-8">Star Awards 2017</p>
+          </div>
+          <div className="relative flex flex-col items-center">
+            <img src={a_4} alt="" className="z-10 object-contain w-full h-5/6"/>
+            <p className="w-full text-center h-1/6 bg-[#C10000] text-white flex items-center justify-center absolute bottom-10 max-md:bottom-8">Star Awards 2018</p>
           </div>
         </div>
-        <span className="flex justify-end w-full px-12 py-3 underline max-md:px-6">
-          <a href="https://www.google.com">View All</a>
-        </span>
-      </div>
-      {/*Advertisements*/}
-      <div className="p-12 max-md:p-6">
-        <div className="border ">
-          <div className="flex items-center w-full h-full max-md:flex-col max-md:justify-center">
-            <img
-              src={add_2}
-              alt=""
-              className="object-cover w-1/2 h-full max-md:w-full max-md:h-1/2 max-md:object-contain"
-            />
-            <p className="px-12 text-xl font-medium tracking-widest text-center max-md:px-6 h-fit max-md:py-6 title">
-              Shining a spotlight on exceptional dedication & performance at
-              Brandix Fast Fashion, Awissawella
-            </p>
+        </div>
+        {/*Milestones*/}
+        <div className="h-fit">
+          <div className="flex flex-col gap-6 p-12 h-fit max-md:p-6">
+            <h1 className="text-[30px] text-[#C10000] title">Our Milestones</h1>
+            {/*for md*/}
+            <div className="hidden h-full gap-3 text-white md:flex">
+              <div className="flex flex-col flex-grow w-2/6 h-full gap-3">
+                <div className="flex flex-col cursor-pointer">
+                  <img src={m_1} alt="" className="h-[500px] object-cover" />
+                  <p className="bg-[#000000BD] p-3">
+                    Best Coming Entrepreneur of 2015 in Central Province
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col justify-between flex-grow w-1/6 gap-3">
+                <div className="flex flex-col cursor-pointer h-1/2">
+                  <img src={m_2} alt="" className="object-cover h-full" />
+                  <p className="bg-[#000000BD] p-3">
+                    Best Performing Entrepreneur of 2016 in Central Province
+                  </p>
+                </div>
+                <div className="flex flex-col cursor-pointer h-1/2">
+                  <img src={m_3} alt="" className="object-cover h-full" />
+                  <p className="bg-[#000000BD] p-3">Star Awards in 2017</p>
+                </div>
+              </div>
+              <div className="flex flex-col flex-grow w-2/6 gap-3">
+                <div className="flex flex-col cursor-pointer">
+                  <img
+                    src={m_4}
+                    alt=""
+                    className="h-[500px] object-cover object-center"
+                  />
+                  <p className="bg-[#000000BD] p-3">
+                    Best Performing Entrepreneur of 2016 in Central Province
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/*for max-md*/}
+            <div className="flex flex-col h-full gap-3 text-white md:hidden">
+              <div className="flex flex-col flex-grow w-full h-full gap-3">
+                <div className="flex flex-col">
+                  <img
+                    src={m_1}
+                    alt=""
+                    className="h-fit max-h-[400px] object-contain bg-[#000000BD]"
+                  />
+                  <p className="bg-[#000000BD] p-3">
+                    Best Coming Entrepreneur of 2015 in Central Province
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col justify-between flex-grow w-full gap-3">
+                <div className="flex flex-col h-1/2">
+                  <img src={m_2} alt="" className="object-contain h-full" />
+                  <p className="bg-[#000000BD] p-3">
+                    Best Performing Entrepreneur of 2016 in Central Province
+                  </p>
+                </div>
+                <div className="flex flex-col h-1/2">
+                  <img src={m_3} alt="" className="object-contain h-full" />
+                  <p className="bg-[#000000BD] p-3">Star Awards in 2017</p>
+                </div>
+              </div>
+              <div className="flex flex-col flex-grow w-full gap-3">
+                <div className="flex flex-col">
+                  <img
+                    src={m_4}
+                    alt=""
+                    className="h-fit max-h-[400px] object-contain object-center bg-[#000000BD]"
+                  />
+                  <p className="bg-[#000000BD] p-3">
+                    Best Performing Entrepreneur of 2016 in Central Province
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span className="flex justify-end w-full px-12 py-3 underline max-md:px-6">
+            <a href="https://www.google.com">View All</a>
+          </span>
+        </div>
+        {/*Advertisements*/}
+        <div className="p-12 max-md:p-6">
+          <div className="border ">
+            <div className="flex items-center w-full h-full max-md:flex-col max-md:justify-center">
+              <img
+                src={add_2}
+                alt=""
+                className="object-cover w-1/2 h-full max-md:w-full max-md:h-1/2 max-md:object-contain"
+              />
+              <p className="px-12 text-xl font-medium tracking-widest text-center max-md:px-6 h-fit max-md:py-6 title">
+                Shining a spotlight on exceptional dedication & performance at
+                Brandix Fast Fashion, Awissawella
+              </p>
+            </div>
           </div>
         </div>
       </div>
