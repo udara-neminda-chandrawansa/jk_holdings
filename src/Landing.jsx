@@ -713,7 +713,7 @@ function Landing() {
         </div>
         {/*awards grid*/}
         <div className="flex justify-center">
-          <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
+          <div className="flex flex-wrap justify-center gap-4 px-12 max-md:px-6">
             <div className="relative flex flex-col items-center">
               <img
                 src={a_1}
