@@ -31,6 +31,38 @@ import linea_proj_3 from "./assets/Projects/new/linea-proj-3.png";
 import linea_proj_4 from "./assets/Projects/new/linea-proj-4.png";
 import linea_proj_5 from "./assets/Projects/new/linea-proj-5.png";
 
+import pallekele_1 from "./assets/Projects/new/pallekele-1.png";
+import pallekele_2 from "./assets/Projects/new/pallekele-2.png";
+import pallekele_3 from "./assets/Projects/new/pallekele-3.png";
+import pallekele_4 from "./assets/Projects/new/pallekele-4.png";
+import pallekele_5 from "./assets/Projects/new/pallekele-5.png";
+import pallekele_6 from "./assets/Projects/new/pallekele-6.png";
+import pallekele_7 from "./assets/Projects/new/pallekele-7.png";
+import pallekele_8 from "./assets/Projects/new/pallekele-8.png";
+import pallekele_9 from "./assets/Projects/new/pallekele-9.png";
+
+import nirmana_1 from "./assets/Projects/new/nirmana-1.png";
+import nirmana_2 from "./assets/Projects/new/nirmana-2.png";
+import nirmana_3 from "./assets/Projects/new/nirmana-3.png";
+import nirmana_4 from "./assets/Projects/new/nirmana-4.png";
+import nirmana_5 from "./assets/Projects/new/nirmana-5.png";
+import nirmana_6 from "./assets/Projects/new/nirmana-6.png";
+import nirmana_7 from "./assets/Projects/new/nirmana-7.png";
+import nirmana_8 from "./assets/Projects/new/nirmana-8.png";
+import nirmana_9 from "./assets/Projects/new/nirmana-9.png";
+
+import nobles_1 from "./assets/Projects/new/nobles-1.png";
+import nobles_2 from "./assets/Projects/new/nobles-2.png";
+import nobles_3 from "./assets/Projects/new/nobles-3.png";
+import nobles_4 from "./assets/Projects/new/nobles-4.png";
+import nobles_5 from "./assets/Projects/new/nobles-5.png";
+import nobles_6 from "./assets/Projects/new/nobles-6.png";
+import nobles_7 from "./assets/Projects/new/nobles-7.png";
+
+import tj_1 from "./assets/Projects/new/tj-1.png";
+import tj_2 from "./assets/Projects/new/tj-2.png";
+import tj_3 from "./assets/Projects/new/tj-3.png";
+
 const coconuts = [
   coconut_1,
   coconut_2,
@@ -45,13 +77,9 @@ const coconuts = [
 
 const gamaduwaGrid = [gamaduwa_1, gamaduwa_2];
 
-const athenaGrid = [
-  athena_1,
-  athena_2,
-  athena_3,
-  athena_4,
-  athena_5,
-  athena_6,
+const athenaGrid = [athena_1, athena_2, athena_3, athena_4, athena_5, athena_6];
+
+const athenaLargeGrid = [
   athena_7,
   athena_8,
   athena_9,
@@ -68,6 +96,43 @@ const lineaProjGrid = [
   linea_proj_5,
 ];
 
+const pallekeleGrid = [
+  pallekele_1,
+  pallekele_2,
+  pallekele_3,
+  pallekele_4,
+  pallekele_5,
+  pallekele_6,
+];
+
+const pallekeleLargeGrid = [pallekele_7, pallekele_8, pallekele_9];
+
+const nirmanaGrid = [
+  nirmana_1,
+  nirmana_2,
+  nirmana_3,
+  nirmana_4,
+  nirmana_5,
+  nirmana_6,
+];
+const nirmanaLargeGrid = [nirmana_7, nirmana_8, nirmana_9];
+
+const noblesGrid = [
+    nobles_1,
+    nobles_2,
+    nobles_3,
+    nobles_4,
+    nobles_5,
+    nobles_6,
+    nobles_7,
+  ];
+
+  const tjGrid = [
+    tj_1,
+    tj_2,
+    tj_3,
+  ];
+    
 const allImages = [
   gamaduwa_1,
   gamaduwa_2,
@@ -88,6 +153,34 @@ const allImages = [
   linea_proj_3,
   linea_proj_4,
   linea_proj_5,
+  pallekele_1,
+  pallekele_2,
+  pallekele_3,
+  pallekele_4,
+  pallekele_5,
+  pallekele_6,
+  pallekele_7,
+  pallekele_8,
+  pallekele_9,
+  nirmana_1,
+  nirmana_2,
+  nirmana_3,
+  nirmana_4,
+  nirmana_5,
+  nirmana_6,
+  nirmana_7,
+  nirmana_8,
+  nirmana_9,
+  nobles_1,
+  nobles_2,
+  nobles_3,
+  nobles_4,
+  nobles_5,
+  nobles_6,
+  nobles_7,
+  tj_1,
+  tj_2,
+  tj_3,
 ];
 
 function ProjectsSlideshow({ images, currentIndex, onClose }) {
@@ -134,17 +227,31 @@ function ProjectsSlideshow({ images, currentIndex, onClose }) {
 
 function ProjectsNew() {
   const [paraVisibility, setParaVisibility] = useState(true);
-  const [athenaLargeGrid, setAthenaLargeGrid] = useState(false);
   const [showSlideshow, setShowSlideshow] = useState(false);
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
   const [gamaduwaGridVisible, setGamaduwaGridVisible] = useState(true);
   const [athenaGridVisible, setAthenaGridVisible] = useState(true);
-  const [lineaProjGridVisible, setlineaProjGridVisible] = useState(true);
+  const [lineaProjGridVisible, setLineaProjGridVisible] = useState(true);
+  const [pallekeleGridVisible, setPallekeleGridVisible] = useState(true);
+  const [nirmanaGridVisible, setNirmanaGridVisible] = useState(true);
+  const [noblesGridVisible, setNoblesGridVisible] = useState(true);
+  const [tjGridVisible, setTjGridVisible] = useState(true);
+
+  const [athenaLargeGridVisible, setAthenaLargeGridVisible] = useState(false);
+  const [pallekeleLargeGridVisible, setPallekeleLargeGridVisible] =
+    useState(false);
+  const [nirmanaLargeGridVisible, setNirmanaLargeGridVisible] = useState(false);
 
   const toggleAllGrids = () => {
     setGamaduwaGridVisible(!gamaduwaGridVisible);
     setAthenaGridVisible(!athenaGridVisible);
-    setlineaProjGridVisible(!lineaProjGridVisible);
+    setLineaProjGridVisible(!lineaProjGridVisible);
+    setPallekeleGridVisible(!pallekeleGridVisible);
+    setNirmanaGridVisible(!nirmanaGridVisible);
+    setNoblesGridVisible(!noblesGridVisible);
+    setTjGridVisible(!tjGridVisible);
   };
 
   const handleViewAll = (gridName) => {
@@ -154,7 +261,17 @@ function ProjectsNew() {
       case "Athena":
         //code
         setAthenaGridVisible(true);
-        setAthenaLargeGrid(!athenaLargeGrid);
+        setAthenaLargeGridVisible(!athenaLargeGridVisible);
+        break;
+      case "Pallekele":
+        //code
+        setPallekeleGridVisible(true);
+        setPallekeleLargeGridVisible(!pallekeleLargeGridVisible);
+        break;
+      case "Nirmana":
+        //code
+        setNirmanaGridVisible(true);
+        setNirmanaLargeGridVisible(!nirmanaLargeGridVisible);
         break;
       default:
         break;
@@ -233,15 +350,15 @@ function ProjectsNew() {
                 />
               </div>
             ))}
-            {athenaLargeGrid ? (
+            {athenaLargeGridVisible ? (
               <>
-                {athenaGrid.map((image, index) => (
+                {athenaLargeGrid.map((image, index) => (
                   <div key={index}>
                     <img
                       src={image}
                       alt={`athena-${index + 1}`}
                       className="cursor-pointer max-sm:w-full"
-                      onClick={() => handleImageClick(index + 2)}
+                      onClick={() => handleImageClick(index + 8)}
                     />
                   </div>
                 ))}
@@ -254,12 +371,19 @@ function ProjectsNew() {
       ) : (
         ""
       )}
-      {/* View All / Go Back Button for athena */}
-      <div className="flex justify-center px-12 py-6 underline max-md:px-6">
-        <button onClick={() => handleViewAll("Athena")}>
-          {paraVisibility ? "View All" : "Go Back"}
-        </button>
-      </div>
+
+      {athenaGridVisible ? (
+        <>
+          {/* View All / Go Back Button for athena */}
+          <div className="flex justify-center px-12 py-6 underline max-md:px-6">
+            <button onClick={() => handleViewAll("Athena")}>
+              {paraVisibility ? "View All" : "Go Back"}
+            </button>
+          </div>
+        </>
+      ) : (
+        ""
+      )}
 
       {lineaProjGridVisible ? (
         <>
@@ -276,6 +400,160 @@ function ProjectsNew() {
                   alt={`linea-proj-${index + 1}`}
                   className="cursor-pointer max-sm:w-full"
                   onClick={() => handleImageClick(index + 14)}
+                />
+              </div>
+            ))}
+          </div>
+        </>
+      ) : (
+        ""
+      )}
+
+      {pallekeleGridVisible ? (
+        <>
+          {/* pallekele header */}
+          <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
+            <h1>Mas Linea Clothing - Pallekele</h1>
+          </div>
+          {/* pallekele Photo Grid */}
+          <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
+            {pallekeleGrid.map((image, index) => (
+              <div key={index}>
+                <img
+                  src={image}
+                  alt={`pallekele-${index + 1}`}
+                  className="cursor-pointer max-sm:w-full"
+                  onClick={() => handleImageClick(index + 19)}
+                />
+              </div>
+            ))}
+            {pallekeleLargeGridVisible ? (
+              <>
+                {pallekeleLargeGrid.map((image, index) => (
+                  <div key={index}>
+                    <img
+                      src={image}
+                      alt={`pallekele-${index + 1}`}
+                      className="cursor-pointer max-sm:w-full"
+                      onClick={() => handleImageClick(index + 25)}
+                    />
+                  </div>
+                ))}
+              </>
+            ) : (
+              ""
+            )}
+          </div>
+        </>
+      ) : (
+        ""
+      )}
+
+      {pallekeleGridVisible ? (
+        <>
+          {/* View All / Go Back Button for pallekele */}
+          <div className="flex justify-center px-12 py-6 underline max-md:px-6">
+            <button onClick={() => handleViewAll("Pallekele")}>
+              {paraVisibility ? "View All" : "Go Back"}
+            </button>
+          </div>
+        </>
+      ) : (
+        ""
+      )}
+
+      {nirmanaGridVisible ? (
+        <>
+          {/* nirmana header */}
+          <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
+            <h1>Mas Nirmana Landscaping</h1>
+          </div>
+          {/* nirmana Photo Grid */}
+          <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
+            {nirmanaGrid.map((image, index) => (
+              <div key={index}>
+                <img
+                  src={image}
+                  alt={`nirmana-${index + 1}`}
+                  className="cursor-pointer max-sm:w-full"
+                  onClick={() => handleImageClick(index + 28)}
+                />
+              </div>
+            ))}
+            {nirmanaLargeGridVisible ? (
+              <>
+                {nirmanaLargeGrid.map((image, index) => (
+                  <div key={index}>
+                    <img
+                      src={image}
+                      alt={`nirmana-${index + 1}`}
+                      className="cursor-pointer max-sm:w-full"
+                      onClick={() => handleImageClick(index + 34)}
+                    />
+                  </div>
+                ))}
+              </>
+            ) : (
+              ""
+            )}
+          </div>
+        </>
+      ) : (
+        ""
+      )}
+
+      {nirmanaGridVisible ? (
+        <>
+          {/* View All / Go Back Button for nirmana */}
+          <div className="flex justify-center px-12 py-6 underline max-md:px-6">
+            <button onClick={() => handleViewAll("Nirmana")}>
+              {paraVisibility ? "View All" : "Go Back"}
+            </button>
+          </div>
+        </>
+      ) : (
+        ""
+      )}
+
+      {noblesGridVisible ? (
+        <>
+          {/* Nobles header */}
+          <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
+            <h1>Nobles Manufacturing (Pvt)Ltd</h1>
+          </div>
+          {/* Nobles Photo Grid */}
+          <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
+            {noblesGrid.map((image, index) => (
+              <div key={index}>
+                <img
+                  src={image}
+                  alt={`nobles-${index + 1}`}
+                  className="cursor-pointer max-sm:w-full"
+                  onClick={() => handleImageClick(index + 37)}
+                />
+              </div>
+            ))}
+          </div>
+        </>
+      ) : (
+        ""
+      )}
+
+      {tjGridVisible ? (
+        <>
+          {/* TJ header */}
+          <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
+            <h1>TJ Awissawella</h1>
+          </div>
+          {/* TJ Photo Grid */}
+          <div className="grid grid-cols-3 gap-4 px-12 pb-6 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
+            {tjGrid.map((image, index) => (
+              <div key={index}>
+                <img
+                  src={image}
+                  alt={`tj-${index + 1}`}
+                  className="cursor-pointer max-sm:w-full"
+                  onClick={() => handleImageClick(index + 44)}
                 />
               </div>
             ))}
