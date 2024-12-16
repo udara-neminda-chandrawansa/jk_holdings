@@ -1,15 +1,27 @@
 import { useState } from "react";
-import coconut_1 from "./assets/csr/csr-coconut-1.png";
-import coconut_2 from "./assets/csr/csr-coconut-2.png";
-import coconut_3 from "./assets/csr/csr-coconut-3.png";
-import coconut_4 from "./assets/csr/csr-coconut-4.png";
-import coconut_5 from "./assets/csr/csr-coconut-5.png";
-import coconut_6 from "./assets/csr/csr-coconut-6.png";
-import coconut_7 from "./assets/csr/csr-coconut-7.png";
-import coconut_8 from "./assets/csr/csr-coconut-8.png";
-import coconut_9 from "./assets/csr/csr-coconut-9.png";
+import coconut_1 from "./assets/csr/coconut-1.webp";
+import coconut_2 from "./assets/csr/coconut-2.webp";
+import coconut_3 from "./assets/csr/coconut-3.webp";
+import coconut_4 from "./assets/csr/coconut-4.webp";
+import coconut_5 from "./assets/csr/coconut-5.webp";
+import coconut_6 from "./assets/csr/coconut-6.webp";
+import coconut_7 from "./assets/csr/coconut-7.webp";
+import coconut_8 from "./assets/csr/coconut-8.webp";
+import coconut_9 from "./assets/csr/coconut-9.webp";
+import coconut_10 from "./assets/csr/coconut-10.webp";
+import coconut_11 from "./assets/csr/coconut-11.webp";
+import coconut_12 from "./assets/csr/coconut-12.webp";
+import coconut_13 from "./assets/csr/coconut-13.webp";
+import coconut_14 from "./assets/csr/coconut-14.webp";
+import coconut_15 from "./assets/csr/coconut-15.webp";
+import coconut_16 from "./assets/csr/coconut-16.webp";
+import coconut_17 from "./assets/csr/coconut-17.webp";
+import coconut_18 from "./assets/csr/coconut-18.webp";
+import coconut_19 from "./assets/csr/coconut-19.webp";
+import coconut_20 from "./assets/csr/coconut-20.webp";
+import coconut_21 from "./assets/csr/coconut-21.webp";
 
-const CSRSmallImagesGrid = [
+const CSRSmallGrid = [
   coconut_1,
   coconut_2,
   coconut_3,
@@ -19,6 +31,45 @@ const CSRSmallImagesGrid = [
   coconut_7,
   coconut_8,
   coconut_9,
+];
+
+const CSRLargeGrid = [
+  coconut_10,
+  coconut_11,
+  coconut_12,
+  coconut_13,
+  coconut_14,
+  coconut_15,
+  coconut_16,
+  coconut_17,
+  coconut_18,
+  coconut_19,
+  coconut_20,
+  coconut_21,
+];
+
+const CSRAllGrid = [
+  coconut_1,
+  coconut_2,
+  coconut_3,
+  coconut_4,
+  coconut_5,
+  coconut_6,
+  coconut_7,
+  coconut_8,
+  coconut_9,
+  coconut_10,
+  coconut_11,
+  coconut_12,
+  coconut_13,
+  coconut_14,
+  coconut_15,
+  coconut_16,
+  coconut_17,
+  coconut_18,
+  coconut_19,
+  coconut_20,
+  coconut_21,
 ];
 
 function CSRSlideshow({ images, currentIndex, onClose }) {
@@ -103,7 +154,7 @@ function CSRNew() {
       </div>
       {/* Photo Grid */}
       <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
-        {CSRSmallImagesGrid.map((image, index) => (
+        {CSRSmallGrid.map((image, index) => (
           <div key={index}>
             <img
               src={image}
@@ -114,13 +165,13 @@ function CSRNew() {
           </div>
         ))}
         {largeGrid &&
-          CSRSmallImagesGrid.map((image, index) => (
-            <div key={index + CSRSmallImagesGrid.length}>
+          CSRLargeGrid.map((image, index) => (
+            <div key={index + CSRSmallGrid.length}>
               <img
                 src={image}
                 alt={`csr-coconut-${index + 1}`}
                 className="cursor-pointer max-sm:w-full"
-                onClick={() => handleImageClick(index)}
+                onClick={() => handleImageClick(index + CSRSmallGrid.length)}
               />
             </div>
           ))}
@@ -134,7 +185,7 @@ function CSRNew() {
       {/* Slideshow */}
       {showSlideshow && (
         <CSRSlideshow
-          images={CSRSmallImagesGrid}
+          images={CSRAllGrid}
           currentIndex={currentImageIndex}
           onClose={() => setShowSlideshow(false)}
         />

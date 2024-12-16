@@ -1,13 +1,4 @@
 import { useState } from "react";
-import coconut_1 from "./assets/csr/csr-coconut-1.png";
-import coconut_2 from "./assets/csr/csr-coconut-2.png";
-import coconut_3 from "./assets/csr/csr-coconut-3.png";
-import coconut_4 from "./assets/csr/csr-coconut-4.png";
-import coconut_5 from "./assets/csr/csr-coconut-5.png";
-import coconut_6 from "./assets/csr/csr-coconut-6.png";
-import coconut_7 from "./assets/csr/csr-coconut-7.png";
-import coconut_8 from "./assets/csr/csr-coconut-8.png";
-import coconut_9 from "./assets/csr/csr-coconut-9.png";
 
 import gamaduwa_1 from "./assets/Projects/new/gamaduwa-1.png";
 import gamaduwa_2 from "./assets/Projects/new/gamaduwa-2.png";
@@ -62,18 +53,6 @@ import nobles_7 from "./assets/Projects/new/nobles-7.png";
 import tj_1 from "./assets/Projects/new/tj-1.png";
 import tj_2 from "./assets/Projects/new/tj-2.png";
 import tj_3 from "./assets/Projects/new/tj-3.png";
-
-const coconuts = [
-  coconut_1,
-  coconut_2,
-  coconut_3,
-  coconut_4,
-  coconut_5,
-  coconut_6,
-  coconut_7,
-  coconut_8,
-  coconut_9,
-];
 
 const gamaduwaGrid = [gamaduwa_1, gamaduwa_2];
 
