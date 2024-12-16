@@ -5,10 +5,11 @@ import Footer from "./components/Footer";
 import Contact from "./Contact";
 import About from "./About";
 import Services from "./Services";
-import Projects from "./Projects";
+//import Projects from "./Projects";
 //import CSR from "./CSR";
 import SingleService from "./SingleService";
 import CSRNew from "./CSRNew";
+import ProjectsNew from "./ProjectsNew";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <Route path="/contact" component={Contact} />
       <Route path="/aboutus" component={About} />
       <Route path="/services" component={Services} />
-      <Route path="/projects" component={Projects} />
+      <Route path="/projects" component={ProjectsNew} />
       <Route path="/csr" component={CSRNew} />
       <Route path="/services/:name">
         {(params) => <SingleService serviceType={params.name} />}

@@ -9,7 +9,7 @@ import coconut_7 from "./assets/csr/csr-coconut-7.png";
 import coconut_8 from "./assets/csr/csr-coconut-8.png";
 import coconut_9 from "./assets/csr/csr-coconut-9.png";
 
-const smallImagesGrid = [
+const CSRSmallImagesGrid = [
   coconut_1,
   coconut_2,
   coconut_3,
@@ -21,7 +21,7 @@ const smallImagesGrid = [
   coconut_9,
 ];
 
-function Slideshow({ images, currentIndex, onClose }) {
+function CSRSlideshow({ images, currentIndex, onClose }) {
   const [current, setCurrent] = useState(currentIndex);
 
   const handleNext = () => {
@@ -103,7 +103,7 @@ function CSRNew() {
       </div>
       {/* Photo Grid */}
       <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
-        {smallImagesGrid.map((image, index) => (
+        {CSRSmallImagesGrid.map((image, index) => (
           <div key={index}>
             <img
               src={image}
@@ -114,8 +114,8 @@ function CSRNew() {
           </div>
         ))}
         {largeGrid &&
-          smallImagesGrid.map((image, index) => (
-            <div key={index + smallImagesGrid.length}>
+          CSRSmallImagesGrid.map((image, index) => (
+            <div key={index + CSRSmallImagesGrid.length}>
               <img
                 src={image}
                 alt={`csr-coconut-${index + 1}`}
@@ -133,8 +133,8 @@ function CSRNew() {
       </div>
       {/* Slideshow */}
       {showSlideshow && (
-        <Slideshow
-          images={smallImagesGrid}
+        <CSRSlideshow
+          images={CSRSmallImagesGrid}
           currentIndex={currentImageIndex}
           onClose={() => setShowSlideshow(false)}
         />
