@@ -81,21 +81,21 @@ function Footer() {
       <div className="flex items-center h-1/4">
         <ul className="flex justify-start w-full gap-6 max-sm:justify-center max-sm:gap-3">
           <li className="flex items-center gap-6 transition-all hover:scale-90">
-            <a href="https://www.facebook.com/">
+            <a href="https://www.facebook.com/jkiholdingspvtltd">
               <img src={fb} alt="fb-icon" />
             </a>
           </li>
-          <li className="flex items-center gap-6 transition-all hover:scale-90">
+          <li className="items-center hidden gap-6 transition-all hover:scale-90">
             <a href="https://www.tiktok.com/">
               <img src={tk} alt="tk-icon" />
             </a>
           </li>
           <li className="flex items-center gap-6 transition-all hover:scale-90">
-            <a href="https://www.whatsapp.com/">
+            <a href="https://wa.me/94773606487">
               <img src={wa} alt="fb-icon" />
             </a>
           </li>
-          <li className="flex items-center gap-6 transition-all hover:scale-90">
+          <li className="items-center hidden gap-6 transition-all hover:scale-90">
             <a href="https://www.instagram.com/">
               <img src={ins} alt="tk-icon" />
             </a>
