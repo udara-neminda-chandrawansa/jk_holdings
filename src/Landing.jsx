@@ -53,12 +53,22 @@ import img5 from "./assets/AboutGrid/img-5.png";
 import img6 from "./assets/AboutGrid/img-6.png";
 import img7 from "./assets/AboutGrid/img-7.png";
 
+import coconut_1 from "./assets/csr/coconut-1.jpg";
+import coconut_2 from "./assets/csr/coconut-2.jpg";
+import coconut_3 from "./assets/csr/coconut-3.jpg";
+import coconut_4 from "./assets/csr/coconut-4.jpg";
+import coconut_5 from "./assets/csr/coconut-5.jpg";
+import coconut_6 from "./assets/csr/coconut-6.jpg";
+import coconut_7 from "./assets/csr/coconut-7.jpg";
+
 //import add_1 from "./assets/adds/add-1.png";
 import add_2 from "./assets/adds/add-2.png";
 
 import { useState, useEffect } from "react";
 import LSCarousel from "./components/LandingServiceCar";
 import ServiceCard from "./components/ServiceCard";
+
+import { Link } from "wouter";
 
 function Landing() {
   const banners = [
@@ -836,7 +846,7 @@ function Landing() {
             </div>
           </div>
           <span className="flex justify-end w-full px-12 py-3 underline max-md:px-6">
-            <a href="https://www.google.com">View All</a>
+            <Link href={"/aboutus"}>View All</Link>
           </span>
         </div>
         {/*Milestones - 2*/}
@@ -926,7 +936,7 @@ function Landing() {
                 <div className="flex flex-col flex-grow w-2/4 h-full">
                   <div className="flex flex-col cursor-pointer">
                     <img
-                      src={img1}
+                      src={coconut_1}
                       alt="milestone-grid-card"
                       className="h-[300px] object-cover"
                     />
@@ -934,14 +944,14 @@ function Landing() {
                 </div>
                 <div className="flex flex-col w-1/4 h-full cursor-pointer">
                   <img
-                    src={img2}
+                    src={coconut_2}
                     alt="milestone-grid-card"
                     className="object-cover h-[300px]"
                   />
                 </div>
                 <div className="flex flex-col w-1/4 h-full cursor-pointer">
                   <img
-                    src={img3}
+                    src={coconut_3}
                     alt="milestone-grid-card"
                     className="object-cover h-[300px]"
                   />
@@ -952,7 +962,7 @@ function Landing() {
                 <div className="flex flex-col flex-grow w-3/5 h-full">
                   <div className="flex flex-col h-full cursor-pointer">
                     <img
-                      src={img4}
+                      src={coconut_4}
                       alt=""
                       className="object-cover object-top h-full"
                     />
@@ -960,19 +970,19 @@ function Landing() {
                 </div>
                 <div className="flex flex-col w-1/5 h-full gap-3 cursor-pointer">
                   <img
-                    src={img5}
+                    src={coconut_5}
                     alt="milestone-grid-card"
                     className="object-cover h-1/2"
                   />
                   <img
-                    src={img6}
+                    src={coconut_6}
                     alt="milestone-grid-card"
                     className="object-cover h-1/2"
                   />
                 </div>
                 <div className="flex flex-col w-1/5 h-full cursor-pointer">
                   <img
-                    src={img7}
+                    src={coconut_7}
                     alt="milestone-grid-card"
                     className="object-cover h-[400px]"
                   />

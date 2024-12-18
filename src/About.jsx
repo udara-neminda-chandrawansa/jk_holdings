@@ -35,6 +35,14 @@ import img5 from "./assets/AboutGrid/img-5.png";
 import img6 from "./assets/AboutGrid/img-6.png";
 import img7 from "./assets/AboutGrid/img-7.png";
 
+import coconut_1 from "./assets/csr/coconut-1.jpg";
+import coconut_2 from "./assets/csr/coconut-2.jpg";
+import coconut_3 from "./assets/csr/coconut-3.jpg";
+import coconut_4 from "./assets/csr/coconut-4.jpg";
+import coconut_5 from "./assets/csr/coconut-5.jpg";
+import coconut_6 from "./assets/csr/coconut-6.jpg";
+import coconut_7 from "./assets/csr/coconut-7.jpg";
+
 import m_1 from "./assets/milestones/m-1.png";
 import m_2 from "./assets/milestones/m-2.png";
 import m_3 from "./assets/milestones/m-3.png";
@@ -247,94 +255,94 @@ function About() {
             ></button>
           </div>
           <div className="h-60 max-sm:h-fit carousel-inner">
-                      <div className="carousel-item active">
-                        <div className="flex flex-col gap-6">
-                          <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
-                            <img src={client2} className="w-[100px]" alt="client-card" />
-                            <img src={client1} className="w-[100px]" alt="client-card" />
-                            <img src={client4} className="w-[100px]" alt="client-card" />
-                            <img src={client5} className="w-[100px]" alt="client-card" />
-                          </div>
-                          <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
-                            <img src={client6} className="w-[100px]" alt="client-card" />
-                            <img src={client7} className="w-[100px]" alt="client-card" />
-                            <img src={client8} className="w-[100px]" alt="client-card" />
-                          </div>
-                        </div>
-                      </div>
-          
-                      <div className="carousel-item">
-                        <div className="flex flex-col gap-6">
-                          <div className="grid w-full grid-cols-4 gap-3 h-[100px] place-content-center place-items-center">
-                            <img
-                              src={noyon}
-                              className="w-[100px] h-1/2 object-contain"
-                              alt="client-card"
-                            />
-                            <img
-                              src={heineken}
-                              className="w-[100px] h-1/2 object-contain"
-                              alt="client-card"
-                            />
-                            <img src={ruhunu} className="w-[100px]" alt="client-card" />
-                            <img
-                              src={screenline}
-                              className="w-[100px]"
-                              alt="client-card"
-                            />
-                          </div>
-                          <div className="grid w-full grid-cols-3 gap-6 h-1/2 place-content-center place-items-center">
-                            <img
-                              src={smart_shirts}
-                              className="w-[100px]"
-                              alt="client-card"
-                            />
-                            <img src={cn_body} className="w-[100px]" alt="client-card" />
-                            <img
-                              src={mas_shadowline}
-                              className="w-[100px]"
-                              alt="client-card"
-                            />
-                          </div>
-                        </div>
-                      </div>
-          
-                      <div className="carousel-item">
-                        <div className="flex flex-col gap-6">
-                          <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
-                            <img
-                              src={mas_active}
-                              className="w-[100px]"
-                              alt="client-card"
-                            />
-          
-                            <img
-                              src={linea_clothing}
-                              className="w-[100px]"
-                              alt="client-card"
-                            />
-                            <img
-                              src={linea_intimo}
-                              className="w-[100px]"
-                              alt="client-card"
-                            />
-                          </div>
-                          <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
-                            <img
-                              src={cashual_line}
-                              className="w-[100px]"
-                              alt="client-card"
-                            />
-                            <img src={unichela} className="w-[100px]" alt="client-card" />
-                            <img
-                              src={fabric_park}
-                              className="w-[100px]"
-                              alt="client-card"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <div className="carousel-item active">
+              <div className="flex flex-col gap-6">
+                <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
+                  <img src={client2} className="w-[100px]" alt="client-card" />
+                  <img src={client1} className="w-[100px]" alt="client-card" />
+                  <img src={client4} className="w-[100px]" alt="client-card" />
+                  <img src={client5} className="w-[100px]" alt="client-card" />
+                </div>
+                <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
+                  <img src={client6} className="w-[100px]" alt="client-card" />
+                  <img src={client7} className="w-[100px]" alt="client-card" />
+                  <img src={client8} className="w-[100px]" alt="client-card" />
+                </div>
+              </div>
+            </div>
+
+            <div className="carousel-item">
+              <div className="flex flex-col gap-6">
+                <div className="grid w-full grid-cols-4 gap-3 h-[100px] place-content-center place-items-center">
+                  <img
+                    src={noyon}
+                    className="w-[100px] h-1/2 object-contain"
+                    alt="client-card"
+                  />
+                  <img
+                    src={heineken}
+                    className="w-[100px] h-1/2 object-contain"
+                    alt="client-card"
+                  />
+                  <img src={ruhunu} className="w-[100px]" alt="client-card" />
+                  <img
+                    src={screenline}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
+                </div>
+                <div className="grid w-full grid-cols-3 gap-6 h-1/2 place-content-center place-items-center">
+                  <img
+                    src={smart_shirts}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
+                  <img src={cn_body} className="w-[100px]" alt="client-card" />
+                  <img
+                    src={mas_shadowline}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="carousel-item">
+              <div className="flex flex-col gap-6">
+                <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
+                  <img
+                    src={mas_active}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
+
+                  <img
+                    src={linea_clothing}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
+                  <img
+                    src={linea_intimo}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
+                </div>
+                <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
+                  <img
+                    src={cashual_line}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
+                  <img src={unichela} className="w-[100px]" alt="client-card" />
+                  <img
+                    src={fabric_park}
+                    className="w-[100px]"
+                    alt="client-card"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       {/*Milestones*/}
@@ -436,9 +444,6 @@ function About() {
             </div>
           </div>
         </div>
-        <span className="flex justify-end w-full px-12 py-3 underline max-md:px-6">
-          <a href="https://www.google.com">View All</a>
-        </span>
       </div>
       {/*Milestones - 2*/}
       <div className="h-fit">
@@ -524,7 +529,7 @@ function About() {
               <div className="flex flex-col flex-grow w-2/4 h-full">
                 <div className="flex flex-col cursor-pointer">
                   <img
-                    src={img1}
+                    src={coconut_1}
                     alt="milestone-grid-card"
                     className="h-[300px] object-cover"
                   />
@@ -532,14 +537,14 @@ function About() {
               </div>
               <div className="flex flex-col w-1/4 h-full cursor-pointer">
                 <img
-                  src={img2}
+                  src={coconut_2}
                   alt="milestone-grid-card"
                   className="object-cover h-[300px]"
                 />
               </div>
               <div className="flex flex-col w-1/4 h-full cursor-pointer">
                 <img
-                  src={img3}
+                  src={coconut_3}
                   alt="milestone-grid-card"
                   className="object-cover h-[300px]"
                 />
@@ -550,7 +555,7 @@ function About() {
               <div className="flex flex-col flex-grow w-3/5 h-full">
                 <div className="flex flex-col h-full cursor-pointer">
                   <img
-                    src={img4}
+                    src={coconut_4}
                     alt=""
                     className="object-cover object-top h-full"
                   />
@@ -558,19 +563,19 @@ function About() {
               </div>
               <div className="flex flex-col w-1/5 h-full gap-3 cursor-pointer">
                 <img
-                  src={img5}
+                  src={coconut_5}
                   alt="milestone-grid-card"
                   className="object-cover h-1/2"
                 />
                 <img
-                  src={img6}
+                  src={coconut_6}
                   alt="milestone-grid-card"
                   className="object-cover h-1/2"
                 />
               </div>
               <div className="flex flex-col w-1/5 h-full cursor-pointer">
                 <img
-                  src={img7}
+                  src={coconut_7}
                   alt="milestone-grid-card"
                   className="object-cover h-[400px]"
                 />
