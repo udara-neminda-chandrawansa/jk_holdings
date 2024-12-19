@@ -315,7 +315,7 @@ function ProjectsNew() {
         <>
           {/* Athena header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>Mas Athena Project Construction</h1>
+            <h1>MAS Athena Project Construction</h1>
           </div>
           {/* Athena Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
@@ -368,7 +368,7 @@ function ProjectsNew() {
         <>
           {/* Linea Project header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>Mas Linea Project Construction</h1>
+            <h1>MAS Linea Project Construction</h1>
           </div>
           {/* Linea proj Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
@@ -392,7 +392,7 @@ function ProjectsNew() {
         <>
           {/* pallekele header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>Mas Linea Clothing - Pallekele</h1>
+            <h1>MAS Linea Clothing - Pallekele</h1>
           </div>
           {/* pallekele Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
@@ -445,7 +445,7 @@ function ProjectsNew() {
         <>
           {/* nirmana header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>Mas Nirmana Landscaping</h1>
+            <h1>MAS Nirmana Landscaping</h1>
           </div>
           {/* nirmana Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
