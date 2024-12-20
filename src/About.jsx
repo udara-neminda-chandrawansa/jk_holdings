@@ -20,20 +20,29 @@ import fabric_park from "./assets/clients/fabric_park.png";
 import heineken from "./assets/clients/heineken.png";
 import mas_active from "./assets/clients/mas_active.png";
 import mas_shadowline from "./assets/clients/mas_shadowline.png";
-import nestle_round from "./assets/clients/nestle_round.png";
+//import nestle_round from "./assets/clients/nestle_round.png";
 import noyon from "./assets/clients/noyon.png";
 import ruhunu from "./assets/clients/ruhunu.png";
 import screenline from "./assets/clients/screenline.png";
 import smart_shirts from "./assets/clients/smart_shirts.png";
 import unichela from "./assets/clients/unichela.png";
 
-import img1 from "./assets/AboutGrid/img-1.png";
-import img2 from "./assets/AboutGrid/img-2.png";
-import img3 from "./assets/AboutGrid/img-3.png";
-import img4 from "./assets/AboutGrid/img-4.png";
-import img5 from "./assets/AboutGrid/img-5.png";
-import img6 from "./assets/AboutGrid/img-6.png";
-import img7 from "./assets/AboutGrid/img-7.png";
+//import img1 from "./assets/AboutGrid/img-1.png";
+//import img2 from "./assets/AboutGrid/img-2.png";
+//import img3 from "./assets/AboutGrid/img-3.png";
+//import img4 from "./assets/AboutGrid/img-4.png";
+//import img5 from "./assets/AboutGrid/img-5.png";
+//import img6 from "./assets/AboutGrid/img-6.png";
+//import img7 from "./assets/AboutGrid/img-7.png";
+
+import bnc_1 from "./assets/csr/bnc-kundasale/1.jpg";
+import bnc_3 from "./assets/csr/bnc-kundasale/3.jpg";
+import bnc_5 from "./assets/csr/bnc-kundasale/5.jpg";
+import bnc_16 from "./assets/csr/bnc-kundasale/16.jpg";
+import bnc_8 from "./assets/csr/bnc-kundasale/8.jpg";
+import bnc_9 from "./assets/csr/bnc-kundasale/9.jpg";
+import bnc_12 from "./assets/csr/bnc-kundasale/12.jpg";
+
 
 import coconut_1 from "./assets/csr/coconut-1.jpg";
 import coconut_2 from "./assets/csr/coconut-2.jpg";
@@ -472,22 +481,22 @@ function About() {
               <div className="flex flex-col flex-grow w-2/4 h-full">
                 <div className="flex flex-col cursor-pointer">
                   <img
-                    src={img1}
+                    src={bnc_8}
                     alt="milestone-grid-card"
-                    className="h-[300px] object-cover"
+                    className="h-[300px] object-cover object-bottom"
                   />
                 </div>
               </div>
               <div className="flex flex-col w-1/4 h-full cursor-pointer">
                 <img
-                  src={img2}
+                  src={bnc_3}
                   alt="milestone-grid-card"
                   className="object-cover h-[300px]"
                 />
               </div>
               <div className="flex flex-col w-1/4 h-full cursor-pointer">
                 <img
-                  src={img3}
+                  src={bnc_5}
                   alt="milestone-grid-card"
                   className="object-cover h-[300px]"
                 />
@@ -498,27 +507,27 @@ function About() {
               <div className="flex flex-col flex-grow w-3/5 h-full">
                 <div className="flex flex-col h-full cursor-pointer">
                   <img
-                    src={img4}
+                    src={bnc_16}
                     alt=""
-                    className="object-cover object-top h-full"
+                    className="object-cover object-bottom h-full"
                   />
                 </div>
               </div>
               <div className="flex flex-col w-1/5 h-full gap-3 cursor-pointer">
                 <img
-                  src={img5}
+                  src={bnc_8}
                   alt="milestone-grid-card"
                   className="object-cover h-1/2"
                 />
                 <img
-                  src={img6}
+                  src={bnc_9}
                   alt="milestone-grid-card"
                   className="object-cover h-1/2"
                 />
               </div>
               <div className="flex flex-col w-1/5 h-full cursor-pointer">
                 <img
-                  src={img7}
+                  src={bnc_12}
                   alt="milestone-grid-card"
                   className="object-cover h-[400px]"
                 />
@@ -586,49 +595,49 @@ function About() {
           <div className="flex flex-col gap-3 text-white md:hidden">
             <div className="bg-[#000000BD]">
               <img
-                src={img1}
+                src={bnc_1}
                 alt="milestone-grid-card"
                 className="w-full max-h-[400px] object-contain"
               />
             </div>
             <div className="bg-[#000000BD]">
               <img
-                src={img2}
+                src={bnc_3}
                 alt="milestone-grid-card"
                 className="w-full max-h-[400px] object-contain"
               />
             </div>
             <div className="bg-[#000000BD]">
               <img
-                src={img3}
+                src={bnc_5}
                 alt="milestone-grid-card"
                 className="w-full max-h-[400px] object-contain"
               />
             </div>
             <div className="bg-[#000000BD]">
               <img
-                src={img4}
+                src={bnc_16}
                 alt="milestone-grid-card"
                 className="w-full max-h-[400px] object-contain"
               />
             </div>
             <div className="bg-[#000000BD]">
               <img
-                src={img5}
+                src={bnc_8}
                 alt="milestone-grid-card"
                 className="w-full max-h-[400px] object-contain"
               />
             </div>
             <div className="bg-[#000000BD]">
               <img
-                src={img6}
+                src={bnc_9}
                 alt="milestone-grid-card"
                 className="w-full max-h-[400px] object-contain"
               />
             </div>
             <div className="bg-[#000000BD]">
               <img
-                src={img7}
+                src={bnc_12}
                 alt="milestone-grid-card"
                 className="w-full max-h-[400px] object-contain"
               />
