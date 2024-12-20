@@ -21,7 +21,23 @@ import coconut_19 from "./assets/csr/coconut-19.jpg";
 import coconut_20 from "./assets/csr/coconut-20.jpg";
 import coconut_21 from "./assets/csr/coconut-21.jpg";
 
-const CSRSmallGrid = [
+import bnc_1 from "./assets/csr/bnc-kundasale/1.jpg";
+import bnc_3 from "./assets/csr/bnc-kundasale/3.jpg";
+//import bnc_5 from "./assets/csr/bnc-kundasale/5.jpg";
+import bnc_6 from "./assets/csr/bnc-kundasale/6.jpg";
+//import bnc_8 from "./assets/csr/bnc-kundasale/8.jpg";
+//import bnc_9 from "./assets/csr/bnc-kundasale/9.jpg";
+import bnc_12 from "./assets/csr/bnc-kundasale/12.jpg";
+import bnc_15 from "./assets/csr/bnc-kundasale/15.jpg";
+import bnc_19 from "./assets/csr/bnc-kundasale/19.jpg";
+import bnc_20 from "./assets/csr/bnc-kundasale/20.jpg";
+import bnc_25 from "./assets/csr/bnc-kundasale/25.jpg";
+import bnc_26 from "./assets/csr/bnc-kundasale/26.jpg";
+import bnc_29 from "./assets/csr/bnc-kundasale/29.jpg";
+import bnc_34 from "./assets/csr/bnc-kundasale/34.jpg";
+import bnc_35 from "./assets/csr/bnc-kundasale/35.jpg";
+
+const CoconutSmallGrid = [
   coconut_1,
   coconut_2,
   coconut_3,
@@ -33,7 +49,7 @@ const CSRSmallGrid = [
   coconut_9,
 ];
 
-const CSRLargeGrid = [
+const CoconutLargeGrid = [
   coconut_10,
   coconut_11,
   coconut_12,
@@ -48,7 +64,11 @@ const CSRLargeGrid = [
   coconut_21,
 ];
 
-const CSRAllGrid = [
+const BNCSmallGrid = [bnc_1, bnc_3, bnc_6, bnc_12, bnc_15, bnc_19];
+
+const BNCLargeGrid = [bnc_20, bnc_25, bnc_26, bnc_29, bnc_34, bnc_35];
+
+const FullGrid = [
   coconut_1,
   coconut_2,
   coconut_3,
@@ -70,6 +90,18 @@ const CSRAllGrid = [
   coconut_19,
   coconut_20,
   coconut_21,
+  bnc_1,
+  bnc_3,
+  bnc_6,
+  bnc_12,
+  bnc_15,
+  bnc_19,
+  bnc_20,
+  bnc_25,
+  bnc_26,
+  bnc_29,
+  bnc_34,
+  bnc_35,
 ];
 
 function CSRSlideshow({ images, currentIndex, onClose }) {
@@ -116,13 +148,37 @@ function CSRSlideshow({ images, currentIndex, onClose }) {
 
 function CSRNew() {
   const [paraVisibility, setParaVisibility] = useState(true);
-  const [largeGrid, setLargeGrid] = useState(false);
+
+  const [coconutGridVisible, setCoconutGridVisible] = useState(true);
+  const [bncGridVisible, setBNCGridVisible] = useState(true);
+
+  const [coconutLargeGridVisible, setCoconutLargeGridVisible] = useState(false);
+  const [bncLargeGridVisible, setBNCLargeGridVisible] = useState(false);
+
   const [showSlideshow, setShowSlideshow] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const handleViewAll = () => {
+  const toggleAllGrids = () => {
+    setCoconutGridVisible(!coconutGridVisible);
+    setBNCGridVisible(!bncGridVisible);
+  };
+
+  const handleViewAll = (gridName) => {
     setParaVisibility(!paraVisibility);
-    setLargeGrid(!largeGrid);
+    toggleAllGrids();
+    switch (gridName) {
+      case "coconut":
+        setCoconutGridVisible(true);
+        setCoconutLargeGridVisible(!coconutLargeGridVisible);
+        break;
+      case "bnc":
+        setBNCGridVisible(true);
+        setBNCLargeGridVisible(!bncLargeGridVisible);
+        break;
+      default:
+        break;
+    }
+    setCoconutLargeGridVisible(!coconutLargeGridVisible);
   };
 
   const handleImageClick = (index) => {
@@ -148,44 +204,99 @@ function CSRNew() {
           </p>
         </div>
       )}
-      {/* Second Header */}
-      <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-        <h1>Coconut plant’s contribution</h1>
-      </div>
-      {/* Photo Grid */}
-      <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
-        {CSRSmallGrid.map((image, index) => (
-          <div key={index}>
-            <img
-              src={image}
-              alt={`csr-coconut-${index + 1}`}
-              className="cursor-pointer max-sm:w-full"
-              onClick={() => handleImageClick(index)}
-            />
+      {coconutGridVisible ? (
+        <>
+          {/* Coconut Header */}
+          <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
+            <h1>Coconut plant’s contribution</h1>
           </div>
-        ))}
-        {largeGrid &&
-          CSRLargeGrid.map((image, index) => (
-            <div key={index + CSRSmallGrid.length}>
-              <img
-                src={image}
-                alt={`csr-coconut-${index + 1}`}
-                className="cursor-pointer max-sm:w-full"
-                onClick={() => handleImageClick(index + CSRSmallGrid.length)}
-              />
-            </div>
-          ))}
-      </div>
-      {/* View All / Go Back Button */}
-      <div className="flex justify-center px-12 py-6 underline max-md:px-6">
-        <button onClick={handleViewAll}>
-          {paraVisibility ? "View All" : "Go Back"}
-        </button>
-      </div>
+          {/* Coconut Photo Grid */}
+          <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
+            {CoconutSmallGrid.map((image, index) => (
+              <div key={index}>
+                <img
+                  src={image}
+                  alt={`csr-coconut-${index + 1}`}
+                  className="cursor-pointer max-sm:w-full"
+                  onClick={() => handleImageClick(index)}
+                />
+              </div>
+            ))}
+            {coconutLargeGridVisible &&
+              CoconutLargeGrid.map((image, index) => (
+                <div key={index + CoconutSmallGrid.length}>
+                  <img
+                    src={image}
+                    alt={`csr-coconut-${index + 1}`}
+                    className="cursor-pointer max-sm:w-full"
+                    onClick={() =>
+                      handleImageClick(index + CoconutSmallGrid.length)
+                    }
+                  />
+                </div>
+              ))}
+          </div>
+          {/* View All / Go Back Button (Coconut) */}
+          <div className="flex justify-center px-12 py-6 underline max-md:px-6">
+            <button onClick={() => handleViewAll("coconut")}>
+              {paraVisibility ? "View All" : "Go Back"}
+            </button>
+          </div>
+        </>
+      ) : (
+        ""
+      )}
+
+      {bncGridVisible ? (
+        <>
+          {/* BNC Header */}
+          <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
+            <h1>
+              Tree Planting Programme at SWRD Bandaranayaka National College,
+              Kundasale
+            </h1>
+          </div>
+          {/* BNC Photo Grid */}
+          <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
+            {BNCSmallGrid.map((image, index) => (
+              <div key={index}>
+                <img
+                  src={image}
+                  alt={`csr-bnc-${index + 1}`}
+                  className="cursor-pointer max-sm:w-full"
+                  onClick={() => handleImageClick(index)}
+                />
+              </div>
+            ))}
+            {bncLargeGridVisible &&
+              BNCLargeGrid.map((image, index) => (
+                <div key={index + BNCSmallGrid.length}>
+                  <img
+                    src={image}
+                    alt={`csr-bnc-${index + 1}`}
+                    className="cursor-pointer max-sm:w-full"
+                    onClick={() =>
+                      handleImageClick(index + BNCSmallGrid.length)
+                    }
+                  />
+                </div>
+              ))}
+          </div>
+          {/* View All / Go Back Button (BNC) */}
+          <div className="flex justify-center px-12 py-6 underline max-md:px-6">
+            <button onClick={() => handleViewAll("bnc")}>
+              {paraVisibility ? "View All" : "Go Back"}
+            </button>
+          </div>
+        </>
+      ) : (
+        ""
+      )}
+
       {/* Slideshow */}
       {showSlideshow && (
         <CSRSlideshow
-          images={CSRAllGrid}
+          images={FullGrid}
           currentIndex={currentImageIndex}
           onClose={() => setShowSlideshow(false)}
         />
