@@ -264,7 +264,7 @@ function CSRNew() {
                   src={image}
                   alt={`csr-bnc-${index + 1}`}
                   className="cursor-pointer max-sm:w-full"
-                  onClick={() => handleImageClick(index)}
+                  onClick={() => handleImageClick(index + 21)}
                 />
               </div>
             ))}
@@ -276,7 +276,7 @@ function CSRNew() {
                     alt={`csr-bnc-${index + 1}`}
                     className="cursor-pointer max-sm:w-full"
                     onClick={() =>
-                      handleImageClick(index + BNCSmallGrid.length)
+                      handleImageClick(index + 21 + BNCSmallGrid.length)
                     }
                   />
                 </div>
