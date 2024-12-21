@@ -17,12 +17,12 @@ function Nav() {
               />
             </li>
           </Link>
-          <Link href="/" className="text-white no-underline">
+          <Link href="/" className="font-semibold text-white no-underline">
             <li className="flex items-center justify-center text-black text-nowrap px-3 cursor-pointer max-lg:text-sm max-[972px]:text-xs">
               Home
             </li>
           </Link>
-          <Link href="#" className="text-white no-underline">
+          <Link href="#" className="font-semibold text-white no-underline">
             <li
               className="flex items-center justify-center text-black text-nowrap px-3 cursor-pointer max-lg:text-sm max-[972px]:text-xs"
               data-coreui-toggle="offcanvas"
@@ -32,29 +32,29 @@ function Nav() {
               Menu
             </li>
           </Link>
-          <Link href="/services" className="text-white no-underline">
+          <Link href="/services" className="font-semibold text-white no-underline">
             <li className="flex items-center justify-center text-black text-nowrap px-3 cursor-pointer max-lg:text-sm max-[972px]:text-xs">
               Services
             </li>
           </Link>
         </ul>
         <ul className="flex items-center justify-end w-1/3 h-full">
-          <Link href="/aboutus" className="text-white no-underline">
+          <Link href="/aboutus" className="font-semibold text-white no-underline">
             <li className="flex items-center justify-center text-black text-nowrap px-3 cursor-pointer max-lg:text-sm max-[972px]:text-xs">
               About Us
             </li>
           </Link>
-          <Link href="/contact" className="text-white no-underline">
+          <Link href="/contact" className="font-semibold text-white no-underline">
             <li className="flex items-center justify-center text-black text-nowrap px-3 cursor-pointer max-lg:text-sm max-[972px]:text-xs">
               Contact Us
             </li>
           </Link>
-          <Link href="/projects" className="text-white no-underline">
+          <Link href="/projects" className="font-semibold text-white no-underline">
             <li className="flex items-center justify-center text-black text-nowrap px-3 cursor-pointer max-lg:text-sm max-[972px]:text-xs">
               Projects
             </li>
           </Link>
-          <Link href="/csr" className="text-white no-underline">
+          <Link href="/csr" className="font-semibold text-white no-underline">
             <li className="flex items-center justify-center text-black text-nowrap px-3 cursor-pointer max-lg:text-sm max-[972px]:text-xs">
               CSR Projects
             </li>
@@ -223,18 +223,6 @@ function Nav() {
             >
               <Link href="/services/getaways" className="hover:text-[#C10000]">
                 Getaways
-              </Link>
-            </li>
-            <li
-              data-coreui-toggle="offcanvas"
-              data-coreui-target="#offcanvasTop"
-              aria-controls="offcanvasTop"
-            >
-              <Link
-                href="/services/architectural-designing"
-                className="hover:text-[#C10000]"
-              >
-                Architectural Designing
               </Link>
             </li>
             <li

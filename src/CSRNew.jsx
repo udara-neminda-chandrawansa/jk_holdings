@@ -1,4 +1,7 @@
 import { useState } from "react";
+
+import add_2 from "./assets/adds/add-2.png";
+
 import coconut_1 from "./assets/csr/coconut-1.jpg";
 import coconut_2 from "./assets/csr/coconut-2.jpg";
 import coconut_3 from "./assets/csr/coconut-3.jpg";
@@ -23,12 +26,13 @@ import coconut_21 from "./assets/csr/coconut-21.jpg";
 
 import bnc_1 from "./assets/csr/bnc-kundasale/1.jpg";
 import bnc_3 from "./assets/csr/bnc-kundasale/3.jpg";
-//import bnc_5 from "./assets/csr/bnc-kundasale/5.jpg";
+import bnc_5 from "./assets/csr/bnc-kundasale/5.jpg";
 import bnc_6 from "./assets/csr/bnc-kundasale/6.jpg";
-//import bnc_8 from "./assets/csr/bnc-kundasale/8.jpg";
-//import bnc_9 from "./assets/csr/bnc-kundasale/9.jpg";
+import bnc_8 from "./assets/csr/bnc-kundasale/8.jpg";
+import bnc_9 from "./assets/csr/bnc-kundasale/9.jpg";
 import bnc_12 from "./assets/csr/bnc-kundasale/12.jpg";
 import bnc_15 from "./assets/csr/bnc-kundasale/15.jpg";
+import bnc_16 from "./assets/csr/bnc-kundasale/16.jpg";
 import bnc_19 from "./assets/csr/bnc-kundasale/19.jpg";
 import bnc_20 from "./assets/csr/bnc-kundasale/20.jpg";
 import bnc_25 from "./assets/csr/bnc-kundasale/25.jpg";
@@ -196,14 +200,190 @@ function CSRNew() {
       {paraVisibility && (
         <div className="px-12 py-6 max-md:px-6">
           <p className="text-justify line-height-abt 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
-            At JKI Holdings, we believe that building communities goes beyond
-            constructing buildings; it’s about uplifting lives and fostering
-            sustainable development. Through our Social Care Project, we are
-            committed to making a positive impact on society by addressing
-            critical social and environmental challenges.
+            At JKI Holdings, we believe in taking responsibility for our
+            actions, both as a company and as members of society. We acknowledge
+            the impact we have on the environment, the people we work with, and
+            the communities we operate in. Therefore, we have initiated a range
+            of projects and programs that aim to create a positive impact on the
+            world around us. Through our corporate social responsibility (CSR)
+            projects, we strive to promote sustainability, equality, diversity,
+            and inclusion. We are committed to making a difference and creating
+            a better future for all.
           </p>
         </div>
       )}
+      {/*scroll grid*/}
+      <div className="px-12 max-md:px-6">
+        {/*for md*/}
+        <div className="flex flex-col max-md:hidden md:h-[700px] gap-3 overflow-y-scroll red-custom-scroll">
+          {/*first row*/}
+          <div className="hidden h-[300px] gap-3 text-white md:flex">
+            <div className="flex flex-col flex-grow w-2/4 h-full">
+              <div className="flex flex-col cursor-pointer">
+                <img
+                  src={bnc_8}
+                  alt="milestone-grid-card"
+                  className="h-[300px] object-cover object-bottom"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col w-1/4 h-full cursor-pointer">
+              <img
+                src={bnc_3}
+                alt="milestone-grid-card"
+                className="object-cover h-[300px]"
+              />
+            </div>
+            <div className="flex flex-col w-1/4 h-full cursor-pointer">
+              <img
+                src={bnc_5}
+                alt="milestone-grid-card"
+                className="object-cover h-[300px]"
+              />
+            </div>
+          </div>
+          {/*second row*/}
+          <div className="hidden h-[400px] gap-3 text-white md:flex">
+            <div className="flex flex-col flex-grow w-3/5 h-full">
+              <div className="flex flex-col h-full cursor-pointer">
+                <img
+                  src={bnc_16}
+                  alt=""
+                  className="object-cover object-bottom h-full"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col w-1/5 h-full gap-3 cursor-pointer">
+              <img
+                src={bnc_34}
+                alt="milestone-grid-card"
+                className="object-cover h-1/2"
+              />
+              <img
+                src={bnc_9}
+                alt="milestone-grid-card"
+                className="object-cover h-1/2"
+              />
+            </div>
+            <div className="flex flex-col w-1/5 h-full cursor-pointer">
+              <img
+                src={bnc_12}
+                alt="milestone-grid-card"
+                className="object-cover h-[400px]"
+              />
+            </div>
+          </div>
+          {/*third row*/}
+          <div className="hidden h-[300px] gap-3 text-white md:flex">
+            <div className="flex flex-col flex-grow w-2/4 h-full">
+              <div className="flex flex-col cursor-pointer">
+                <img
+                  src={coconut_1}
+                  alt="milestone-grid-card"
+                  className="h-[300px] object-cover"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col w-1/4 h-full cursor-pointer">
+              <img
+                src={coconut_2}
+                alt="milestone-grid-card"
+                className="object-cover h-[300px]"
+              />
+            </div>
+            <div className="flex flex-col w-1/4 h-full cursor-pointer">
+              <img
+                src={coconut_3}
+                alt="milestone-grid-card"
+                className="object-cover h-[300px]"
+              />
+            </div>
+          </div>
+          {/*fourth row*/}
+          <div className="hidden h-[400px] gap-3 text-white md:flex">
+            <div className="flex flex-col flex-grow w-3/5 h-full">
+              <div className="flex flex-col h-full cursor-pointer">
+                <img
+                  src={coconut_4}
+                  alt=""
+                  className="object-cover object-top h-full"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col w-1/5 h-full gap-3 cursor-pointer">
+              <img
+                src={coconut_5}
+                alt="milestone-grid-card"
+                className="object-cover h-1/2"
+              />
+              <img
+                src={coconut_6}
+                alt="milestone-grid-card"
+                className="object-cover h-1/2"
+              />
+            </div>
+            <div className="flex flex-col w-1/5 h-full cursor-pointer">
+              <img
+                src={coconut_7}
+                alt="milestone-grid-card"
+                className="object-cover h-[400px]"
+              />
+            </div>
+          </div>
+        </div>
+        {/*for max-md*/}
+        <div className="flex-col hidden gap-3 text-white">
+          <div className="bg-[#000000BD]">
+            <img
+              src={bnc_1}
+              alt="milestone-grid-card"
+              className="w-full max-h-[400px] object-contain"
+            />
+          </div>
+          <div className="bg-[#000000BD]">
+            <img
+              src={bnc_3}
+              alt="milestone-grid-card"
+              className="w-full max-h-[400px] object-contain"
+            />
+          </div>
+          <div className="bg-[#000000BD]">
+            <img
+              src={bnc_5}
+              alt="milestone-grid-card"
+              className="w-full max-h-[400px] object-contain"
+            />
+          </div>
+          <div className="bg-[#000000BD]">
+            <img
+              src={bnc_16}
+              alt="milestone-grid-card"
+              className="w-full max-h-[400px] object-contain"
+            />
+          </div>
+          <div className="bg-[#000000BD]">
+            <img
+              src={bnc_8}
+              alt="milestone-grid-card"
+              className="w-full max-h-[400px] object-contain"
+            />
+          </div>
+          <div className="bg-[#000000BD]">
+            <img
+              src={bnc_9}
+              alt="milestone-grid-card"
+              className="w-full max-h-[400px] object-contain"
+            />
+          </div>
+          <div className="bg-[#000000BD]">
+            <img
+              src={bnc_12}
+              alt="milestone-grid-card"
+              className="w-full max-h-[400px] object-contain"
+            />
+          </div>
+        </div>
+      </div>
       {coconutGridVisible ? (
         <>
           {/* Coconut Header */}
@@ -292,7 +472,22 @@ function CSRNew() {
       ) : (
         ""
       )}
-
+      {/*Advertisements*/}
+      <div className="p-12 max-md:p-6">
+        <div className="border ">
+          <div className="flex items-center w-full h-full max-md:flex-col max-md:justify-center">
+            <img
+              src={add_2}
+              alt=""
+              className="object-cover w-1/2 h-full max-md:w-full max-md:h-1/2 max-md:object-contain"
+            />
+            <p className="px-12 text-xl font-medium tracking-widest text-center max-md:px-6 h-fit max-md:py-6 title">
+              Shining a spotlight on exceptional dedication & performance at
+              Brandix Fast Fashion, Awissawella
+            </p>
+          </div>
+        </div>
+      </div>
       {/* Slideshow */}
       {showSlideshow && (
         <CSRSlideshow

@@ -1,17 +1,19 @@
 import misson_banner from "./assets/mission_bg.jpg";
 import jcb_banner from "./assets/banner-1.jpg";
 import client_banner from "./assets/clients_bg.png";
-import about_banner from "./assets/about_bg.png";
+//import about_banner from "./assets/about_bg.png";
+import abt_man from "./assets/about_man.png";
 
 import client1 from "./assets/clients/brandix.png";
 import client2 from "./assets/clients/mas.png";
 //import client3 from "./assets/clients/kanrich.png";
-import client4 from "./assets/clients/dimo.png";
+//import client4 from "./assets/clients/dimo.png";
 import client5 from "./assets/clients/cbl.png";
-import client6 from "./assets/clients/nestle.png";
+//import client6 from "./assets/clients/nestle.png";
 import client7 from "./assets/clients/hela.png";
-import client8 from "./assets/clients/esquel.png";
+//import client8 from "./assets/clients/esquel.png";
 
+import teejay from "./assets/clients/teejay.png";
 import linea_clothing from "./assets/clients/linea_clothing.png";
 import linea_intimo from "./assets/clients/linea_intimo.png";
 import cashual_line from "./assets/clients/cashual_line.png";
@@ -43,7 +45,6 @@ import bnc_8 from "./assets/csr/bnc-kundasale/8.jpg";
 import bnc_9 from "./assets/csr/bnc-kundasale/9.jpg";
 import bnc_12 from "./assets/csr/bnc-kundasale/12.jpg";
 
-
 import coconut_1 from "./assets/csr/coconut-1.jpg";
 import coconut_2 from "./assets/csr/coconut-2.jpg";
 import coconut_3 from "./assets/csr/coconut-3.jpg";
@@ -67,7 +68,7 @@ function About() {
       content: (
         <div className="z-10 flex flex-col justify-center w-3/4 h-full gap-6 pl-12 text-white max-sm:p-6 max-sm:w-full line-height-abt max-md:pl-6">
           <div className="flex flex-col gap-6 text-justify">
-            <h1 className="text-[30px] lg:text-[50px] xl:text-[70px] title">
+            <h1 className="text-[30px] lg:text-[35px] xl:text-[60px] title">
               Our Mission
             </h1>
             <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
@@ -77,12 +78,46 @@ function About() {
             </p>
           </div>
           <div className="flex flex-col gap-6">
-            <h1 className="text-[30px] lg:text-[50px] xl:text-[70px] title">
+            <h1 className="text-[30px] lg:text-[35px] xl:text-[60px] title">
               Our Vision
             </h1>
             <p className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
               To be the epitome of Service Providing industry
             </p>
+          </div>
+          <div className="flex flex-col gap-6">
+            <h1 className="text-[30px] lg:text-[35px] xl:text-[60px] title">
+              Our Core Values
+            </h1>
+            <ul className="grid w-full grid-cols-3 gap-3">
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-xs">
+                Customer satisfaction
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-xs">
+                Credibility
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-xs">
+                Assuarance
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-xs">
+                Neatness
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-xs">
+                Uniqueness
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-xs">
+                Integrity
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-xs">
+                Professionalism
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-xs">
+                Innovation
+              </li>
+              <li className="2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-xs">
+                Partnership
+              </li>
+            </ul>
           </div>
         </div>
       ),
@@ -189,32 +224,63 @@ function About() {
             ecological footprint.
           </p>
         </div>
-        {/*abt banner + txt*/}
-        <div
-          className="relative flex h-full bg-center bg-no-repeat bg-contain md:py-6 min-h-fit max-md:h-fit max-md:flex-col"
-          style={{ backgroundImage: `url(${about_banner})` }}
-        >
-          {/*banner text*/}
-          <div className="flex items-end justify-end w-full h-full pr-12 overflow-y-scroll lg:items-center max-lg:relative max-lg:items-start max-lg:justify-center max-lg:text-center max-lg:py-6 max-lg:pb-0 max-lg:pr-0 min-h-fit no-scrollbar">
-            <h1 className="z-20 w-1/2 py-3 text-justify text-black max-md:w-full max-md:text-start">
-              <span className="hidden lg:inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
+
+        {/*Message from managing director*/}
+        <div className="lg:h-[20dvh] flex flex-col lg:items-end lg:justify-end lg:pr-14 gap-2 max-lg:pt-6">
+          <p className="lg:w-1/2 2xl:text-5xl xl:text-4xl max-xl:text-3xl max-lg:text-3xl max-sm:text-2xl max-lg:pt-3 title">
+            Message from the Managing Director
+          </p>
+          <p className="pb-3 lg:w-1/2 2xl:text-3xl xl:text-2xl max-xl:text-xl max-lg:text-lg max-sm:text-base title">
+            Deshabandhu Vidyananda Jagath Karunarathna
+          </p>
+        </div>
+        <div className="relative flex h-[55dvh] min-h-fit max-lg:h-fit max-lg:flex-col">
+          {/*about-man*/}
+          <img
+            src={abt_man}
+            className="absolute lg:w-1/2 max-lg:relative max-lg:h-[300px] bottom-0 z-10 max-2xl:h-[70dvh] h-[60dvh] object-contain object-bottom"
+            alt="about-img"
+          />
+          {/*trapezoid*/}
+          <div className="absolute text-white pr-12 max-sm:pr-3 right-0 bottom-0 w-full h-0 border-b-[55dvh] border-b-[#C10000] border-l-[400px] border-r-0 border-l-transparent max-lg:hidden"></div>
+          {/*trapezoid text*/}
+          <div className="absolute flex items-end justify-end w-full h-full pr-12 overflow-y-scroll lg:items-center max-lg:relative max-lg:items-start max-lg:justify-center max-lg:text-center max-lg:py-6 max-lg:pb-0 max-lg:pr-0 min-h-fit black-custom-scroll">
+            <h1 className="z-20 w-1/2 h-full py-3 text-justify lg:text-white max-lg:w-full max-lg:text-start line-height-abt">
+              <span className="hidden lg:inline text-[60px] max-md:text-2xl max-lg:text-3xl max-xl:text-5xl">
                 “
               </span>
-              <span className="z-10 italic font-semibold 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base line-height-abt">
+              <span className="z-10 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
                 Taniya Group, a pioneer in building construction industry, came
                 to be known as JKI Holdings in the year 2001. Since then, we
                 have expanded our services from building construction to
                 Interior Designing, Landscaping, Aluminum Fabrication, Pest
-                Control and Facility Management, to fulfil al our clients'
-                requirements in commercial and residential establishments. We
-                have already commenced our operations in Tourism Industry, and
-                we are determined to commence our operations in the Information
-                Technology Industry as wel. As the Founder, I started this
-                organization, so that we as a “Nation” can grow together and
-                sustain our footprint in the world as a Proud Nation and bring
-                international revenues into the country.
+                Control and Facility Management, to fulfill all our clients'
+                requirements in commercial and residential establishments.
+                <br />
+                <br />
+                We have already commenced our operations in Tourism Industry,
+                and we are determined to commence our operations in the
+                Information Technology Industry as well.
+                <br />
+                <br />
+                As the Founder, I started this organization, so that we as a
+                “Nation” can grow together and sustain our footprint in the
+                world as a Proud Nation and bring international revenues into
+                the country, from which our people can grow and thrive to reach
+                the Global Market.
+                <br />
+                <br />
+                We are continuously expanding, exploring new opportunities, and
+                facilitating exceptional levels of customer satisfaction and
+                looking for dynamic, enthusiastic and committed individuals to
+                grow with us.
+                <br />
+                <br />
+                The sole reason we were recognized and awarded was the
+                'exceptional service' that we extend through our well-trained,
+                professional, and committed workforce.
               </span>
-              <span className="absolute hidden lg:inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
+              <span className="hidden lg:inline absolute text-[60px] max-md:text-2xl max-lg:text-3xl max-xl:text-5xl">
                 ”
               </span>
             </h1>
@@ -266,31 +332,29 @@ function About() {
           <div className="h-60 max-sm:h-fit carousel-inner">
             <div className="carousel-item active">
               <div className="flex flex-col gap-6">
-                <div className="grid w-full h-full grid-cols-4 gap-6 place-content-center place-items-center">
+                <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
                   <img src={client2} className="w-[100px]" alt="client-card" />
                   <img src={client1} className="w-[100px]" alt="client-card" />
-                  <img src={client4} className="w-[100px]" alt="client-card" />
                   <img src={client5} className="w-[100px]" alt="client-card" />
                 </div>
                 <div className="grid w-full h-full grid-cols-3 gap-6 place-content-center place-items-center">
-                  <img src={client6} className="w-[100px]" alt="client-card" />
+                  <img
+                    src={noyon}
+                    className="w-[100px] h-[100px] object-contain"
+                    alt="client-card"
+                  />
                   <img src={client7} className="w-[100px]" alt="client-card" />
-                  <img src={client8} className="w-[100px]" alt="client-card" />
+                  <img src={teejay} className="w-[100px]" alt="client-card" />
                 </div>
               </div>
             </div>
 
             <div className="carousel-item">
               <div className="flex flex-col gap-6">
-                <div className="grid w-full grid-cols-4 gap-3 h-[100px] place-content-center place-items-center">
-                  <img
-                    src={noyon}
-                    className="w-[100px] h-1/2 object-contain"
-                    alt="client-card"
-                  />
+                <div className="grid w-full grid-cols-3 gap-3 h-[100px] place-content-center place-items-center">
                   <img
                     src={heineken}
-                    className="w-[100px] h-1/2 object-contain"
+                    className="w-[100px] h-[100px] object-contain"
                     alt="client-card"
                   />
                   <img src={ruhunu} className="w-[100px]" alt="client-card" />

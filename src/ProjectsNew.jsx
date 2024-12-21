@@ -6,7 +6,7 @@ import gamaduwa_2 from "./assets/Projects/new/gamaduwa-2.png";
 import athena_1 from "./assets/Projects/new/athena-1.png";
 import athena_2 from "./assets/Projects/new/athena-2.png";
 import athena_3 from "./assets/Projects/new/athena-3.png";
-import athena_4 from "./assets/Projects/new/athena-4.png";
+//import athena_4 from "./assets/Projects/new/athena-4.png";
 import athena_5 from "./assets/Projects/new/athena-5.png";
 import athena_6 from "./assets/Projects/new/athena-6.png";
 import athena_7 from "./assets/Projects/new/athena-7.png";
@@ -56,7 +56,7 @@ import tj_3 from "./assets/Projects/new/tj-3.png";
 
 const gamaduwaGrid = [gamaduwa_1, gamaduwa_2];
 
-const athenaGrid = [athena_1, athena_2, athena_3, athena_4, athena_5, athena_6];
+const athenaGrid = [athena_1, athena_2, athena_3, athena_5, athena_6];
 
 const athenaLargeGrid = [
   athena_7,
@@ -90,9 +90,6 @@ const nirmanaGrid = [
   nirmana_1,
   nirmana_2,
   nirmana_3,
-  nirmana_4,
-  nirmana_5,
-  nirmana_6,
 ];
 const nirmanaLargeGrid = [nirmana_7, nirmana_8, nirmana_9];
 
@@ -118,7 +115,6 @@ const allImages = [
   athena_1,
   athena_2,
   athena_3,
-  athena_4,
   athena_5,
   athena_6,
   athena_7,
@@ -315,7 +311,7 @@ function ProjectsNew() {
         <>
           {/* Athena header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>MAS Athena Project Construction</h1>
+            <h1>Construction works & Landscape MAS Athena - Thulhiriya</h1>
           </div>
           {/* Athena Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
@@ -445,7 +441,7 @@ function ProjectsNew() {
         <>
           {/* nirmana header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>MAS Nirmana Landscaping</h1>
+            <h1>MAS Nirmana Landscaping - Katunayake</h1>
           </div>
           {/* nirmana Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">

@@ -54,11 +54,6 @@ function Services() {
                 url={"getaways"}
               ></ServiceCard>
               <ServiceCard
-                img={Card_4}
-                text={"Architectural Designing"}
-                url={"architectural-designing"}
-              ></ServiceCard>
-              <ServiceCard
                 img={Card_5}
                 text={"Interior Designing"}
                 url={"interior-designing"}
@@ -78,14 +73,14 @@ function Services() {
                 text={"Wood-based Services"}
                 url={"wood-based-services"}
               ></ServiceCard>
-            </>
-          ) : pagination === 2 ? (
-            <>
               <ServiceCard
                 img={Card_9}
                 text={"Aluminum Fabrication"}
                 url={"aluminum-fabrication"}
               ></ServiceCard>
+            </>
+          ) : pagination === 2 ? (
+            <>
               <ServiceCard
                 img={Card_10}
                 text={"Electrical Services"}
@@ -121,17 +116,13 @@ function Services() {
                 text={"Residential Construction"}
                 url={"residential-construction"}
               ></ServiceCard>
-            </>
-          ) : (
-            <ServiceCard
+              <ServiceCard
               img={Card_17}
               text={"Commercial Construction"}
               url={"commercial-construction"}
-              extraClasses={
-                "md:col-start-2 md:col-span-2 w-1/2 md:justify-self-center place-self-center"
-              }
             ></ServiceCard>
-          )}
+            </>
+          ) : ""}
         </div>
       </div>
       {/*pagination*/}
@@ -171,22 +162,11 @@ function Services() {
           </li>
           <li>
             <button
-              onClick={() => setPagination(3)}
-              aria-current="page"
-              className={`items-center justify-center h-8 px-3 leading-tight bg-white border border-gray-300 flflex md:hover:bg-gray-100 md:hover:text-gray-700 ${
-                pagination === 3 ? " text-[#C10000]" : " text-gray-500"
-              }`}
-            >
-              3
-            </button>
-          </li>
-          <li>
-            <button
               onClick={() =>
-                pagination < 3 ? setPagination(pagination + 1) : ""
+                pagination < 2 ? setPagination(pagination + 1) : ""
               }
               className={`flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg md:hover:bg-gray-100 md:hover:text-gray-200 ${
-                pagination === 3 ? "text-gray-100" : ""
+                pagination === 2 ? "text-gray-100" : ""
               }`}
             >
               Next

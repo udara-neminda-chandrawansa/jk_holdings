@@ -70,32 +70,40 @@ function SingleService({ serviceType }) {
 
       construction_banner,
       construction_img,
-      <ul className="flex flex-col w-full gap-6 list-none">
-        <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
-          Commercial and Residential Construction and Consultation
-        </li>
-        <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
-          Architectural Designs upholding local Vastu practices
-        </li>
-        <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
-          Masonry Services
-        </li>
-        <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
-          Aluminum & Steel Fabrication
-        </li>
-        <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
-          Commercial and Residential Electrical Installations
-        </li>
-        <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
-          Professional Painting Services
-        </li>
-        <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
-          Interior and Exterior Solutions
-        </li>
-        <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
-          Landscaping - Designing & Maintenance
-        </li>
-      </ul>,
+      <div className="flex flex-col gap-6">
+        <p className="lh-lg">
+          <strong>Architectural Designing: </strong>We also offer a full range of architectural services including
+          architectural designs, plan certification, plan approvals, and plan
+          estimation suitable for all budgets. We design everything from small
+          starter homes to one-of-a kind luxury homes.
+        </p>
+        <ul className="flex flex-col w-full gap-6 list-none">
+          <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
+            Commercial and Residential Construction and Consultation
+          </li>
+          <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
+            Architectural Designs upholding local Vastu practices
+          </li>
+          <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
+            Masonry Services
+          </li>
+          <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
+            Aluminum & Steel Fabrication
+          </li>
+          <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
+            Commercial and Residential Electrical Installations
+          </li>
+          <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
+            Professional Painting Services
+          </li>
+          <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
+            Interior and Exterior Solutions
+          </li>
+          <li className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:bg-[#C10000]">
+            Landscaping - Designing & Maintenance
+          </li>
+        </ul>
+      </div>,
     ],
     [
       "Facility Management",
