@@ -479,14 +479,14 @@ function Landing() {
           </div>
           {/*phrase*/}
           <div className="flex justify-center pb-6 text-2xl poltawski">
-            <span className="inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
+            <span className="inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000] max-sm:hidden">
               “
             </span>
-            <h1 className="w-1/2 text-center max-sm:w-fit max-sm:py-3">
+            <h1 className="w-1/2 text-center max-sm:w-fit max-sm:p-3">
               Human Resources isn't a thing we do. It's the thing that runs our
               business.
             </h1>
-            <span className="inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000]">
+            <span className="inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000] max-sm:hidden">
               ”
             </span>
           </div>

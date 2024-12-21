@@ -23,15 +23,24 @@ function Contact() {
         </div>
       </div>
       {/*form*/}
-      <div className="flex items-center justify-between p-12 h-fit max-md:p-6 max-sm:p-3 max-md:flex-col max-md:justify-center">
-        {/*image*/}
-        <div className="md:w-1/2">
-            <img src={contact_img} alt="contact us" className="max-md:h-[300px] object-contain"/>
+      <div className="flex items-center justify-between gap-6 p-12 h-fit max-md:p-6 max-sm:p-3 max-md:flex-col max-md:justify-center">
+        {/*map*/}
+        <div className="md:w-1/2 h-[350px] max-md:w-full max-md:h-[400px]">
+          {/*<img src={contact_img} alt="contact us" className="max-md:h-[300px] object-contain"/>*/}
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6072997558836!2d80.72255229999999!3d7.285442399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3613323edc5b1%3A0x35bf1b56c40c2b55!2sJ%20K%20I%20Holdings%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1734777142649!5m2!1sen!2slk"
+            style={{ border: "0px", width: "100%", height: "100%" }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
         {/*form*/}
-        <div className="w-1/2 p-6 max-md:w-full max-sm:p-0 max-md:h-full">
+        <div className="w-1/2 max-md:w-full max-sm:p-0 max-md:h-full">
           <div className="bg-[#00000008] h-full w-full rounded-md p-6 flex flex-col gap-3">
-            <h1 className="text-2xl font-semibold uppercase title">Get in touch now!</h1>
+            <h1 className="text-2xl font-semibold uppercase title">
+              Get in touch now!
+            </h1>
             <div className="relative z-0">
               <input
                 type="text"
@@ -60,6 +69,19 @@ function Contact() {
                 Enter Your Email
               </label>
             </div>
+
+            <div class="w-full">
+              <select
+                id="services"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-black focus:border-black block w-full p-2.5"
+              >
+                <option selected>Choose a service</option>
+                <option value="construction">JKI Constructions</option>
+                <option value="facility_mgmt">JKI Facility Management</option>
+                <option value="gateways">JKI Gateways</option>
+              </select>
+            </div>
+
             <textarea
               id="message"
               className="flex flex-grow p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-black focus:border-black"
@@ -68,7 +90,7 @@ function Contact() {
             <span className="flex justify-end w-full">
               <button
                 type="button"
-                className="w-full flex justify-center text-black bg-[#C10000] text-white focus:ring-1 focus:outline-none focus:ring-black font-medium rounded-lg text-sm px-2.5 py-2.5 text-center items-center gap-6"
+                className="w-full flex justify-center bg-[#C10000] text-white focus:ring-1 focus:outline-none focus:ring-black font-medium rounded-lg text-sm px-2.5 py-2.5 text-center items-center gap-6"
               >
                 Send
                 <svg
