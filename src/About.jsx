@@ -1,17 +1,12 @@
 import misson_banner from "./assets/mission_bg.jpg";
 import jcb_banner from "./assets/banner-1.jpg";
 import client_banner from "./assets/clients_bg.png";
-//import about_banner from "./assets/about_bg.png";
 import abt_man from "./assets/about_man.png";
 
 import client1 from "./assets/clients/brandix.png";
 import client2 from "./assets/clients/mas.png";
-//import client3 from "./assets/clients/kanrich.png";
-//import client4 from "./assets/clients/dimo.png";
 import client5 from "./assets/clients/cbl.png";
-//import client6 from "./assets/clients/nestle.png";
 import client7 from "./assets/clients/hela.png";
-//import client8 from "./assets/clients/esquel.png";
 
 import teejay from "./assets/clients/teejay.png";
 import linea_clothing from "./assets/clients/linea_clothing.png";
@@ -22,20 +17,11 @@ import fabric_park from "./assets/clients/fabric_park.png";
 import heineken from "./assets/clients/heineken.png";
 import mas_active from "./assets/clients/mas_active.png";
 import mas_shadowline from "./assets/clients/mas_shadowline.png";
-//import nestle_round from "./assets/clients/nestle_round.png";
 import noyon from "./assets/clients/noyon.png";
 import ruhunu from "./assets/clients/ruhunu.png";
 import screenline from "./assets/clients/screenline.png";
 import smart_shirts from "./assets/clients/smart_shirts.png";
 import unichela from "./assets/clients/unichela.png";
-
-//import img1 from "./assets/AboutGrid/img-1.png";
-//import img2 from "./assets/AboutGrid/img-2.png";
-//import img3 from "./assets/AboutGrid/img-3.png";
-//import img4 from "./assets/AboutGrid/img-4.png";
-//import img5 from "./assets/AboutGrid/img-5.png";
-//import img6 from "./assets/AboutGrid/img-6.png";
-//import img7 from "./assets/AboutGrid/img-7.png";
 
 import bnc_1 from "./assets/csr/bnc-kundasale/1.jpg";
 import bnc_3 from "./assets/csr/bnc-kundasale/3.jpg";
@@ -52,11 +38,6 @@ import coconut_4 from "./assets/csr/coconut-4.jpg";
 import coconut_5 from "./assets/csr/coconut-5.jpg";
 import coconut_6 from "./assets/csr/coconut-6.jpg";
 import coconut_7 from "./assets/csr/coconut-7.jpg";
-
-import m_1 from "./assets/milestones/m-1.png";
-import m_2 from "./assets/milestones/m-2.png";
-import m_3 from "./assets/milestones/m-3.png";
-import m_4 from "./assets/milestones/m-4.png";
 
 import { useState, useEffect } from "react";
 
