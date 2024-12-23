@@ -36,11 +36,6 @@ import screenline from "./assets/clients/screenline.png";
 import smart_shirts from "./assets/clients/smart_shirts.png";
 import unichela from "./assets/clients/unichela.png";
 
-import m_1 from "./assets/milestones/m-1.png";
-import m_2 from "./assets/milestones/m-2.png";
-import m_3 from "./assets/milestones/m-3.png";
-import m_4 from "./assets/milestones/m-4.png";
-
 import a_1 from "./assets/Awards/award-1.png";
 import a_2 from "./assets/Awards/award-2.png";
 import a_3 from "./assets/Awards/award-3.png";
@@ -370,114 +365,8 @@ function Landing() {
             </div>
           </div>
         </div>
-        {/*Milestones*/}
+        {/*phrase*/}
         <div className="h-fit">
-          <div className="flex flex-col gap-6 p-12 h-fit max-md:p-6">
-            <h1 className="text-[30px] text-[#C10000] title">Our Milestones</h1>
-            {/*for md*/}
-            <div className="hidden h-full gap-3 text-white md:flex">
-              <div className="flex flex-col flex-grow w-2/6 h-full gap-3">
-                <div className="flex flex-col cursor-pointer">
-                  <img src={m_1} alt="" className="h-[500px] object-cover" />
-                  <p className="bg-[#000000BD] p-3">
-                    Best Coming Entrepreneur of 2015 in Central Province
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col justify-between flex-grow w-1/6 gap-3">
-                <div className="flex flex-col cursor-pointer h-1/2">
-                  <img src={m_2} alt="" className="object-cover h-full" />
-                  <p className="bg-[#000000BD] p-3">
-                    Best Performing Entrepreneur of 2016 in Central Province
-                  </p>
-                </div>
-                <div className="flex flex-col cursor-pointer h-1/2">
-                  <img src={m_3} alt="" className="object-cover h-full" />
-                  <p className="bg-[#000000BD] p-3">Star Awards in 2017</p>
-                </div>
-              </div>
-              <div className="flex flex-col flex-grow w-2/6 gap-3">
-                <div className="flex flex-col cursor-pointer">
-                  <img
-                    src={m_4}
-                    alt=""
-                    className="h-[500px] object-cover object-center"
-                  />
-                  <p className="bg-[#000000BD] p-3">
-                    Best Performing Entrepreneur of 2016 in Central Province
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/*for max-md*/}
-            <div className="flex flex-col h-full gap-3 text-white md:hidden">
-              <div className="flex flex-col flex-grow w-full h-full gap-3">
-                <div className="flex flex-col">
-                  <img
-                    src={m_1}
-                    alt=""
-                    className="h-fit max-h-[400px] object-contain bg-[#000000BD]"
-                  />
-                  <p className="bg-[#000000BD] p-3">
-                    Best Coming Entrepreneur of 2015 in Central Province
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col justify-between flex-grow w-full gap-3">
-                <div className="flex flex-col h-1/2">
-                  <img src={m_2} alt="" className="object-contain h-full" />
-                  <p className="bg-[#000000BD] p-3">
-                    Best Performing Entrepreneur of 2016 in Central Province
-                  </p>
-                </div>
-                <div className="flex flex-col h-1/2">
-                  <img src={m_3} alt="" className="object-contain h-full" />
-                  <p className="bg-[#000000BD] p-3">Star Awards in 2017</p>
-                </div>
-              </div>
-              <div className="flex flex-col flex-grow w-full gap-3">
-                <div className="flex flex-col">
-                  <img
-                    src={m_4}
-                    alt=""
-                    className="h-fit max-h-[400px] object-contain object-center bg-[#000000BD]"
-                  />
-                  <p className="bg-[#000000BD] p-3">
-                    Best Performing Entrepreneur of 2016 in Central Province
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <span className="flex justify-end w-full px-12 py-3 underline max-md:px-6">
-            <Link href={"/aboutus"}>View All</Link>
-          </span>
-        </div>
-        {/*Milestones - 2*/}
-        <div className="h-fit">
-          <div className="flex-col hidden gap-6 p-12 h-fit max-md:p-6">
-            <span>
-              <h1 className="text-[30px] text-[#C10000] title">
-                Our Milestones
-              </h1>
-              <h1 className="text-[20px] sm:w-1/2 font-medium title text-center">
-                For a brighter future
-              </h1>
-            </span>
-            <p className="text-justify 2xl:text-2xl xl:text-xl max-md:text-lg max-sm:text-base">
-              At JKI Holdings, we believe in taking responsibility for our
-              actions, both as a company and as members of society. We
-              acknowledge the impact we have on the environment, the people we
-              work with, and the communities we operate in. Therefore, we have
-              initiated a range of projects and programs that aim to create a
-              positive impact on the world around us. Through our corporate
-              social responsibility (CSR) projects, we strive to promote
-              sustainability, equality, diversity, and inclusion. We are
-              committed to making a difference and creating a better future for
-              all.
-            </p>
-          </div>
-          {/*phrase*/}
           <div className="flex justify-center pb-6 text-2xl poltawski">
             <span className="inline text-[60px] max-md:text-2xl sansita max-lg:text-3xl max-xl:text-5xl text-[#C10000] max-sm:hidden">
               “

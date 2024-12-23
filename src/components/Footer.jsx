@@ -98,6 +98,9 @@ function Footer() {
               <Link href="/aboutus">About Us</Link>
             </li>
             <li className="text-sm hover:text-red-500">
+              <Link href="/achievements">Achievements</Link>
+            </li>
+            <li className="text-sm hover:text-red-500">
               <Link href="/contact">Contact Us</Link>
             </li>
             <li className="text-sm hover:text-red-500">
