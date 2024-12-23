@@ -86,29 +86,21 @@ const pallekeleGrid = [
 
 const pallekeleLargeGrid = [pallekele_7, pallekele_8, pallekele_9];
 
-const nirmanaGrid = [
-  nirmana_1,
-  nirmana_2,
-  nirmana_3,
-];
+const nirmanaGrid = [nirmana_1, nirmana_2, nirmana_3];
 const nirmanaLargeGrid = [nirmana_7, nirmana_8, nirmana_9];
 
 const noblesGrid = [
-    nobles_1,
-    nobles_2,
-    nobles_3,
-    nobles_4,
-    nobles_5,
-    nobles_6,
-    nobles_7,
-  ];
+  nobles_1,
+  nobles_2,
+  nobles_3,
+  nobles_4,
+  nobles_5,
+  nobles_6,
+  nobles_7,
+];
 
-  const tjGrid = [
-    tj_1,
-    tj_2,
-    tj_3,
-  ];
-    
+const tjGrid = [tj_1, tj_2, tj_3];
+
 const allImages = [
   gamaduwa_1,
   gamaduwa_2,
@@ -283,6 +275,10 @@ function ProjectsNew() {
         </div>
       )}
 
+      <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title text-center">
+        <h1>Construction Projects</h1>
+      </div>
+
       {gamaduwaGridVisible ? (
         <>
           {/* gamaduwa header */}
@@ -383,6 +379,10 @@ function ProjectsNew() {
       ) : (
         ""
       )}
+
+      <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title text-center">
+        <h1>Facility Management Projects</h1>
+      </div>
 
       {pallekeleGridVisible ? (
         <>

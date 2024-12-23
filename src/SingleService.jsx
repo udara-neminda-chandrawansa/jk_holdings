@@ -38,6 +38,8 @@ import email_icon from "./assets/Services/email_icon.png";
 import add_icon from "./assets/Services/add_icon.png";
 import phone_icon from "./assets/Services/phone_icon.png";
 
+import { Link } from "wouter";
+
 function SingleService({ serviceType }) {
   // Mapping serviceType to an integer index
   const serviceTypeMap = {
@@ -103,6 +105,7 @@ function SingleService({ serviceType }) {
             Landscaping - Designing & Maintenance
           </li>
         </ul>
+        <Link className={"underline"} href="/services-grid/construction">View All</Link>
       </div>,
     ],
     [
@@ -120,6 +123,7 @@ function SingleService({ serviceType }) {
           meticulous garden maintenance. We prioritize efficiency and
           environmental responsibility in every service we provide.
         </p>
+        <Link className={"underline"} href="/services-grid/facility-management">View All</Link>
       </div>,
     ],
     [

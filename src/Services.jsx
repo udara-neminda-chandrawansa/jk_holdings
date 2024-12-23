@@ -1,25 +1,11 @@
+import SCPCard from "./components/SCPCard";
 import ServiceCard from "./components/ServiceCard";
+
 import Card_1 from "./assets/ServiceCards/card_1.jpg";
 import Card_2 from "./assets/ServiceCards/card_2.jpg";
 import Card_3 from "./assets/ServiceCards/card_3.jpg";
-import Card_4 from "./assets/ServiceCards/card_4.png";
-import Card_5 from "./assets/ServiceCards/card_5.png";
-import Card_6 from "./assets/ServiceCards/card_6.png";
-import Card_7 from "./assets/ServiceCards/card_7.png";
-import Card_8 from "./assets/ServiceCards/card_8.png";
-import Card_9 from "./assets/ServiceCards/card_9.png";
-import Card_10 from "./assets/ServiceCards/card_10.png";
-import Card_11 from "./assets/ServiceCards/card_11.png";
-import Card_12 from "./assets/ServiceCards/card_12.png";
-import Card_13 from "./assets/ServiceCards/card_13.png";
-import Card_14 from "./assets/ServiceCards/card_14.png";
-import Card_15 from "./assets/ServiceCards/card_15.png";
-import Card_16 from "./assets/ServiceCards/card_16.png";
-import Card_17 from "./assets/ServiceCards/card_17.png";
-import { useState } from "react";
 
 function Services() {
-  const [pagination, setPagination] = useState(1); // for setting and retreiving pagination
 
   return (
     <div>
@@ -35,145 +21,24 @@ function Services() {
       </div>
       {/*card grid*/}
       <div>
-        <div className="grid grid-cols-4 gap-6 px-12 pb-3 place-items-center max-md:px-6 max-md:grid-cols-2 max-sm:grid-cols-1">
-          {pagination === 1 ? (
-            <>
-              <ServiceCard
-                img={Card_1}
-                text={"Construction"}
-                url={"construction"}
-              ></ServiceCard>
-              <ServiceCard
-                img={Card_2}
-                text={"Facility Management"}
-                url={"facility-management"}
-              ></ServiceCard>
-              <ServiceCard
-                img={Card_3}
-                text={"Getaways"}
-                url={"getaways"}
-              ></ServiceCard>
-              <ServiceCard
-                img={Card_5}
-                text={"Interior Designing"}
-                url={"interior-designing"}
-              ></ServiceCard>
-              <ServiceCard
-                img={Card_6}
-                text={"Masonry, Tile & Interlock Services"}
-                url={"masonry-tile-interlock-services"}
-              ></ServiceCard>
-              <ServiceCard
-                img={Card_7}
-                text={"Plumbing Services"}
-                url={"plumbing-services"}
-              ></ServiceCard>
-              <ServiceCard
-                img={Card_8}
-                text={"Wood-based Services"}
-                url={"wood-based-services"}
-              ></ServiceCard>
-              <ServiceCard
-                img={Card_9}
-                text={"Aluminum Fabrication"}
-                url={"aluminum-fabrication"}
-              ></ServiceCard>
-            </>
-          ) : pagination === 2 ? (
-            <>
-              <ServiceCard
-                img={Card_10}
-                text={"Electrical Services"}
-                url={"electrical-services"}
-              ></ServiceCard>
-              <ServiceCard
-                img={Card_11}
-                text={"Property Management"}
-                url={"property-management"}
-              ></ServiceCard>
-              <ServiceCard
-                img={Card_12}
-                text={"Manpower Supply"}
-                url={"manpower-supply"}
-              ></ServiceCard>
-              <ServiceCard
-                img={Card_13}
-                text={"Janitorial Services"}
-                url={"janitorial-services"}
-              ></ServiceCard>
-              <ServiceCard
-                img={Card_14}
-                text={"Landscape Designing"}
-                url={"landscape-designing"}
-              ></ServiceCard>
-              <ServiceCard
-                img={Card_15}
-                text={"Garden Maintenance"}
-                url={"garden-maintenance"}
-              ></ServiceCard>
-              <ServiceCard
-                img={Card_16}
-                text={"Residential Construction"}
-                url={"residential-construction"}
-              ></ServiceCard>
-              <ServiceCard
-              img={Card_17}
-              text={"Commercial Construction"}
-              url={"commercial-construction"}
-            ></ServiceCard>
-            </>
-          ) : ""}
+        <div className="grid grid-cols-3 gap-6 px-12 pb-6 place-items-center max-md:px-6 max-md:grid-cols-2 max-sm:grid-cols-1">
+          <SCPCard
+            img={Card_1}
+            text={"Construction"}
+            url={"construction"}
+          ></SCPCard>
+          <SCPCard
+            img={Card_2}
+            text={"Facility Management"}
+            url={"facility-management"}
+          ></SCPCard>
+          <ServiceCard
+            img={Card_3}
+            text={"Getaways"}
+            url={"getaways"}
+          ></ServiceCard>
         </div>
       </div>
-      {/*pagination*/}
-      <nav className="flex justify-center py-3">
-        <ul className="inline-flex -space-x-px text-sm">
-          <li>
-            <button
-              onClick={() =>
-                pagination > 1 ? setPagination(pagination - 1) : ""
-              }
-              className={`flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg md:hover:bg-gray-100 md:hover:text-gray-200 ${
-                pagination === 1 ? "text-gray-100" : ""
-              }`}
-            >
-              Previous
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => setPagination(1)}
-              className={`items-center justify-center h-8 px-3 leading-tight bg-white border border-gray-300 flflex md:hover:bg-gray-100 md:hover:text-gray-700 ${
-                pagination === 1 ? " text-[#C10000]" : " text-gray-500"
-              }`}
-            >
-              1
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => setPagination(2)}
-              className={`items-center justify-center h-8 px-3 leading-tight bg-white border border-gray-300 flflex md:hover:bg-gray-100 md:hover:text-gray-700 ${
-                pagination === 2 ? " text-[#C10000]" : " text-gray-500"
-              }`}
-            >
-              2
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() =>
-                pagination < 2 ? setPagination(pagination + 1) : ""
-              }
-              className={`flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg md:hover:bg-gray-100 md:hover:text-gray-200 ${
-                pagination === 2 ? "text-gray-100" : ""
-              }`}
-            >
-              Next
-            </button>
-          </li>
-        </ul>
-      </nav>
     </div>
   );
 }

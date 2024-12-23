@@ -11,6 +11,7 @@ import SingleService from "./SingleService";
 import CSRNew from "./CSRNew";
 import ProjectsNew from "./ProjectsNew";
 import Achievements from "./Achievements";
+import ServicesCardsPage from "./ServicesCardsPage";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       <Route path="/contact" component={Contact} />
       <Route path="/aboutus" component={About} />
       <Route path="/services" component={Services} />
+      <Route path="/services-grid/:name">
+        {(params) => <ServicesCardsPage mainService={params.name} />}
+      </Route>
       <Route path="/achievements" component={Achievements} />
       <Route path="/projects" component={ProjectsNew} />
       <Route path="/csr" component={CSRNew} />
