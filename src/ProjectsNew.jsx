@@ -132,9 +132,6 @@ const allImages = [
   nirmana_1,
   nirmana_2,
   nirmana_3,
-  nirmana_4,
-  nirmana_5,
-  nirmana_6,
   nirmana_7,
   nirmana_8,
   nirmana_9,
@@ -275,9 +272,11 @@ function ProjectsNew() {
         </div>
       )}
 
-      <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title text-center">
-        <h1>Construction Projects</h1>
-      </div>
+      {paraVisibility && (
+        <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title text-center">
+          <h1>Construction Projects</h1>
+        </div>
+      )}
 
       {gamaduwaGridVisible ? (
         <>
@@ -329,7 +328,7 @@ function ProjectsNew() {
                       src={image}
                       alt={`athena-${index + 1}`}
                       className="cursor-pointer max-sm:w-full"
-                      onClick={() => handleImageClick(index + 8)}
+                      onClick={() => handleImageClick(index + 7)}
                     />
                   </div>
                 ))}
@@ -370,7 +369,7 @@ function ProjectsNew() {
                   src={image}
                   alt={`linea-proj-${index + 1}`}
                   className="cursor-pointer max-sm:w-full"
-                  onClick={() => handleImageClick(index + 14)}
+                  onClick={() => handleImageClick(index + 13)}
                 />
               </div>
             ))}
@@ -379,10 +378,12 @@ function ProjectsNew() {
       ) : (
         ""
       )}
-
-      <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title text-center">
-        <h1>Facility Management Projects</h1>
-      </div>
+      
+      {paraVisibility && (
+        <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title text-center">
+          <h1>Facility Management Projects</h1>
+        </div>
+      )}
 
       {pallekeleGridVisible ? (
         <>
@@ -398,7 +399,7 @@ function ProjectsNew() {
                   src={image}
                   alt={`pallekele-${index + 1}`}
                   className="cursor-pointer max-sm:w-full"
-                  onClick={() => handleImageClick(index + 19)}
+                  onClick={() => handleImageClick(index + 18)}
                 />
               </div>
             ))}
@@ -410,7 +411,7 @@ function ProjectsNew() {
                       src={image}
                       alt={`pallekele-${index + 1}`}
                       className="cursor-pointer max-sm:w-full"
-                      onClick={() => handleImageClick(index + 25)}
+                      onClick={() => handleImageClick(index + 24)}
                     />
                   </div>
                 ))}
@@ -451,7 +452,7 @@ function ProjectsNew() {
                   src={image}
                   alt={`nirmana-${index + 1}`}
                   className="cursor-pointer max-sm:w-full"
-                  onClick={() => handleImageClick(index + 28)}
+                  onClick={() => handleImageClick(index + 27)}
                 />
               </div>
             ))}
@@ -463,7 +464,7 @@ function ProjectsNew() {
                       src={image}
                       alt={`nirmana-${index + 1}`}
                       className="cursor-pointer max-sm:w-full"
-                      onClick={() => handleImageClick(index + 34)}
+                      onClick={() => handleImageClick(index + 30)}
                     />
                   </div>
                 ))}
@@ -504,7 +505,7 @@ function ProjectsNew() {
                   src={image}
                   alt={`nobles-${index + 1}`}
                   className="cursor-pointer max-sm:w-full"
-                  onClick={() => handleImageClick(index + 37)}
+                  onClick={() => handleImageClick(index + 33)}
                 />
               </div>
             ))}
@@ -528,7 +529,7 @@ function ProjectsNew() {
                   src={image}
                   alt={`tj-${index + 1}`}
                   className="cursor-pointer max-sm:w-full"
-                  onClick={() => handleImageClick(index + 44)}
+                  onClick={() => handleImageClick(index + 40)}
                 />
               </div>
             ))}
