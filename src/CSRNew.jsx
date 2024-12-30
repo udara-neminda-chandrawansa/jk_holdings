@@ -51,12 +51,13 @@ const CoconutSmallGrid = [
   coconut_7,
   coconut_8,
   coconut_9,
-];
-
-const CoconutLargeGrid = [
   coconut_10,
   coconut_11,
   coconut_12,
+];
+
+const CoconutLargeGrid = [
+
   coconut_13,
   coconut_14,
   coconut_15,
@@ -68,9 +69,9 @@ const CoconutLargeGrid = [
   coconut_21,
 ];
 
-const BNCSmallGrid = [bnc_1, bnc_3, bnc_6, bnc_12, bnc_15, bnc_19];
+const BNCSmallGrid = [bnc_1, bnc_3, bnc_6, bnc_12, bnc_15, bnc_19,bnc_20, bnc_25,];
 
-const BNCLargeGrid = [bnc_20, bnc_25, bnc_26, bnc_29, bnc_34, bnc_35];
+const BNCLargeGrid = [ bnc_26, bnc_29, bnc_34, bnc_35];
 
 const FullGrid = [
   coconut_1,
@@ -212,186 +213,14 @@ function CSRNew() {
           </p>
         </div>
       )}
-      {/*scroll grid*/}
-      <div className="px-12 max-md:px-6">
-        {/*for md*/}
-        <div className="flex flex-col max-md:hidden md:h-[700px] gap-3 overflow-y-scroll red-custom-scroll">
-          {/*first row*/}
-          <div className="hidden h-[300px] gap-3 text-white md:flex">
-            <div className="flex flex-col flex-grow w-2/4 h-full">
-              <div className="flex flex-col cursor-pointer">
-                <img
-                  src={bnc_8}
-                  alt="milestone-grid-card"
-                  className="h-[300px] object-cover object-bottom"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col w-1/4 h-full cursor-pointer">
-              <img
-                src={bnc_3}
-                alt="milestone-grid-card"
-                className="object-cover h-[300px]"
-              />
-            </div>
-            <div className="flex flex-col w-1/4 h-full cursor-pointer">
-              <img
-                src={bnc_5}
-                alt="milestone-grid-card"
-                className="object-cover h-[300px]"
-              />
-            </div>
-          </div>
-          {/*second row*/}
-          <div className="hidden h-[400px] gap-3 text-white md:flex">
-            <div className="flex flex-col flex-grow w-3/5 h-full">
-              <div className="flex flex-col h-full cursor-pointer">
-                <img
-                  src={bnc_16}
-                  alt=""
-                  className="object-cover object-bottom h-full"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col w-1/5 h-full gap-3 cursor-pointer">
-              <img
-                src={bnc_34}
-                alt="milestone-grid-card"
-                className="object-cover h-1/2"
-              />
-              <img
-                src={bnc_9}
-                alt="milestone-grid-card"
-                className="object-cover h-1/2"
-              />
-            </div>
-            <div className="flex flex-col w-1/5 h-full cursor-pointer">
-              <img
-                src={bnc_12}
-                alt="milestone-grid-card"
-                className="object-cover h-[400px]"
-              />
-            </div>
-          </div>
-          {/*third row*/}
-          <div className="hidden h-[300px] gap-3 text-white md:flex">
-            <div className="flex flex-col flex-grow w-2/4 h-full">
-              <div className="flex flex-col cursor-pointer">
-                <img
-                  src={coconut_1}
-                  alt="milestone-grid-card"
-                  className="h-[300px] object-cover"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col w-1/4 h-full cursor-pointer">
-              <img
-                src={coconut_2}
-                alt="milestone-grid-card"
-                className="object-cover h-[300px]"
-              />
-            </div>
-            <div className="flex flex-col w-1/4 h-full cursor-pointer">
-              <img
-                src={coconut_3}
-                alt="milestone-grid-card"
-                className="object-cover h-[300px]"
-              />
-            </div>
-          </div>
-          {/*fourth row*/}
-          <div className="hidden h-[400px] gap-3 text-white md:flex">
-            <div className="flex flex-col flex-grow w-3/5 h-full">
-              <div className="flex flex-col h-full cursor-pointer">
-                <img
-                  src={coconut_4}
-                  alt=""
-                  className="object-cover object-top h-full"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col w-1/5 h-full gap-3 cursor-pointer">
-              <img
-                src={coconut_5}
-                alt="milestone-grid-card"
-                className="object-cover h-1/2"
-              />
-              <img
-                src={coconut_6}
-                alt="milestone-grid-card"
-                className="object-cover h-1/2"
-              />
-            </div>
-            <div className="flex flex-col w-1/5 h-full cursor-pointer">
-              <img
-                src={coconut_7}
-                alt="milestone-grid-card"
-                className="object-cover h-[400px]"
-              />
-            </div>
-          </div>
-        </div>
-        {/*for max-md*/}
-        <div className="flex-col hidden gap-3 text-white">
-          <div className="bg-[#000000BD]">
-            <img
-              src={bnc_1}
-              alt="milestone-grid-card"
-              className="w-full max-h-[400px] object-contain"
-            />
-          </div>
-          <div className="bg-[#000000BD]">
-            <img
-              src={bnc_3}
-              alt="milestone-grid-card"
-              className="w-full max-h-[400px] object-contain"
-            />
-          </div>
-          <div className="bg-[#000000BD]">
-            <img
-              src={bnc_5}
-              alt="milestone-grid-card"
-              className="w-full max-h-[400px] object-contain"
-            />
-          </div>
-          <div className="bg-[#000000BD]">
-            <img
-              src={bnc_16}
-              alt="milestone-grid-card"
-              className="w-full max-h-[400px] object-contain"
-            />
-          </div>
-          <div className="bg-[#000000BD]">
-            <img
-              src={bnc_8}
-              alt="milestone-grid-card"
-              className="w-full max-h-[400px] object-contain"
-            />
-          </div>
-          <div className="bg-[#000000BD]">
-            <img
-              src={bnc_9}
-              alt="milestone-grid-card"
-              className="w-full max-h-[400px] object-contain"
-            />
-          </div>
-          <div className="bg-[#000000BD]">
-            <img
-              src={bnc_12}
-              alt="milestone-grid-card"
-              className="w-full max-h-[400px] object-contain"
-            />
-          </div>
-        </div>
-      </div>
       {coconutGridVisible ? (
         <>
           {/* Coconut Header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>Coconut plant’s contribution</h1>
+            <h1><strong className="font-semibold">Coconut plants</strong> contribution for JKI employees </h1>
           </div>
           {/* Coconut Photo Grid */}
-          <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
+          <div className="grid grid-cols-4 gap-4 px-12 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
             {CoconutSmallGrid.map((image, index) => (
               <div key={index}>
                 <img
@@ -432,12 +261,12 @@ function CSRNew() {
           {/* BNC Header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
             <h1>
-              Tree Planting Programme at SWRD Bandaranayaka National College,
+              <strong className="font-semibold">Tree Planting Programme</strong> at SWRD Bandaranayaka National College,
               Kundasale
             </h1>
           </div>
           {/* BNC Photo Grid */}
-          <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
+          <div className="grid grid-cols-4 gap-4 px-12 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
             {BNCSmallGrid.map((image, index) => (
               <div key={index}>
                 <img

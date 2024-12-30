@@ -282,7 +282,7 @@ function ProjectsNew() {
         <>
           {/* gamaduwa header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>House Renovation - Gamudawa</h1>
+            <h1>Gamudawa - <strong className="font-semibold">House Renovation</strong></h1>
           </div>
           {/* gamaduwa Photo Grid */}
           <div className="grid grid-cols-2 gap-4 px-12 max-sm:grid-cols-1 max-md:px-6">
@@ -306,7 +306,7 @@ function ProjectsNew() {
         <>
           {/* Athena header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>Construction works & Landscape MAS Athena - Thulhiriya</h1>
+            <h1>MAS Athena Thulhiriya - <strong className="font-semibold">Construction works & Landscape</strong></h1>
           </div>
           {/* Athena Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
@@ -359,7 +359,7 @@ function ProjectsNew() {
         <>
           {/* Linea Project header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>MAS Linea Project Construction</h1>
+            <h1>MAS Linea Project - <strong className="font-semibold">Construction</strong></h1>
           </div>
           {/* Linea proj Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
@@ -389,7 +389,7 @@ function ProjectsNew() {
         <>
           {/* pallekele header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>MAS Linea Clothing - Pallekele</h1>
+            <h1>MAS Linea Clothing Pallekele - <strong className="font-semibold">Facility Management</strong></h1>
           </div>
           {/* pallekele Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
@@ -442,7 +442,7 @@ function ProjectsNew() {
         <>
           {/* nirmana header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>MAS Nirmana Landscaping - Katunayake</h1>
+            <h1>MAS Nirmana Katunayake - <strong className="font-semibold">Landscaping</strong></h1>
           </div>
           {/* nirmana Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
@@ -495,7 +495,7 @@ function ProjectsNew() {
         <>
           {/* Nobles header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>Nobles Manufacturing (Pvt)Ltd</h1>
+            <h1>Nobles Manufacturing (Pvt)Ltd - <strong className="font-semibold">Facility Management</strong></h1>
           </div>
           {/* Nobles Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
@@ -519,7 +519,7 @@ function ProjectsNew() {
         <>
           {/* TJ header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>TJ Awissawella</h1>
+            <h1>TJ Awissawella - <strong className="font-semibold">Facility Management</strong></h1>
           </div>
           {/* TJ Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 pb-6 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
