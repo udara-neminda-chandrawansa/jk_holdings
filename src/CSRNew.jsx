@@ -217,7 +217,7 @@ function CSRNew() {
         <>
           {/* Coconut Header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1><strong className="font-semibold">Coconut plants</strong> contribution for JKI employees </h1>
+            <h1><strong className="font-semibold">Coconut plants contribution</strong> for JKI employees </h1>
           </div>
           {/* Coconut Photo Grid */}
           <div className="grid grid-cols-4 gap-4 px-12 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
