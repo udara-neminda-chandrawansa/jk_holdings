@@ -274,7 +274,7 @@ function ProjectsNew() {
 
       {paraVisibility && (
         <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title text-center">
-          <h1>Construction Projects</h1>
+          <h1 className="font-semibold">Renovation</h1>
         </div>
       )}
 
@@ -282,7 +282,7 @@ function ProjectsNew() {
         <>
           {/* gamaduwa header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>Gamudawa - <strong className="font-semibold">House Renovation</strong></h1>
+            <h1>House Renovation - Gamudawa</h1>
           </div>
           {/* gamaduwa Photo Grid */}
           <div className="grid grid-cols-2 gap-4 px-12 max-sm:grid-cols-1 max-md:px-6">
@@ -302,11 +302,17 @@ function ProjectsNew() {
         ""
       )}
 
+      {paraVisibility && (
+        <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title text-center">
+          <h1 className="font-semibold">Construction</h1>
+        </div>
+      )}
+
       {athenaGridVisible ? (
         <>
           {/* Athena header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>MAS Athena Thulhiriya - <strong className="font-semibold">Construction works & Landscape</strong></h1>
+            <h1>MAS Athena - Thulhiriya</h1>
           </div>
           {/* Athena Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
@@ -359,7 +365,7 @@ function ProjectsNew() {
         <>
           {/* Linea Project header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>MAS Linea Project - <strong className="font-semibold">Construction</strong></h1>
+            <h1>MAS Linea Project</h1>
           </div>
           {/* Linea proj Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
@@ -378,71 +384,18 @@ function ProjectsNew() {
       ) : (
         ""
       )}
-      
+
       {paraVisibility && (
         <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title text-center">
-          <h1>Facility Management Projects</h1>
+          <h1 className="font-semibold">Landscaping</h1>
         </div>
-      )}
-
-      {pallekeleGridVisible ? (
-        <>
-          {/* pallekele header */}
-          <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>MAS Linea Clothing Pallekele - <strong className="font-semibold">Facility Management</strong></h1>
-          </div>
-          {/* pallekele Photo Grid */}
-          <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
-            {pallekeleGrid.map((image, index) => (
-              <div key={index}>
-                <img
-                  src={image}
-                  alt={`pallekele-${index + 1}`}
-                  className="cursor-pointer max-sm:w-full"
-                  onClick={() => handleImageClick(index + 18)}
-                />
-              </div>
-            ))}
-            {pallekeleLargeGridVisible ? (
-              <>
-                {pallekeleLargeGrid.map((image, index) => (
-                  <div key={index}>
-                    <img
-                      src={image}
-                      alt={`pallekele-${index + 1}`}
-                      className="cursor-pointer max-sm:w-full"
-                      onClick={() => handleImageClick(index + 24)}
-                    />
-                  </div>
-                ))}
-              </>
-            ) : (
-              ""
-            )}
-          </div>
-        </>
-      ) : (
-        ""
-      )}
-
-      {pallekeleGridVisible ? (
-        <>
-          {/* View All / Go Back Button for pallekele */}
-          <div className="flex justify-center px-12 py-6 underline max-md:px-6">
-            <button onClick={() => handleViewAll("Pallekele")}>
-              {paraVisibility ? "View All" : "Go Back"}
-            </button>
-          </div>
-        </>
-      ) : (
-        ""
       )}
 
       {nirmanaGridVisible ? (
         <>
           {/* nirmana header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>MAS Nirmana Katunayake - <strong className="font-semibold">Landscaping</strong></h1>
+            <h1>MAS Nirmana - Katunayake</h1>
           </div>
           {/* nirmana Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
@@ -491,24 +444,59 @@ function ProjectsNew() {
         ""
       )}
 
-      {noblesGridVisible ? (
+      {paraVisibility && (
+        <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title text-center">
+          <h1 className="font-semibold">Facility Management</h1>
+        </div>
+      )}
+
+      {pallekeleGridVisible ? (
         <>
-          {/* Nobles header */}
+          {/* pallekele header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>Nobles Manufacturing (Pvt)Ltd - <strong className="font-semibold">Facility Management</strong></h1>
+            <h1>MAS Linea Clothing - Pallekele</h1>
           </div>
-          {/* Nobles Photo Grid */}
+          {/* pallekele Photo Grid */}
           <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
-            {noblesGrid.map((image, index) => (
+            {pallekeleGrid.map((image, index) => (
               <div key={index}>
                 <img
                   src={image}
-                  alt={`nobles-${index + 1}`}
+                  alt={`pallekele-${index + 1}`}
                   className="cursor-pointer max-sm:w-full"
-                  onClick={() => handleImageClick(index + 33)}
+                  onClick={() => handleImageClick(index + 18)}
                 />
               </div>
             ))}
+            {pallekeleLargeGridVisible ? (
+              <>
+                {pallekeleLargeGrid.map((image, index) => (
+                  <div key={index}>
+                    <img
+                      src={image}
+                      alt={`pallekele-${index + 1}`}
+                      className="cursor-pointer max-sm:w-full"
+                      onClick={() => handleImageClick(index + 24)}
+                    />
+                  </div>
+                ))}
+              </>
+            ) : (
+              ""
+            )}
+          </div>
+        </>
+      ) : (
+        ""
+      )}
+
+      {pallekeleGridVisible ? (
+        <>
+          {/* View All / Go Back Button for pallekele */}
+          <div className="flex justify-center px-12 py-6 underline max-md:px-6">
+            <button onClick={() => handleViewAll("Pallekele")}>
+              {paraVisibility ? "View All" : "Go Back"}
+            </button>
           </div>
         </>
       ) : (
@@ -519,10 +507,12 @@ function ProjectsNew() {
         <>
           {/* TJ header */}
           <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
-            <h1>TJ Awissawella - <strong className="font-semibold">Facility Management</strong></h1>
+            <h1>
+              TJ Awissawella
+            </h1>
           </div>
           {/* TJ Photo Grid */}
-          <div className="grid grid-cols-3 gap-4 px-12 pb-6 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
+          <div className="grid grid-cols-3 gap-4 px-12 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
             {tjGrid.map((image, index) => (
               <div key={index}>
                 <img
@@ -530,6 +520,30 @@ function ProjectsNew() {
                   alt={`tj-${index + 1}`}
                   className="cursor-pointer max-sm:w-full"
                   onClick={() => handleImageClick(index + 40)}
+                />
+              </div>
+            ))}
+          </div>
+        </>
+      ) : (
+        ""
+      )}
+
+      {noblesGridVisible ? (
+        <>
+          {/* Nobles header */}
+          <div className="py-6 text-[#C10000] px-12 max-md:px-6 text-[40px] title">
+            <h1>Nobles Manufacturing</h1>
+          </div>
+          {/* Nobles Photo Grid */}
+          <div className="grid grid-cols-3 gap-4 px-12 pb-6 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:px-6">
+            {noblesGrid.map((image, index) => (
+              <div key={index}>
+                <img
+                  src={image}
+                  alt={`nobles-${index + 1}`}
+                  className="cursor-pointer max-sm:w-full"
+                  onClick={() => handleImageClick(index + 33)}
                 />
               </div>
             ))}
